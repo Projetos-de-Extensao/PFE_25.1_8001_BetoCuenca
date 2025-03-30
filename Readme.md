@@ -14,7 +14,7 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial, d
 ## Alunos
 | 202407095879  |  Bernardo Casanovas Linhares |
 | 202407095909  |  Guilherme Reis Itaborahy Magalhães |
-| xxxxxxxxxxxx  |  Enrique Labre...|
+| 20248380501  |  Enrique Mari Clavecilla Labre|
 | 202408573421  |  Anderson Lima de Araújo Júnior |
 
 ## Sobre 
@@ -37,5 +37,3 @@ Adicione 1 ou mais vídeos com a execução do projeto final.
     
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-qualquer coisa
