@@ -17,7 +17,7 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial, d
 | 202407095879  |  Bernardo Casanovas Linhares |
 | 202407095909  |  Guilherme Reis Itaborahy Magalhães |
 | xxxxxxxxxxxx  |  Enrique Labre...|
-| xxxxxxxxxxxx  |  Anderson Lima...|
+| 202408573421  |  Anderson Lima de Araújo Júnior |
 
 ## Sobre 
 Descreva o seu projeto em linhas gerais. 
