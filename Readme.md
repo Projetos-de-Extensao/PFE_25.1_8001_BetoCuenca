@@ -14,8 +14,11 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial, d
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 202407095879  |  Bernardo Casanovas Linhares |
+| 202407095909  |  Guilherme Reis Itaborahy Magalhães |
+| xxxxxxxxxxxx  |  Sabrina Herdy... |
+| xxxxxxxxxxxx  |  Enrique Labre...|
+| xxxxxxxxxxxx  |  Anderson Lima...|
 
 ## Sobre 
 Descreva o seu projeto em linhas gerais. 
