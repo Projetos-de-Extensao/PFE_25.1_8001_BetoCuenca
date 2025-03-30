@@ -1,4 +1,4 @@
-### Levantar principais sites de eventos
+## Levantar principais sites de eventos
 
 Sympla: A Sympla se destaca com suas ferramentas abrangentes de gerenciamento de eventos, permitindo que os organizadores criem páginas de eventos personalizáveis, gerenciem o registro dos participantes e monitorem as vendas de ingressos em tempo real. Suas robustas análises fornecem insights valiosos sobre as características demográficas dos participantes e o desempenho das vendas, tornando-a uma plataforma favorita entre os planejadores de eventos. A Sympla suporta tanto eventos virtuais quanto presenciais, oferecendo recursos como comunicação com os participantes e gerenciamento de expositores. Essa plataforma é amplamente utilizada devido à sua interface amigável e às extensas opções de personalização.
 
@@ -10,7 +10,7 @@ Ticket Tailor: O Ticket Tailor se destaca por suas baixas taxas e páginas de ev
 
 Whova: O Whova é notável por seu foco no engajamento dos participantes, oferecendo recursos como aplicativos de eventos, ferramentas de networking e check-in móvel. A plataforma fornece uma experiência sem interrupções tanto para eventos presenciais quanto virtuais, com ferramentas para agendamento de sessões e pesquisas com os participantes. As análises avançadas do Whova ajudam os organizadores a entender o comportamento e as preferências dos participantes. Ele é favorito entre os grandes organizadores de eventos devido ao seu conjunto abrangente de ferramentas de engajamento e gerenciamento.
 
-# Levantar as principais funcionalidades de cada site acima
+## Levantar as principais funcionalidades de cada site acima
 
 ### Funcionalidades do Ingresso.com: 
 
@@ -74,7 +74,7 @@ Whova: O Whova é notável por seu foco no engajamento dos participantes, oferec
 
 
 
-# Escolher o tipo de site de evento que será desenvolvido
+## Escolher o tipo de site de evento que será desenvolvido
 
 Após a análise das principais plataformas de eventos disponíveis no mercado, o site que será desenvolvido será inspirado no Ingresso.com e, principalmente, no Cheers.
 
