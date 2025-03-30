@@ -8,7 +8,7 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial, d
  
 # NomedoProjeto
 
-**Número do Grupo**: XX <br>
+**Número do Grupo**: II <br>
 **Código da Disciplina**: FGA0208-T01<br>
 
 ## Alunos
@@ -16,7 +16,6 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial, d
 | -- | -- |
 | 202407095879  |  Bernardo Casanovas Linhares |
 | 202407095909  |  Guilherme Reis Itaborahy Magalhães |
-| xxxxxxxxxxxx  |  Sabrina Herdy... |
 | xxxxxxxxxxxx  |  Enrique Labre...|
 | xxxxxxxxxxxx  |  Anderson Lima...|
 
