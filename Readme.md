@@ -37,5 +37,3 @@ Adicione 1 ou mais vídeos com a execução do projeto final.
 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-qualquer coisa
