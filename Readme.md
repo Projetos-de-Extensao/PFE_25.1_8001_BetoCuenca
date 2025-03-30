@@ -6,28 +6,26 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial, d
  
  (Apague essa seção)
  
-# NomedoProjeto
+# BetoCuenca
 
 **Número do Grupo**: II <br>
 **Código da Disciplina**: FGA0208-T01<br>
 
 ## Alunos
-|Matrícula | Aluno |
-| -- | -- |
 | 202407095879  |  Bernardo Casanovas Linhares |
 | 202407095909  |  Guilherme Reis Itaborahy Magalhães |
 | xxxxxxxxxxxx  |  Enrique Labre...|
 | 202408573421  |  Anderson Lima de Araújo Júnior |
 
 ## Sobre 
-Descreva o seu projeto em linhas gerais. 
+Um site de compra de ingressos para eventos Universitários. 
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
 
 ## Instalação 
-**Linguagens**: xxxxxx<br>
-**Tecnologias**: xxxxxx<br>
+**Linguagens**: HTML, CSS e Javascript<br>
+**Tecnologias**: ??<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 Insira um manual ou um script para auxiliar ainda mais.
 

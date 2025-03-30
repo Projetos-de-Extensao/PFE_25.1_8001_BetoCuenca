@@ -26,7 +26,7 @@ title: Sprint 1
 
 ## Sprint Retrospective/Review Meeting
 
-#### Presentes na reunião: XXXX
+#### Presentes na reunião: Anderson, Guilherme, Bernardo e Enrique
 
 ### Dividas da Sprint
 
