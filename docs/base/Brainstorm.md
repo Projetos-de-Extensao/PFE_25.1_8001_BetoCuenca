@@ -76,7 +76,8 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 </p>
  
 ### Requisitos elicitados
- 
+| ID | Descrição |
+| -- | -- |
 |BS01| O usuário poderá visualizar uma lista de eventos disponíveis.|
 |BS02| O usuário poderá simular uma compra de ingresso.|
 |BS03| A interface deve permitir filtragem de eventos por data, local e categoria.|
