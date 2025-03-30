@@ -12,6 +12,8 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial, d
 **Código da Disciplina**: FGA0208-T01<br>
 
 ## Alunos
+|Matrícula | Aluno |
+| -- | -- |
 | 202407095879  |  Bernardo Casanovas Linhares |
 | 202407095909  |  Guilherme Reis Itaborahy Magalhães |
 | 20248380501  |  Enrique Mari Clavecilla Labre|
