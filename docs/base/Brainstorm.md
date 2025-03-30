@@ -99,6 +99,8 @@ Através da aplicação da técnica, foi possível elicitar alguns dos primeiros
  
  
 ## Autores
+| Data | Versão | Parte Feito | Contribudores |
+| -- | -- | -- | -- |
 | 28/03/2025 | 1.0 | Criação do documento | Enrique Labre |
 | 29/03/2025 | 2.0 | Debate de Brainstorm | Anderson Lima, Bernardo Casanovas e Guilherme Reis |
 | 29/03/2025 | 2.1 | Adicionar no documento | Guilherme Reis |
