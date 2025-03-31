@@ -20,6 +20,7 @@ A equipe se reuniu via Discord para debater ideias gerais sobre o projeto. A reu
 ## Versão 1.0
 
 ### Mapa Mental 1
+[![Mapa Mental](../assets/mapa_mental1.png)](../assets/mapa_mental1.png)
 
 [![Mapa Mental Entrevista](../assets/Mapas_mentais/entrevista.png)](../assets/Mapas_mentais/entrevista.png)
 
