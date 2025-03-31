@@ -12,7 +12,9 @@ Mapa mental consiste em criar resumos cheios de símbolos, cores, setas e frases
 ## Metodologia
  
 <p align = "justify">
-Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa mental. O documento foi produzido utilizando a ferramenta...
+A equipe se reuniu para debater ideias gerais sobre o projeto via Discord, começou 14:53 e terminou 17:53, onde o Guilherme Reis foi o moderador, direcionando a equipe criar nossa mapa mental.
+
+O documento foi produzido utilizando a ferramenta...
 </p>
  
 ## Mapa mental - Geral.
