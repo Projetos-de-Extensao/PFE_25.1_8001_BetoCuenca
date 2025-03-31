@@ -12,23 +12,20 @@ title: Sprint 1
 
 | Tarefa                                                                                       | Responsabilidade |
 | -------------------------------------------------------------------------------------------- | ---------------- |
-| Decidir o nome o projeto. ?<?>                                                                    | Todos            |
+| Decidir o nome o projeto.                                                                     | Todos            |
 | Criar o repositório nos padrões (Organizar wiki).                                          | Todos              |
 | Criar issues no GitHub / ZenHub [-]                                                              | Anderson, Enrique              |
-| Configuração do grupo do Telegram(configurar bot).                                         | ???              |
 | Estudar e escolher as metodologias.                                                          | Todos            |
-| [Documento de visão](https://github.com/xxx/xxx.md)                                            | XXX e XXXXX      |
-| Elaborar [5w2H](https://github.com/xxx/xxx.md)                                                   |  Bernardo      |
-| [Mapas Mentais](https://github.com/xxx/xxx.md)                                                  | Todos      |
-| [Brainstorming](https://github.com/UnBArqDsw/2020.1_G7_TCM/blob/master/docs/base/Brainstorm.md) | Todos            |
-| [Entrevistas](https://github.com/xxx/xxx.md)                                                    | Todos     |
-| [Prototipação.](https://github.com/xxx/xxx.md)                                                | Todos      |
+| Elaborar [5w2H](https://projetos-de-extensao.github.io/PFE_25.1_8001_II/base/5w2h/)                                                   |  Bernardo      |
+| [Mapas Mentais](https://projetos-de-extensao.github.io/PFE_25.1_8001_II/base/mapa_mental/)                                                  | Todos      |
+| [Brainstorming](https://projetos-de-extensao.github.io/PFE_25.1_8001_II/base/Brainstorm/) | Todos            |
 
 ## Sprint Retrospective/Review Meeting
 
 #### Presentes na reunião: Anderson, Guilherme, Bernardo e Enrique
 
-### Dividas da Sprint
+### Dívidas da Sprint
+- Nome do site
 
 ### Riscos Encontrados
 
