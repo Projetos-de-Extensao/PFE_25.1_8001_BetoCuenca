@@ -4,89 +4,56 @@ title: Entrevista
 ---
 
 ## Introdução
-<p align = "justify">
-A técnica da entrevista trata-se de uma conversa guiada por um roteiro de perguntas ou tópicos, na qual visa questionar o stakeholders sobre o sistema atual e esclarecer as suas necessidades sobre o sistema que será desenvolvido. A entrevista permite investigação em profundidade sobre um problema, dessa forma coletar uma grande quantidade de informações para o sistema.
+
+<p align="justify">
+A técnica da entrevista consiste em uma conversa guiada por um roteiro de perguntas ou tópicos, com o objetivo de questionar os stakeholders sobre o sistema atual e esclarecer suas necessidades para o sistema que será desenvolvido. A entrevista permite uma investigação aprofundada sobre um problema, coletando uma grande quantidade de informações relevantes para o projeto.
 </p>
 
 ## Metodologia
-<p align = "justify">
-Para esta entrevista optamos por seguir um modelo de entrevista aberta, onde terá uma série de perguntas de apoio pré-definidas com finalidade do stakeholders expor informações importantes para o sistema. As questões são formuladas e filtradas, de acordo com o interesse da equipe com o propósito de orientar o entrevistador durante a entrevista. O entrevistador e entrevistado tem liberdade para abordar qualquer assunto relacionado ao sistema durante a entrevista.
+
+<p align="justify">
+Para esta entrevista, optamos por seguir um modelo de entrevista aberta, com uma série de perguntas de apoio pré-definidas. O objetivo foi permitir que os stakeholders expusessem informações importantes para o sistema. As questões foram formuladas e filtradas de acordo com o interesse da equipe, orientando o entrevistador durante a conversa. Tanto o entrevistador quanto o entrevistado tiveram liberdade para abordar qualquer assunto relacionado ao sistema.
 </p>
 
 ### Roteiro
 
-- Você.... ?
-- Como funcionava.... ?
-- Você já usou alguma aplicação.... 
-- Teve algum problema.... ?
-- O que você acha de uma aplicação..... ?
-- Para você qual seria o sistema ideal.... ?
-- Você gostaria de poder se cadastrar..... 
-- você gostaria que as informações... 
+- Qual o objetivo principal da aplicação?  
+- Como será o processo para cadastrar um novo cliente ou torneio?  
+- Como será a forma de adicionar produtos?  
+- Quais informações seriam interessantes para o cliente?  
+- Você gostaria de poder editar seus dados salvos?  
+- Você gostaria de receber notificações sobre eventos futuros?  
+- O que você acha de uma aplicação que permita integração com redes sociais?  
 
-
-## Entrevistas 
+## Entrevistas
 
 ### Versão 1.0
 
-### **Entrevista 1**
+#### **Entrevista 1**
 
-<br>
+| Nome          | Papel          |
+|---------------|----------------|
+| Guilherme Reis | Moderador      |
+| Stakeholders   | Entrevistados  |
 
-|Nome | Papel |
------|------|
-|xxxx Pedro| Entrevistador|
-|xxxx xxxx| Entrevistado|
-
-<br>
-<br>
-
-|Data|Horário de inicio|Horário de fim |Descrição
-----|-----|-----|---------|
-|03/09/20 | 12:11| 12:38 | Entrevista realizada via hangouts.|
-
-<br>
-<br>
- 
-|Nome do participante|Diálogo durante a apresentação dos projetos|
-|----|-------------|
-|XXX XXXX:|Você... |
-|XXX XXXX:|Sim.... |
-|XXX XXXX:|Como... |
-|XXXX XXXX:|Já...  |
-
-<br>
- 
-### Requisitos elicitados
- 
-|ID|Descrição|
-|----|-------------|
-|REQ01|O ...|
-|REQ02|O ...|
-|REQ03|O ...|
-|REQ04|O ...|
-|REQ05|O ...|
-|REQ06|O ...|
-|REQ07|O ...|
-|REQ08|O ...|
-|REQ09|O ...|
-|REQ10|O ...|
-
+<p align="justify">
+Durante a entrevista, foram abordados tópicos como o objetivo principal da aplicação, o processo de cadastro, a adição de produtos e as informações relevantes para os clientes. Também foram discutidas funcionalidades como notificações, integração com redes sociais e edição de dados salvos.
+</p>
 
 ## Conclusão
-<p align = "justify">
-Através da aplicação da técnica, foi possível elicitar alguns requisitos importantes para o projeto.
+
+<p align="justify">
+A aplicação da técnica de entrevista permitiu coletar informações valiosas para o desenvolvimento do sistema, alinhando as expectativas dos stakeholders com os objetivos do projeto.
 </p>
- 
+
 ## Referências
 
->
-> 
+> [Cheers.com.br](https://cheers.com.br)  
+> [Ingresso.com.br](https://www.ingresso.com)
 
 ## Autor(es)
 
-| Data | Versão | Descrição | Autor(es) |
-| -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | xxx XXXX |
-| DD/MM/YYYY | 2.0 | Adição da entrevista 1 | XXX XXXX | 
-| DD/MM/YYYY | 2.1 | Adição dos requisitos elicitados e conclusão | XXXX XXXXX | 
+| Data       | Versão | Descrição                     | Autor(es)          |
+|------------|--------|-------------------------------|--------------------|
+| dd/mm/yyyy | 1.0    | Criação do documento          | Guilherme Reis     |
+| dd/mm/yyyy | 2.0    | Adição de informações detalhadas | Anderson Lima      |

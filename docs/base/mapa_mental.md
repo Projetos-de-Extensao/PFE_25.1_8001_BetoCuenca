@@ -2,49 +2,44 @@
 id: mapa_mental
 title: Mapas Mentais
 ---
- 
-## Introdução
- 
-<p align = "justify">
-Mapa mental consiste em criar resumos cheios de símbolos, cores, setas e frases de efeito com o objetivo de organizar o conteúdo e facilitar associações entre as informações destacadas. Esse material é muito indicado para pessoas que têm facilidade de aprender de forma visual.
-</p>
- 
-## Metodologia
- 
-<p align = "justify">
-A equipe se reuniu para debater ideias gerais sobre o projeto via Discord, começou 14:53 e terminou 17:53, onde o Guilherme Reis foi o moderador, direcionando a equipe criar nossa mapa mental.
 
-O documento foi produzido utilizando a ferramenta...
+## Introdução
+
+<p align="justify">
+O mapa mental é uma técnica que consiste em criar resumos visuais utilizando símbolos, cores, setas e frases de efeito. O objetivo é organizar o conteúdo e facilitar associações entre as informações destacadas. Esse material é especialmente indicado para pessoas que têm facilidade de aprender de forma visual.
 </p>
- 
-## Mapa mental - Geral.
- 
+
+## Metodologia
+
+<p align="justify">
+A equipe se reuniu via Discord para debater ideias gerais sobre o projeto. A reunião ocorreu das 14:53 às 17:53, com Guilherme Reis atuando como moderador. Ele direcionou a equipe na criação do mapa mental, utilizando questões pré-elaboradas para guiar o processo. O documento foi produzido utilizando ferramentas específicas para a criação de mapas mentais.
+</p>
+
+## Mapa Mental - Geral
+
 ## Versão 1.0
- 
-### Mapa mental 1
- 
-[![Mapa mental Entrevista](../assets/Mapas_mentais/....png)](../assets/Mapas_mentais/...png)
- 
- 
-### Mapa mental 2
- 
-[![Mapa mental Brainstorm](../assets/Mapas_mentais/...png)](assets/Mapas_mentais/....png)
- 
+
+### Mapa Mental 1
+
+[![Mapa Mental Entrevista](../assets/Mapas_mentais/entrevista.png)](../assets/Mapas_mentais/entrevista.png)
+
+### Mapa Mental 2
+
+[![Mapa Mental Brainstorm](../assets/Mapas_mentais/brainstorm.png)](../assets/Mapas_mentais/brainstorm.png)
+
 ## Conclusão
- 
-<p align = "justify">
-O mapa mental é uma ficha de estudos que ajuda a dar uma visão geral do tema, e ajuda a fixar os pontos mais importantes sobre o app.
+
+<p align="justify">
+O mapa mental é uma ferramenta valiosa para oferecer uma visão geral do tema e fixar os pontos mais importantes do projeto. Ele auxilia na organização das ideias e no planejamento das próximas etapas.
 </p>
- 
+
 ## Referências
-> Mapa MentalXXX,  Disponível em: https://www.....
- 
-> Ferramentas para Mapas Mentais. Disponível em: https://www....
- 
-> Plataforma para usuários colaborar no desenho... Disponível em: https://...
- 
+> Mapa Mental XXX, Disponível em: https://www.....  
+> Ferramentas para Mapas Mentais, Disponível em: https://www....  
+> Plataforma para usuários colaborarem no desenho, Disponível em: https://...
+
 ## Versionamento
-| Data | Versão | Descrição | Autor(es) |
-| -- | -- | -- | -- |
-| dd/mm/yy | 1.0 | Criação do documento | xxx xxxx |
-| dd/mm/yy | 2.0 | Adicionado Mapa mental 2 | xxxx xxxx |
+| Data       | Versão | Descrição                | Autor(es)       |
+|------------|--------|--------------------------|-----------------|
+| dd/mm/yy   | 1.0    | Criação do documento     | xxx xxxx        |
+| dd/mm/yy   | 2.0    | Adicionado Mapa Mental 2 | xxxx xxxx       |

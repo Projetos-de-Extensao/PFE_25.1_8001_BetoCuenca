@@ -1,0 +1,178 @@
+@startmindmap
+<style>
+mindmapDiagram {
+  node {
+    BackgroundColor #F0F6FF
+    BorderColor #2A5BA3
+    FontColor #0B2E59
+    FontName Arial
+    FontSize 14
+    LineColor #2A5BA3
+  }
+}
+</style>
+
+* 🚀 **Brainstorm - Elicitação de Requisitos**
+** 📝 Introdução
+*** 📌 **Definição e Propósito**
+**** Técnica estruturada para elicitação inicial dos requisitos
+**** Discussão ampla baseada no documento "Problema de Negócio"
+**** Captura de ideias preliminares para direcionar o escopo
+*** 📌 **Princípios Fundamentais**
+**** Diálogo aberto, respeitoso e inclusivo
+**** Estímulo à criatividade e inovação
+**** Evitar julgamentos ou críticas durante o processo
+
+** 🎯 Metodologia Aplicada
+*** 🗓️ **Organização da Sessão**
+**** Ambiente virtual via plataforma Discord
+**** Sessão moderada por Guilherme Reis
+**** Horário: 14h53 às 17h53 (total de 3 horas)
+**** Participação ativa de toda equipe de desenvolvimento
+*** 🛠️ **Ferramentas e Técnicas**
+**** Questões pré-elaboradas como guia de discussão
+**** Transcrição simultânea das contribuições
+**** Validação conjunta após encerramento da sessão
+
+** ❓ Tópicos Centrais Discutidos
+*** 🥅 **Objetivos Gerais da Aplicação**
+**** Plataforma intuitiva e eficiente para compra, venda e gestão de ingressos
+**** Facilitar interação direta entre organizadores e público universitário
+**** Automatização da logística e financeira para eventos
+**** Suporte específico para necessidades das atléticas universitárias
+**** Garantia de agilidade e segurança nas transações
+
+*** 👤 **Processo de Cadastro e Autenticação**
+**** Formulário interativo com persistência via LocalStorage
+**** Modal responsivo para autenticação (Login/Registro)
+**** Confirmação visual após autenticação (nome exibido automaticamente)
+
+*** 🎟️ **Cadastro e Exibição de Eventos e Ingressos**
+**** Exibição dinâmica dos eventos por arquivo JSON local
+**** Interface intuitiva para cadastro de eventos pelos organizadores
+**** Simulação interativa de compras com feedback visual imediato (modais)
+
+*** 📊 **Informações e Feedback ao Usuário**
+**** Detalhamento completo do evento: descrição, data, local e organizador
+**** Sistema avançado de filtros: categoria, data e localização
+**** QR Codes fictícios gerados após simulação de compra
+**** Alertas visuais e notificações para eventos próximos
+
+** 📚 **Requisitos Técnicos e Funcionais Elicitados**
+*** 🔵 **Funcionalidades para Usuários**
+**** Listagem clara e atrativa dos eventos disponíveis
+**** Simulação prática e intuitiva do processo de compra
+**** Gestão centralizada de ingressos adquiridos ("Meus ingressos")
+**** Personalização avançada através de filtros dinâmicos
+**** Interface adaptativa para dispositivos móveis e desktop
+**** Opções de edição e exclusão de informações pessoais salvas no LocalStorage
+**** Modal de boas-vindas e introdução ao funcionamento do sistema
+
+*** 🟢 **Funcionalidades para Organizadores**
+**** Painel administrativo robusto e intuitivo
+**** Criação, edição e exclusão ágil de eventos
+**** Visualização detalhada de estatísticas de vendas e acessos
+**** Simulação de relatórios de performance (exportação PDF/Excel)
+**** Opção para resetar ou limpar o LocalStorage diretamente no painel
+
+*** 🌐 **Funcionalidades Gerais e Técnicas**
+**** Sistema avançado de login/cadastro utilizando LocalStorage
+**** Armazenamento local seguro e organizado (criptografia básica opcional)
+**** Detalhes completos e acessíveis sobre eventos e ingressos
+**** Integração visual com redes sociais para compartilhamento simplificado
+**** Multilíngue (internacionalização básica)
+**** Exportação simplificada e organizada de relatórios e dados simulados
+**** Avisos visuais ao tentar abandonar a página com alterações não salvas
+**** Notificações visuais interativas e simulação de lembretes
+**** Simulação visual clara de QR Codes para ingressos adquiridos
+**** Capacidade de uso offline após carregamento inicial (conceito de PWA)
+
+** 🛡️ **Segurança e Experiência do Usuário (UX/UI)**
+*** 🔐 **Segurança**
+**** Garantia mínima de segurança dos dados via LocalStorage (recomendação para criptografia básica)
+**** Alertas de falhas e mensagens amigáveis para problemas técnicos
+*** 🎨 **Design e Usabilidade**
+**** Interface limpa, moderna e profissional
+**** Uso de componentes UI/UX reconhecidos (modais, cards, toasts)
+**** Fluxo lógico claro de navegação para fácil aprendizagem
+**** Feedback constante e responsivo às ações dos usuários
+
+** 📌 **Próximos Passos Sugeridos**
+*** Desenvolvimento inicial das interfaces gráficas com prototipagem (Figma)
+*** Validação contínua dos requisitos com usuários reais (feedback iterativo)
+*** Implementação inicial das funcionalidades em front-end puro (HTML, CSS, JS)
+*** Testes contínuos de usabilidade e responsividade (mobile-first approach)
+
+** 📕 **Referências e Inspirações**
+*** 🎟️ [Ingresso.com.br](https://www.ingresso.com)
+*** 🥳 [Cheers.com.br](https://cheers.com.br)
+*** 📱 Referências visuais do Behance e Dribbble (inspiração UI/UX)
+
+** 👨‍💻 **Equipe e Contribuidores**
+*** 📅 **28/03/2025 (v1.0)**
+**** Enrique Labre (Criação inicial do documento)
+*** 📅 **29/03/2025 (v2.0-v2.1)**
+**** Anderson Lima, Bernardo Casanovas, Guilherme Reis (Brainstorm e documentação)
+*** 📅 **30/03/2025 (v2.2)**
+**** Bernardo Casanovas, Enrique Labre (Revisão final)
+
+@endmindmap
+
+
+
+
+
+
+
+
+
+
+' @startmindmap
+' * **Brainstorm**
+' ** Introdução
+' *** Técnica de elicitação de requisitos
+' *** Discussão de tópicos gerais do projeto
+' *** Incentivo ao diálogo, evitando críticas
+' ** Metodologia
+' *** Reunião realizada via Discord
+' *** Moderador: Guilherme Reis
+' *** Uso de questões pré-elaboradas para guiar o debate
+' ** Perguntas
+' *** Objetivo principal da aplicação
+' **** Solução intuitiva para compra, venda e gestão de ingressos
+' **** Conectar organizadores e estudantes
+' **** Gerenciamento automatizado de eventos e pagamentos
+' **** Auxílio às atléticas na organização financeira e logística
+' *** Cadastro de cliente ou torneio
+' **** Formulário salvo em LocalStorage
+' **** Modal de login para autenticação
+' **** Nome de usuário pré-definido exibido após login
+' *** Adicionar produtos
+' **** Exibição de eventos e ingressos a partir de JSON
+' **** Simulação de compra com modal de sucesso
+' *** Informações para o cliente
+' **** Detalhes do evento: local, horário e organizador
+' **** Sistema de filtro por categoria
+' **** QR Codes fictícios para ingressos comprados
+' ** Requisitos elicitados
+' *** Funcionalidades para o usuário
+' **** Visualizar lista de eventos disponíveis
+' **** Simular compra de ingresso
+' **** Filtragem de eventos por data, local e categoria
+' **** Visualizar ingressos em "Meus ingressos"
+' **** Interface responsiva para dispositivos móveis
+' *** Funcionalidades para organizadores
+' **** Criação e edição de eventos
+' **** Painel de controle com estatísticas de vendas
+' **** Reset do LocalStorage no painel de controle
+' *** Funcionalidades gerais
+' **** Login e registro usando LocalStorage
+' **** Exibição de detalhes completos de eventos
+' **** Geração de QR Codes fictícios
+' **** Notificações para eventos futuros
+' **** Integração com redes sociais
+' **** Suporte a múltiplos idiomas
+' **** Segurança dos dados dos usuários
+' **** Exportação de relatórios em PDF ou Excel
+' **** Aviso ao tentar sair da página com dados não salvos
+' @endmindmap
