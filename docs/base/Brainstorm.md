@@ -64,6 +64,8 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via Discord, come�
 <b>1</b> - O organizador poderia ver uma página de cadastro de evento que apenas preenche um JSON local.
 </p>
  
+---
+
 ### 5. Quais informações seriam interessante para o cliente?
 <p align = "justify">
    <b>1</b> - Informações sobre o evento, local, horário e organizador e um sistema de filtro por cada categoria.
