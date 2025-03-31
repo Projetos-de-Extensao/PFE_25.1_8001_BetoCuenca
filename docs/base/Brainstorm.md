@@ -43,6 +43,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via Discord, come�
 <b>2</b> - O cliente verá um modal de login.
  
 <b>3</b> - O site irá exibir um nome de usuário pré-definido após o "login".
+</p>
  
 ---
  
@@ -50,29 +51,26 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via Discord, come�
  
 <p align = "justify">
 <b>1</b> - Os eventos e ingressos serão exibidos a partir de JSON ou arquivo local.
-</p>
- 
-<p align = "justify">
+
 <b>2</b> - O usuário poderá ver diferentes tipos de ingressos, mas a compra será apenas simulada.
-</p>
  
 <b>3</b> - A aplicação pode incluir um botão de "Comprar" que apenas exibe um modal de sucesso.
- 
+ </p>
+
 ---
  
-### 5.  Como seria a forma do cliente adicionar produtos?
+### 4.  Como seria a forma do cliente adicionar produtos?
 <p align = "justify">
-<b>XXX</b> - O organizador poderia ver uma página de cadastro de evento que apenas preenche um JSON local.
+<b>1</b> - O organizador poderia ver uma página de cadastro de evento que apenas preenche um JSON local.
 </p>
  
-### 6. Quais informações seriam interessante para o cliente?
+### 5. Quais informações seriam interessante para o cliente?
 <p align = "justify">
    <b>1</b> - Informações sobre o evento, local, horário e organizador e um sistema de filtro por cada categoria.
    
    <b>2</b> - O usuário poderá visualizar ingressos disponíveis e preços.
 
-   <b>3</b> - O site pode exibir QR Codes fictícios para cada ingresso comprado.
-   
+   <b>3</b> - O site pode exibir QR Codes fictícios para cada ingresso comprado.   
 </p>
  
 ### Requisitos elicitados
