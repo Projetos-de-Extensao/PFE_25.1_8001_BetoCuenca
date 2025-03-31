@@ -41,3 +41,53 @@ skinparam BackgroundColor #FFFFFF
 *** 6.2. Priorizar melhorias
 *** 6.3. Ajustar protótipos
 @endwbs
+
+@startsalt
+{
+  {#white+lightgrey}
+  {* <b>Aplicativo Web - Fluxo de Tarefas (Wireframe)</b> }
+
+  // --- Tela: Registrar Pedido --- //
+  {T "Registrar Pedido" 
+    [Buscar cliente    | input:___________ 🔍]
+    [Lista de produtos | ( ) Produto A  $10.00]
+    [                  | ( ) Produto B  $15.00]
+    [                  | (✔) Produto C  $20.00]
+    [Desconto (%)      | input:___5%     [Aplicar]]
+    [Total: $35.00     | [Finalizar Venda]]
+  }
+
+  // --- Tela: Consultar Estoque --- //
+  {T "Consultar Estoque"
+    [Filtrar por: | dropdown: Categoria ▼]
+    [Itens no estoque:]
+    {#
+      | Produto | Qtd | Reposição |
+      |---------|-----|-----------|
+      | A       | 50  | 05/04     |
+      | B       | 0   | 10/04     |
+      | C       | 120 | -         |
+    }
+    [Atualizar Estoque]
+  }
+
+  // --- Tela: Gerar Relatório --- //
+  {T "Gerar Relatório"
+    [Período: | 01/03/2024 ▾ to 31/03/2024 ▾]
+    [Métricas:]
+    [ (✔) Vendas por dia  ]
+    [ (✔) Produtos mais vendidos ]
+    [ ( ) Ticket médio    ]
+    [Formato: | (✔) PDF   ( ) Excel ]
+    [ [Gerar Relatório] ]
+  }
+
+  // --- Notas --- //
+  note right
+    <b>Problemas identificados:</b>
+    1. Campo de busca lento
+    2. Atualização de estoque não automática
+    3. Opções de relatório pouco intuitivas
+  end note
+}
+@endsalt
