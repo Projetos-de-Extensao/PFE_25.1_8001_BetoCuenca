@@ -55,7 +55,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via Discord, come�
 <b>2</b> - O usuário poderá ver diferentes tipos de ingressos, mas a compra será apenas simulada.
  
 <b>3</b> - A aplicação pode incluir um botão de "Comprar" que apenas exibe um modal de sucesso.
- </p>
+</p>
 
 ---
  
