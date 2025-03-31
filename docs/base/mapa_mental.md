@@ -43,4 +43,4 @@ O mapa mental é uma ferramenta valiosa para oferecer uma visão geral do tema e
 | Data       | Versão | Descrição                | Autor(es)       |
 |------------|--------|--------------------------|-----------------|
 | dd/mm/yy   | 1.0    | Criação do documento     | xxx xxxx        |
-| dd/mm/yy   | 2.0    | Adicionado Mapa Mental 2 | Anderson Lima |
+| 30/03/25   | 2.0    | Adicionado Mapa Mental 2 | Anderson Lima |
