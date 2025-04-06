@@ -1,0 +1,15 @@
+@startuml
+skinparam handwritten true
+
+title Tela de Login
+
+rectangle "Login" {
+  [Logo do Sistema]
+  --
+  :Campo de Email:
+  :Campo de Senha:
+  [Botão: Entrar]
+  [Link: Criar Conta]
+  [Mensagem de erro (se inválido)]
+}
+@enduml
