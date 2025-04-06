@@ -1,0 +1,11 @@
+@startuml
+skinparam handwritten true
+title Recuperação de Senha
+
+rectangle "Recuperação de Senha" {
+  [Campo de Email]
+  [Botão: Enviar Link de Recuperação]
+  [Mensagem: Verifique seu email para redefinir a senha]
+  [Botão: Voltar ao Login]
+}
+@enduml

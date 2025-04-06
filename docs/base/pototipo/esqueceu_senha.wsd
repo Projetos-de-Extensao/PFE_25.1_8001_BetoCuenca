@@ -1,0 +1,9 @@
+@startuml
+skinparam handwritten true
+title Tela Esqueceu Senha
+
+frame "Recuperação de Senha" {
+  component "Campo Email"
+  component "Botão Enviar Link de Recuperação"
+}
+@enduml

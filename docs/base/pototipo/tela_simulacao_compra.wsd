@@ -1,0 +1,14 @@
+@startuml
+skinparam handwritten true
+title Simulação de Compra
+
+rectangle "Simulação de Compra" {
+  [Resumo do Evento]
+  [Quantidade de Ingressos]
+  [Preço Total]
+  [Botão: Confirmar Compra]
+  [Botão: Cancelar Compra]
+  [Mensagem: Compra Simulada com Sucesso]
+  [Botão: Voltar]
+}
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+skinparam handwritten true
+title Estatísticas - Organizador
+
+rectangle "Estatísticas de Vendas e Acessos" {
+  [Gráfico de Vendas]
+  [Gráfico de Acessos]
+  [Gráfico de Ingressos Vendidos por Categoria]
+  [Botão: Exportar Relatório (PDF/Excel)]
+  [Botão: Voltar]
+}
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+skinparam handwritten true
+title Tela Meus Eventos
+
+frame "Meus Eventos" {
+  component "Lista de Meus Eventos"
+  component "Botão Editar Evento"
+  component "Botão Excluir Evento"
+}
+@enduml

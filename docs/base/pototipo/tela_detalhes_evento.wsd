@@ -1,0 +1,14 @@
+@startuml
+skinparam handwritten true
+title Detalhes do Evento
+
+rectangle "Detalhes do Evento" {
+  [Nome do Evento]
+  [Descrição]
+  [Data e Hora]
+  [Localização]
+  [Organizador]
+  [Botão: Comprar Ingresso]
+  [Botão: Voltar]
+}
+@enduml

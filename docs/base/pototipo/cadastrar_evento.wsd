@@ -1,0 +1,10 @@
+@startuml
+skinparam handwritten true
+title Cadastrar Evento - Etapa 1
+
+frame "Cadastrar Evento - Parte 1" {
+  component "Nome do Evento"
+  component "Descrição"
+  component "Próximo"
+}
+@enduml
