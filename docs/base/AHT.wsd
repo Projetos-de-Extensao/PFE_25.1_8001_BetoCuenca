@@ -4,42 +4,42 @@ skinparam shadowing false
 skinparam ArrowColor #000000
 skinparam BackgroundColor #FFFFFF
 
-* Análise de Tarefas - Aplicativo Web de E-commerce
-** 1. Definição de Objetivos
-*** 1.1. Identificar tarefas críticas dos usuários
-*** 1.2. Mapear pontos de dificuldade
-*** 1.3. Validar requisitos do novo app
-** 2. Coleta de Dados
-*** 2.1. Entrevistas com usuários (Vendedores, Gerentes, Clientes)
-*** 2.2. Observação contextual
-*** 2.3. Questionários online
-*** 2.4. Análise de logs do sistema atual
-** 3. Análise das Tarefas Principais
-*** 3.1. Registrar Pedido
-**** 3.1.1. Buscar cliente
-**** 3.1.2. Adicionar itens
-**** 3.1.3. Aplicar desconto (se necessário)
-**** 3.1.4. Finalizar venda
-*** 3.2. Consultar Estoque
-**** 3.2.1. Filtrar por categoria
-**** 3.2.2. Ver disponibilidade
-**** 3.2.3. Checar previsão de reposição
-*** 3.3. Gerar Relatório
-**** 3.3.1. Selecionar período
-**** 3.3.2. Escolher métricas
-**** 3.3.3. Exportar (PDF/Excel)
-** 4. Identificação de Problemas
-*** 4.1. Lentidão na busca de produtos
-*** 4.2. Dados de estoque desatualizados
-*** 4.3. Interface confusa para relatórios
-** 5. Proposta de Melhorias
-*** 5.1. Otimizar fluxo de checkout
-*** 5.2. Melhorar sincronização de estoque
-*** 5.3. Redesenhar interface de relatórios
-** 6. Validação e Priorização
-*** 6.1. Apresentar insights aos stakeholders
-*** 6.2. Priorizar melhorias
-*** 6.3. Ajustar protótipos
+* Sistema de Ingressos Universitários
+** Acessar o sistema
+*** Visualizar eventos disponíveis
+*** Filtrar eventos por data, local e categoria
+*** Visualizar detalhes do evento
+** Criar conta / Fazer login
+*** Preencher dados
+*** Salvar dados no LocalStorage
+*** Exibir nome do usuário após login
+*** Exibir modal de boas-vindas (primeiro acesso)
+** Comprar ingresso
+*** Selecionar evento
+*** Simular compra
+*** Gerar QR Code fictício
+*** Armazenar ingresso na aba "Meus ingressos"
+** Ver meus ingressos
+*** Acessar aba "Meus ingressos"
+*** Visualizar QR Codes gerados
+** Cadastro e controle de eventos (modo organizador)
+*** Cadastrar novo evento (via JSON local)
+*** Editar eventos existentes
+*** Visualizar estatísticas de vendas (simuladas)
+*** Resetar dados (limpar LocalStorage)
+*** Exportar relatórios (PDF/Excel - simulado)
+** Configurações do usuário
+*** Editar dados salvos
+*** Exibir mensagem ao sair com dados não salvos
+*** Mudar idioma (multi-idioma)
+*** Ativar/desativar notificações
+** Compartilhamento e integração
+*** Compartilhar evento em redes sociais
+*** Simular envio de confirmação por pop-up/modal
+** Interface e desempenho
+*** Interface responsiva (mobile-friendly)
+*** Suporte offline após primeiro carregamento (PWA)
+*** Mensagens de erro amigáveis
 @endwbs
 
 @startsalt
