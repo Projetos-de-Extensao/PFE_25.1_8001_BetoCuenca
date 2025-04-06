@@ -4,89 +4,93 @@ skinparam shadowing false
 skinparam ArrowColor #000000
 skinparam BackgroundColor #FFFFFF
 
-* Análise de Tarefas - Aplicativo Web de E-commerce
-** 1. Definição de Objetivos
-*** 1.1. Identificar tarefas críticas dos usuários
-*** 1.2. Mapear pontos de dificuldade
-*** 1.3. Validar requisitos do novo app
-** 2. Coleta de Dados
-*** 2.1. Entrevistas com usuários (Vendedores, Gerentes, Clientes)
-*** 2.2. Observação contextual
-*** 2.3. Questionários online
-*** 2.4. Análise de logs do sistema atual
-** 3. Análise das Tarefas Principais
-*** 3.1. Registrar Pedido
-**** 3.1.1. Buscar cliente
-**** 3.1.2. Adicionar itens
-**** 3.1.3. Aplicar desconto (se necessário)
-**** 3.1.4. Finalizar venda
-*** 3.2. Consultar Estoque
-**** 3.2.1. Filtrar por categoria
-**** 3.2.2. Ver disponibilidade
-**** 3.2.3. Checar previsão de reposição
-*** 3.3. Gerar Relatório
-**** 3.3.1. Selecionar período
-**** 3.3.2. Escolher métricas
-**** 3.3.3. Exportar (PDF/Excel)
-** 4. Identificação de Problemas
-*** 4.1. Lentidão na busca de produtos
-*** 4.2. Dados de estoque desatualizados
-*** 4.3. Interface confusa para relatórios
-** 5. Proposta de Melhorias
-*** 5.1. Otimizar fluxo de checkout
-*** 5.2. Melhorar sincronização de estoque
-*** 5.3. Redesenhar interface de relatórios
-** 6. Validação e Priorização
-*** 6.1. Apresentar insights aos stakeholders
-*** 6.2. Priorizar melhorias
-*** 6.3. Ajustar protótipos
+* Sistema de Ingressos Universitários
+** Acessar o sistema
+*** Visualizar eventos disponíveis
+*** Filtrar eventos por data, local e categoria
+*** Visualizar detalhes do evento
+** Criar conta / Fazer login
+*** Preencher dados
+*** Salvar dados no LocalStorage
+*** Exibir nome do usuário após login
+*** Exibir modal de boas-vindas (primeiro acesso)
+** Comprar ingresso
+*** Selecionar evento
+*** Simular compra
+*** Gerar QR Code fictício
+*** Armazenar ingresso na aba "Meus ingressos"
+** Ver meus ingressos
+*** Acessar aba "Meus ingressos"
+*** Visualizar QR Codes gerados
+** Cadastro e controle de eventos (modo organizador)
+*** Cadastrar novo evento (via JSON local)
+*** Editar eventos existentes
+*** Visualizar estatísticas de vendas (simuladas)
+*** Resetar dados (limpar LocalStorage)
+*** Exportar relatórios (PDF/Excel - simulado)
+** Configurações do usuário
+*** Editar dados salvos
+*** Exibir mensagem ao sair com dados não salvos
+*** Mudar idioma (multi-idioma)
+*** Ativar/desativar notificações
+** Compartilhamento e integração
+*** Compartilhar evento em redes sociais
+*** Simular envio de confirmação por pop-up/modal
+** Interface e desempenho
+*** Interface responsiva (mobile-friendly)
+*** Suporte offline após primeiro carregamento (PWA)
+*** Mensagens de erro amigáveis
 @endwbs
 
 @startsalt
 {
   {#white+lightgrey}
-  {* <b>Aplicativo Web - Fluxo de Tarefas (Wireframe)</b> }
+  {* <b>Aplicativo Web de Eventos - Fluxo de Tarefas (Wireframe)</b> }
 
-  // --- Tela: Registrar Pedido --- //
-  {T "Registrar Pedido" 
-    [Buscar cliente    | input:___________ 🔍]
-    [Lista de produtos | ( ) Produto A  $10.00]
-    [                  | ( ) Produto B  $15.00]
-    [                  | (✔) Produto C  $20.00]
-    [Desconto (%)      | input:___5%     [Aplicar]]
-    [Total: $35.00     | [Finalizar Venda]]
+__**Tela: Gerenciar Evento**__
+  {T "Gerenciar Evento" 
+    [Buscar organizador    | input:___________ 🔍]
+    [Detalhes do evento   | input:___________]
+    [Data e Hora          | input:___/___/____ ▾]
+    [Local                | input:___________]
+    [Categoria            | dropdown: Evento ▼]
+    [Configurar Ingressos | ( ) Gratuito]
+    [                     | ( ) Pago R$___]
+    [                     | ( ) Limitado ___ vagas]
+    [ [Publicar Evento] ]
   }
-
-  // --- Tela: Consultar Estoque --- //
-  {T "Consultar Estoque"
+--------------------------------------------------------------
+__**Tela: Consultar Eventos**__
+  {T "Consultar Eventos"
     [Filtrar por: | dropdown: Categoria ▼]
-    [Itens no estoque:]
+    [Eventos disponíveis:]
     {#
-      | Produto | Qtd | Reposição |
-      |---------|-----|-----------|
-      | A       | 50  | 05/04     |
-      | B       | 0   | 10/04     |
-      | C       | 120 | -         |
+      Evento | Data  | Vagas   | Status
+      ------|-------|---------|--------
+      Show A| 15/04 | 50/100  | Aberto
+      Show B| 20/04 | 0/200   | Lotado
+      Show C| 25/04 | 150/150 | Fechado
     }
-    [Atualizar Estoque]
+    [Atualizar Lista]
   }
-
-  // --- Tela: Gerar Relatório --- //
+--------------------------------------------------------------
+__**Tela: Gerar Relatório**__
   {T "Gerar Relatório"
     [Período: | 01/03/2024 ▾ to 31/03/2024 ▾]
     [Métricas:]
-    [ (✔) Vendas por dia  ]
-    [ (✔) Produtos mais vendidos ]
-    [ ( ) Ticket médio    ]
+    [ (✔) Número de participantes ]
+    [ (✔) Taxa de ocupação ]
+    [ (✔) Vendas por categoria ]
+    [ ( ) Engajamento social ]
     [Formato: | (✔) PDF   ( ) Excel ]
     [ [Gerar Relatório] ]
   }
-
-  // --- Notas --- //
+--------------------------------------------------------------
+__**Notas**__
   note right
     <b>Problemas identificados:</b>
     1. Campo de busca lento
-    2. Atualização de estoque não automática
+    2. Atualização de disponibilidade não automática
     3. Opções de relatório pouco intuitivas
   end note
 }
