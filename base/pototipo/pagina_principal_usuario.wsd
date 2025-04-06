@@ -1,0 +1,21 @@
+@startuml
+skinparam handwritten true
+
+title Página Principal - Usuário
+
+rectangle "Home (Usuário)" {
+  [Barra de Navegação]
+  --
+  [Bem-vindo, <Nome>]
+  [Filtro: Categoria | Data | Localização]
+  --
+  rectangle "Lista de Eventos" {
+    [Card Evento 1]
+    [Card Evento 2]
+    ...
+  }
+  --
+  [Botão: Meus Ingressos]
+  [Botão: Logout]
+}
+@enduml
