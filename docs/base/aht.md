@@ -2,7 +2,7 @@
 
 **Contexto:**  
 
-Uma empresa de e-commerce está desenvolvendo um **novo aplicativo web** para facilitar a gestão de pedidos, estoque e atendimento ao cliente. A equipe de UX/UI precisa realizar uma **análise de tarefas** para entender como os usuários (vendedores, gerentes e clientes) interagem com o sistema atual e identificar oportunidades de melhoria.  
+Estámos desenvolvendo um **novo aplicativo web** para facilitar a gestão de eventos, consulta de eventos e atendimento aos participantes. A equipe de UX/UI precisa realizar uma **análise de tarefas** para entender como os usuários (organizadores de eventos, participantes e administradores) interagem com o sistema atual e identificar oportunidades de melhoria.  
 
 ---
 
@@ -16,9 +16,9 @@ Uma empresa de e-commerce está desenvolvendo um **novo aplicativo web** para fa
 ## **2. Público-Alvo (Personas)**  
 | Perfil          | Tarefas Principais                     |  
 |-----------------|----------------------------------------|  
-| **Vendedor**    | Registrar pedidos, consultar estoque   |  
-| **Gerente**     | Aprovar descontos, gerar relatórios    |  
-| **Cliente**     | Acompanhar pedido, solicitar suporte   |  
+| **Organizador** | Gerenciar eventos, configurar ingressos   |  
+| **Administrador**     | Aprovar eventos, gerar relatórios    |  
+| **Participante**     | Consultar eventos, fazer inscrições   |  
 
 ---
 
@@ -33,8 +33,8 @@ Uma empresa de e-commerce está desenvolvendo um **novo aplicativo web** para fa
 ## **4. Principais Tarefas a Serem Analisadas**  
 | Tarefa                  | Passos Identificados                     | Possíveis Problemas              |  
 |-------------------------|------------------------------------------|----------------------------------|  
-| **Registrar pedido**    | 1. Buscar cliente → 2. Adicionar itens → 3. Aplicar desconto (se necessário) → 4. Finalizar venda | Lentidão na busca de produtos |  
-| **Consultar estoque**   | 1. Filtrar por categoria → 2. Ver disponibilidade → 3. Checar previsão de reposição | Dados desatualizados |  
+| **Gerenciar Evento**    | 1. Buscar organizador → 2. Adicionar detalhes → 3. Configurar ingressos → 4. Publicar evento | Lentidão na busca de organizadores |  
+| **Consultar Eventos**   | 1. Filtrar por categoria → 2. Verificar disponibilidade → 3. Checar programação | Dados desatualizados |  
 | **Gerar relatório**     | 1. Selecionar período → 2. Escolher métricas → 3. Exportar PDF/Excel | Interface confusa |  
 
 ---
@@ -48,7 +48,7 @@ Uma empresa de e-commerce está desenvolvendo um **novo aplicativo web** para fa
 
 ## **6. Resultados Esperados**  
 - **Lista de tarefas críticas** a serem otimizadas no novo app.  
-- **Protótipo de fluxos** aprimorados (ex.: checkout em menos etapas).  
+- **Protótipo de fluxos** aprimorados (ex.: publicação de eventos em menos etapas).  
 - **Relatório de insights** com recomendações para a equipe de desenvolvimento.  
 
 ---
@@ -74,44 +74,45 @@ skinparam shadowing false
 skinparam ArrowColor #000000
 skinparam BackgroundColor #FFFFFF
 
-* Análise de Tarefas - Aplicativo Web de E-commerce
+* Análise de Tarefas - Aplicativo Web de Eventos
 ** 1. Definição de Objetivos
 *** 1.1. Identificar tarefas críticas dos usuários
 *** 1.2. Mapear pontos de dificuldade
 *** 1.3. Validar requisitos do novo app
 ** 2. Coleta de Dados
-*** 2.1. Entrevistas com usuários (Vendedores, Gerentes, Clientes)
+*** 2.1. Entrevistas com usuários (Criadores de eventos, Clientes)
 *** 2.2. Observação contextual
 *** 2.3. Questionários online
 *** 2.4. Análise de logs do sistema atual
 ** 3. Análise das Tarefas Principais
-*** 3.1. Registrar Pedido
-**** 3.1.1. Buscar cliente
-**** 3.1.2. Adicionar itens
-**** 3.1.3. Aplicar desconto (se necessário)
-**** 3.1.4. Finalizar venda
-*** 3.2. Consultar Estoque
+*** 3.1. Gerenciar Evento
+**** 3.1.1. Buscar organizador
+**** 3.1.2. Adicionar detalhes do evento
+**** 3.1.3. Configurar ingressos (se aplicável)
+**** 3.1.4. Publicar evento
+*** 3.2. Consultar Eventos
 **** 3.2.1. Filtrar por categoria
-**** 3.2.2. Ver disponibilidade
-**** 3.2.3. Checar previsão de reposição
-*** 3.3. Gerar Relatório
+**** 3.2.2. Verificar disponibilidade
+**** 3.2.3. Checar programação
+*** 3.3. Gerar Relatórios
 **** 3.3.1. Selecionar período
-**** 3.3.2. Escolher métricas
+**** 3.3.2. Escolher métricas do evento
+***** Número de participantes
+***** Taxa de ocupação
+***** Vendas de ingressos por categoria
+***** Engajamento nas redes sociais
 **** 3.3.3. Exportar (PDF/Excel)
 ** 4. Identificação de Problemas
-*** 4.1. Lentidão na busca de produtos
-*** 4.2. Dados de estoque desatualizados
-*** 4.3. Interface confusa para relatórios
+*** (Nehuma)
 ** 5. Proposta de Melhorias
-*** 5.1. Otimizar fluxo de checkout
-*** 5.2. Melhorar sincronização de estoque
-*** 5.3. Redesenhar interface de relatórios
+*** (Nehuma)
 ** 6. Validação e Priorização
-*** 6.1. Apresentar insights aos stakeholders
-*** 6.2. Priorizar melhorias
+*** 6.1. Apresentar insights aos stakeholders (Prof. John)
+*** 6.2. Priorizar dicas do professor
 *** 6.3. Ajustar protótipos
 @endwbs
 ```
+![Análise de Tarefas](../assets/AHT1.png)
 
 ### **Visualização do Diagrama:**
 
@@ -131,82 +132,73 @@ O diagrama organiza as tarefas em uma estrutura hierárquica, mostrando:
 
 ---
 
-Aqui está um protótipo de **fluxo de tarefas em formato wireframe** usando **PlantUML Salt**, simulando telas básicas do aplicativo web de e-commerce:
+Aqui está um protótipo de **fluxo de tarefas em formato wireframe** usando **PlantUML Salt**, simulando telas básicas do aplicativo web de eventos:
 
 ```plantuml
 @startsalt
 {
-  {#white+lightgrey}
-  {* <b>Aplicativo Web - Fluxo de Tarefas (Wireframe)</b> }
+  {* <b>Aplicativo Web de Eventos - Fluxo de Tarefas (Wireframe)</b> }
 
-  // --- Tela: Registrar Pedido --- //
-  {T "Registrar Pedido" 
-    [Buscar cliente    | input:___________ 🔍]
-    [Lista de produtos | ( ) Produto A  $10.00]
-    [                  | ( ) Produto B  $15.00]
-    [                  | (✔) Produto C  $20.00]
-    [Desconto (%)      | input:___5%     [Aplicar]]
-    [Total: $35.00     | [Finalizar Venda]]
+__**Tela: Gerenciar Evento**__
+  {T "Gerenciar Evento" 
+    [Buscar organizador    | input:___________ 🔍]
+    [Detalhes do evento   | input:___________]
+    [Data e Hora          | input:___/___/____ ▾]
+    [Local                | input:___________]
+    [Categoria            | dropdown: Evento ▼]
+    [Configurar Ingressos | ( ) Gratuito]
+    [                     | ( ) Pago R$___]
+    [                     | ( ) Limitado ___ vagas]
+    [ [Publicar Evento] ]
   }
-
-  // --- Tela: Consultar Estoque --- //
-  {T "Consultar Estoque"
+--------------------------------------------------------------
+__**Tela: Consultar Eventos**__
+  {T "Consultar Eventos"
     [Filtrar por: | dropdown: Categoria ▼]
-    [Itens no estoque:]
+    [Eventos disponíveis:]
     {#
-      | Produto | Qtd | Reposição |
-      |---------|-----|-----------|
-      | A       | 50  | 05/04     |
-      | B       | 0   | 10/04     |
-      | C       | 120 | -         |
+      Evento | Data  | Vagas   | Status
+      Show A| 15/04 | 50/100  | Aberto
+      Show B| 20/04 | 0/200   | Lotado
+      Show C| 25/04 | 150/150 | Fechado
     }
-    [Atualizar Estoque]
+    [Atualizar Lista]
   }
-
-  // --- Tela: Gerar Relatório --- //
+--------------------------------------------------------------
+__**Tela: Gerar Relatório**__
   {T "Gerar Relatório"
     [Período: | 01/03/2024 ▾ to 31/03/2024 ▾]
     [Métricas:]
-    [ (✔) Vendas por dia  ]
-    [ (✔) Produtos mais vendidos ]
-    [ ( ) Ticket médio    ]
+    [ (✔) Número de participantes ]
+    [ (✔) Taxa de ocupação ]
+    [ (✔) Vendas por categoria ]
+    [ ( ) Engajamento social ]
     [Formato: | (✔) PDF   ( ) Excel ]
     [ [Gerar Relatório] ]
   }
-
-  // --- Notas --- //
-  note right
-    <b>Problemas identificados:</b>
-    1. Campo de busca lento
-    2. Atualização de estoque não automática
-    3. Opções de relatório pouco intuitivas
-  end note
 }
 @endsalt
 ```
-
+![Exemplo das Telas](../assets/AHT2.png)
 ---
 
 ### **Características do Protótipo:**
 
-1. **Registrar Pedido**:
+1. **Gerenciar Evento**:
    - Campo de busca com ícone de lupa 🔍
-   - Lista de produtos selecionáveis (checkboxes)
-   - Seção para aplicar desconto
+   - Campos para detalhes do evento
+   - Configuração de ingressos
    - Botão de ação principal
 
-2. **Consultar Estoque**:
+2. **Consultar Eventos**:
    - Dropdown para filtro
-   - Tabela de dados simulada
-   - Botão para atualização manual (problema identificado)
+   - Tabela de eventos disponíveis
+   - Botão para atualização manual
 
 3. **Gerar Relatório**:
    - Seletores de período
    - Checkboxes para métricas
    - Opções de formato de exportação
-
-4. **Anotações**:
-   - Destaque dos 3 principais problemas de UX
 
 ---
 
@@ -251,39 +243,39 @@ A partir do cenário, análise de tarefas e protótipo, podemos levantar as segu
 
 ---
 
-### **1. Histórias para Vendedores**  
+### **1. Histórias para Organizadores de Eventos**  
 
-**US01** - Como **vendedor**, quero **buscar clientes rapidamente pelo nome ou CPF** para agilizar o atendimento.  
-*(Critério de Aceitação: Resultados em <2 segundos, com sugestão ao digitar)*  
+**US01** - Como **organizador**, quero **buscar e adicionar detalhes do evento rapidamente** para agilizar a publicação.  
+*(Critério de Aceitação: Formulário com validação em tempo real)*  
 
-**US02** - Como **vendedor**, quero **aplicar descontos personalizados** para fidelizar clientes.  
-*(Critério de Aceitação: Campo com validação de limite por perfil de usuário)*  
+**US02** - Como **organizador**, quero **configurar diferentes tipos de ingressos** para atender diferentes públicos.  
+*(Critério de Aceitação: Opções para gratuito, pago e limitado)*  
 
-**US03** - Como **vendedor**, quero **ver o estoque em tempo real** durante a venda para evitar prometer produtos indisponíveis.  
-*(Critério de Aceitação: Indicador visual "ESGOTADO" se quantidade = 0)*  
+**US03** - Como **organizador**, quero **ver o status de ocupação em tempo real** para gerenciar a capacidade do evento.  
+*(Critério de Aceitação: Indicador visual de vagas disponíveis)*  
 
-### **2. Histórias para Gerentes**  
+### **2. Histórias para Administradores**  
 
-**US04** - Como **gerente**, quero **aprovar descontos acima de 10%** para manter a margem de lucro.  
-*(Critério de Aceitação: Notificação push para aprovação em 2º nível)*  
+**US04** - Como **administrador**, quero **aprovar eventos antes da publicação** para garantir qualidade.  
+*(Critério de Aceitação: Fluxo de aprovação em duas etapas)*  
 
-**US05** - Como **gerente**, quero **exportar relatórios de vendas por período** para análise mensal.  
+**US05** - Como **administrador**, quero **gerar relatórios de participação por período** para análise mensal.  
 *(Critério de Aceitação: Opções de PDF/Excel com gráficos embutidos)*  
 
-**US06** - Como **gerente**, quero **receber alertas de estoque crítico** para evitar rupturas.  
-*(Critério de Aceitação: Notificação quando estoque <5 unidades)*  
+**US06** - Como **administrador**, quero **receber alertas de eventos lotados** para planejar expansão.  
+*(Critério de Aceitação: Notificação quando ocupação >90%)*  
 
-### **3. Histórias para Clientes**  
+### **3. Histórias para Participantes**  
 
-**US07** - Como **cliente**, quero **rastrear meu pedido em tempo real** para planejar meu dia.  
-*(Critério de Aceitação: Status com etapas "Preparação/Entrega/Entregue")*  
+**US07** - Como **participante**, quero **consultar eventos por categoria** para encontrar eventos de interesse.  
+*(Critério de Aceitação: Filtros por tipo, data e localização)*  
 
-**US08** - Como **cliente**, quero **solicitar trocas via chat** para resolver problemas sem ligar.  
-*(Critério de Aceitação: Botão "Abrir Chamado" no histórico de pedidos)*  
+**US08** - Como **participante**, quero **inscrever-me em eventos via chat** para resolver dúvidas sem ligar.  
+*(Critério de Aceitação: Botão "Inscrever" com chat integrado)*  
 
 ### **4. Histórias Técnicas (Derivadas dos Problemas Identificados)**  
 
-**US09** - Como **sistema**, preciso **sincronizar o estoque com o PDV a cada 5 minutos** para evitar vendas de itens indisponíveis.  
+**US09** - Como **sistema**, preciso **sincronizar a disponibilidade de vagas a cada 5 minutos** para evitar overselling.  
 
 **US10** - Como **equipe de UX**, queremos **redesenhar o fluxo de relatórios** para reduzir cliques desnecessários.  
 *(Critério de Aceitação: Teste A/B com redução de 50% no tempo de geração)*  
@@ -301,15 +293,15 @@ A partir do cenário, análise de tarefas e protótipo, podemos levantar as segu
 
 | História | Tela no Protótipo Salt | Problema Relacionado |  
 |----------|------------------------|----------------------|  
-| US01     | "Buscar cliente"       | Campo de busca lento |  
-| US03     | Tabela de estoque      | Dados desatualizados |  
+| US01     | "Gerenciar Evento"     | Campo de busca lento |  
+| US03     | Tabela de eventos      | Dados desatualizados |  
 | US05     | Seção de relatórios    | Interface confusa    |  
 
 ### **Próximos Passos**  
 
 1. Validar histórias com stakeholders.  
 2. Refinar critérios de aceitação com testes de usuário.  
-3. Associar histórias a épicos no backlog (ex.: "Otimização de Checkout").  
+3. Associar histórias a épicos no backlog (ex.: "Otimização de Gestão de Eventos").  
 
 Essas histórias cobrem todos os pontos críticos identificados na **análise de tarefas** e **protótipo**, garantindo alinhamento entre necessidades do usuário e soluções técnicas.
 
@@ -328,34 +320,34 @@ graph TD
     C --> D[Tarefas Técnicas]
 ```
 
-- **Épico**: Grande iniciativa estratégica (ex.: "Melhorar Gestão de Pedidos").  
-- **Feature**: Funcionalidade entregável dentro do épico (ex.: "Fluxo de Descontos").  
-- **História de Usuário**: Requisito específico (ex.: "Aplicar desconto manual").  
-- **Tarefas**: Itens técnicos para implementação (ex.: "Criar endpoint de validação de desconto").  
+- **Épico**: Grande iniciativa estratégica (ex.: "Melhorar Gestão de Eventos").  
+- **Feature**: Funcionalidade entregável dentro do épico (ex.: "Fluxo de Ingressos").  
+- **História de Usuário**: Requisito específico (ex.: "Configurar ingressos").  
+- **Tarefas**: Itens técnicos para implementação (ex.: "Criar endpoint de validação de ingressos").  
 
 ---
 
 ### **2. Exemplo Prático (Baseado no Cenário Anterior)**  
 
-#### **Épico 1: Otimização do Processo de Vendas**  
+#### **Épico 1: Otimização do Processo de Eventos**  
 
 | Feature                      | Histórias Associadas (US)  |  
 |------------------------------|---------------------------|  
-| **Busca Rápida de Clientes** | US01 (Busca por nome/CPF) |  
-| **Gestão de Descontos**      | US02, US04 (Aprovação)    |  
+| **Busca Rápida de Eventos** | US01 (Busca por categoria) |  
+| **Gestão de Ingressos**      | US02, US04 (Aprovação)    |  
 
-#### **Épico 2: Controle de Estoque em Tempo Real**  
-
-| Feature                      | Histórias Associadas (US)  |  
-|------------------------------|---------------------------|  
-| **Sincronização de Estoque** | US03, US09 (Alertas)      |  
-
-#### **Épico 3: Autoatendimento do Cliente**  
+#### **Épico 2: Controle de Vagas em Tempo Real**  
 
 | Feature                      | Histórias Associadas (US)  |  
 |------------------------------|---------------------------|  
-| **Rastreamento de Pedidos**  | US07                      |  
-| **Canal de Suporte**         | US08 (Chat de Trocas)     |  
+| **Sincronização de Vagas** | US03, US09 (Alertas)      |  
+
+#### **Épico 3: Autoatendimento do Participante**  
+
+| Feature                      | Histórias Associadas (US)  |  
+|------------------------------|---------------------------|  
+| **Consulta de Eventos**  | US07                      |  
+| **Canal de Inscrição**         | US08 (Chat de Inscrições)     |  
 
 ---
 
@@ -366,9 +358,9 @@ graph TD
    - US10 (alta complexidade) → Sprint futura.  
 
 2. **Quebrar épicos em features menores**:  
-   - Ex.: O épico "Otimização de Vendas" pode ser dividido em:  
-     - Feature 1: Busca de clientes (1 sprint).  
-     - Feature 2: Descontos (2 sprints).  
+   - Ex.: O épico "Otimização de Eventos" pode ser dividido em:  
+     - Feature 1: Busca de eventos (1 sprint).  
+     - Feature 2: Ingressos (2 sprints).  
 
 3. **Usar critérios INVEST**:  
    - Garantir que cada história seja **Independente**, **Negociável**, **Valiosa**, **Estimável**, **Pequena** e **Testável**.  
@@ -380,13 +372,13 @@ graph TD
 - **Jira/ClickUp**: Criar épicos > features > histórias.  
 
 ```markdown
-  [Épico] Melhorar Gestão de Pedidos  
+  [Épico] Melhorar Gestão de Eventos  
     ├── [Feature] Busca Rápida  
-    │    ├── US01: Buscar cliente em <2s  
-    │    └── US05: Filtrar por histórico  
-    └── [Feature] Descontos  
-         ├── US02: Aplicar desconto  
-         └── US04: Aprovação de gerente  
+    │    ├── US01: Buscar evento em <2s  
+    │    └── US05: Filtrar por categoria  
+    └── [Feature] Ingressos  
+         ├── US02: Configurar ingressos  
+         └── US04: Aprovação de admin  
 ```  
 
 - **Miro**: Mapeamento visual com cores por prioridade.  
@@ -399,8 +391,8 @@ graph TD
   - Selecionar features prioritárias e desmembrar em histórias para a sprint.  
   - Ex.: Na Sprint 1, implementar a **Feature "Busca Rápida"** (US01 + US05).  
 - **Definição de Pronto (DoD)**:  
-  - Para US03 ("Estoque em tempo real"), definir:  
-    - Integração com API de estoque concluída.  
+  - Para US03 ("Vagas em tempo real"), definir:  
+    - Integração com API de vagas concluída.  
     - Testes de carga realizados.  
 
 ---
@@ -410,13 +402,13 @@ graph TD
 | Sprint 1 | Histórias | Prioridade |  
 |----------|-----------|------------|  
 | **Feature: Busca Rápida** | US01, US05 | Must |  
-| **Feature: Descontos**    | US02      | Should |  
+| **Feature: Ingressos**    | US02      | Should |  
 
 ---
 
 ### **7. Validação com Stakeholders**  
 
 - Revisar épicos/features a cada **Reunião de Roadmap**.  
-- Ajustar prioridades com base no feedback (ex.: adiantar US07 se clientes exigirem rastreamento).  
+- Ajustar prioridades com base no feedback (ex.: adiantar US07 se participantes exigirem busca avançada).  
 
 Essa estrutura mantém o backlog **focado no valor do usuário** e **adaptável a mudanças**, seguindo os princípios do Scrum.
