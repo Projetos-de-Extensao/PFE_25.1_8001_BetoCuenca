@@ -1,8 +1,8 @@
 ---
-id: sprint1
-title: Sprint 1
+id: sprint2
+title: Sprint 2
 ---
-# Sprint 1 (25/03/2025 à 30/03/2025)
+# Sprint 2 (31/03/2025 à 06/04/2025)
 
 ## Planejamento de Sprint
 
