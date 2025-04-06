@@ -1,0 +1,19 @@
+@startuml
+' Ativa o estilo "desenhado à mão"
+skinparam handwritten true
+
+title Página Principal - Organizador
+
+rectangle "Painel do Organizador" {
+  [Barra de Navegação]
+  --
+  [Bem-vindo, Nome]
+  --
+  [Criar Evento]
+  [Editar Eventos]
+  [Estatísticas]
+  [Exportar Relatórios]
+  [Gerenciar Ingressos]
+  [Logout]
+}
+@enduml
