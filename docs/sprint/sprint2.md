@@ -1,34 +1,28 @@
 ---
-id: sprint2
-title: Sprint 2
+id: sprint1
+title: Sprint 1
 ---
-# Sprint 2 (xx/xx/2x à xx/xx/202x)
+# Sprint 1 (25/03/2025 à 30/03/2025)
 
 ## Planejamento de Sprint
 
-#### Presentes na reunião: XXXXX
+#### Presentes na reunião: Anderson Lima, Bernardo, Enrique, Guilherme 
 
 ### Lista de Tarefas da Sprint
 
 | Tarefa                                                                                       | Responsabilidade |
 | -------------------------------------------------------------------------------------------- | ---------------- |
-| Decidir o nome o projeto.                                                                    | Todos            |
-| Criar o repositório nos padrões (Organizar wiki).                                          | xx               |
-| Criar issues no GitHub / ZenHub                                                              | xxx              |
-| Configuração do grupo do Telegram(configurar bot).                                         | xxx              |
-| Estudar e escolher as metodologias.                                                          | Todos            |
-| [Documento de visão](https://github.com/xxx/xxx.md)                                            | XXX e XXXXX      |
-| Elaborar[5w2H](https://github.com/xxx/xxx.md)                                                   | XXX e XXXXX      |
-| [Mapas Mentais](https://github.com/xxx/xxx.md)                                                  | XXX e XXXXX      |
-| [Brainstorming](https://github.com/UnBArqDsw/2020.1_G7_TCM/blob/master/docs/base/Brainstorm.md) | Todos            |
-| [Entrevistas](https://github.com/xxx/xxx.md)                                                    | XXX e XXXXX      |
-| [Prototipação.](https://github.com/xxx/xxx.md)                                                | XXX e XXXXX      |
+| [AHT](https://projetos-de-extensao.github.io/PFE_25.1_8001_BetoCuenca/base/aht/#)                                                                   | Guilherme e Enrique            |
+| [User Stories](https://projetos-de-extensao.github.io/PFE_25.1_8001_BetoCuenca/base/userStories/)                                          | Guilherme              |
+| Revisão e suporte na sprint                                                            | Bernardo             |
+| [Protótipo]                                                          | Anderson            |
 
 ## Sprint Retrospective/Review Meeting
 
-#### Presentes na reunião: XXXX
+#### Presentes na reunião: Anderson, Guilherme, Bernardo e Enrique
 
-### Dividas da Sprint
+### Dívidas da Sprint
+- Nome do site
 
 ### Riscos Encontrados
 
@@ -36,19 +30,20 @@ title: Sprint 2
 
 ### Pontos Positivos
 
-![pontos positivos](../assets/Sprints/S1-positivos.png)
+- Equipe adaptável à falta de Membros
+- Reuniões bem produtivas
+- Reuniões rápidas e efetivas
+- Colaboradores sabem ser independentes
 
 ### Pontos Negativos
 
-![pontos negativos](../assets/Sprints/S1-negativos.png)
+- Falta de Motivação 
 
 ### O que podemos melhorar?
 
-- Ter mais foco na reuniões para evitar o desperdício de tempo.
-- A equipe deve ter mais autonomia em relação à falta de membros.
-- Podemos utilizar algo ferramenta de timebox para maior efetividade nas reuniões, sugestão: https://timebox.cedrotech.com/
+- Reuniões com um pouco mais de antecedência.
 
 ### Ferramentas utilizadas
 
-- Reunião: [m](https://hangouts.google.com/)eet
-- Colheita dos pontos: [Mentimeter](https://www.mentimeter.com/)
+- Reunião: Discord 
+- Organização de tarefas: ClickUp e Projects do GitHub
