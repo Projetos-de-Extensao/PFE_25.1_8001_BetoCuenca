@@ -408,7 +408,7 @@ graph TD
 
 ### **7. Validação com Stakeholders**  
 
-- Revisar features a cada **Reunião de Roadmap**.  
+- Revisar épicos/features a cada **Reunião de Roadmap**.  
 - Ajustar prioridades com base no feedback (ex.: adiantar US07 se participantes exigirem busca avançada).  
 
 Essa estrutura mantém o backlog **focado no valor do usuário** e **adaptável a mudanças**, seguindo os princípios do Scrum.
