@@ -391,7 +391,7 @@ graph TD
   - Selecionar features prioritárias e desmembrar em histórias para a sprint.  
   - Ex.: Na Sprint 1, implementar a **Feature "Busca Rápida"** (US01 + US05).  
 - **Definição de Pronto (DoD)**:  
-  - Para US03 ("Vagas em tempo real"), definir:  
+  - Para US03 ("Vagas em tempo real"), definir:
     - Integração com API de vagas concluída.  
     - Testes de carga realizados.  
 
@@ -408,7 +408,7 @@ graph TD
 
 ### **7. Validação com Stakeholders**  
 
-- Revisar épicos/features a cada **Reunião de Roadmap**.  
+- Revisar features a cada **Reunião de Roadmap**.  
 - Ajustar prioridades com base no feedback (ex.: adiantar US07 se participantes exigirem busca avançada).  
 
 Essa estrutura mantém o backlog **focado no valor do usuário** e **adaptável a mudanças**, seguindo os princípios do Scrum.
