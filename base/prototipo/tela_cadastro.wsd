@@ -1,0 +1,17 @@
+@startuml
+skinparam handwritten true
+
+title Tela de Cadastro
+
+rectangle "Cadastro de Usuário" {
+  [Logo do Sistema]
+  --
+  :Nome Completo:
+  :Email:
+  :Senha:
+  :Confirmar Senha:
+  [Selecionar Tipo: Usuário | Organizador]
+  [Botão: Cadastrar]
+  [Link: Já tenho uma conta]
+}
+@enduml

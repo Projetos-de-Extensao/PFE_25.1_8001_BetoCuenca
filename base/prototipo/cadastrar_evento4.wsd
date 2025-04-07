@@ -1,0 +1,9 @@
+@startuml
+skinparam handwritten true
+title Cadastrar Evento - Etapa 4
+
+frame "Cadastrar Evento - Parte 4" {
+  component "Resumo"
+  component "Botão Publicar"
+}
+@enduml

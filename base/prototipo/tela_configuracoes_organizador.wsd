@@ -1,0 +1,13 @@
+@startuml
+skinparam handwritten true
+title Configurações - Organizador
+
+rectangle "Configurações do Organizador" {
+  [Alterar Nome]
+  [Alterar Email]
+  [Alterar Senha]
+  [Gerenciar Equipe]
+  [Botão: Salvar Alterações]
+  [Botão: Voltar]
+}
+@enduml

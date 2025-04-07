@@ -1,0 +1,30 @@
+@startuml
+left to right direction
+actor "Usuário" as User
+actor "Organizador" as Organizer
+
+rectangle "Sistema de Ingressos" {
+  usecase "Login" as UC_Login
+  usecase "Cadastro" as UC_Cadastro
+  usecase "Visualizar Eventos" as UC_ViewEvents
+  usecase "Simular Compra" as UC_SimCompra
+  usecase "Gerenciar Ingressos" as UC_MeusIngressos
+  usecase "Cadastrar Evento" as UC_A addEvent
+  usecase "Editar Evento" as UC_EditEvent
+  usecase "Visualizar Estatísticas" as UC_Stats
+  usecase "Exportar Relatórios" as UC_Export
+}
+
+User --> UC_Login
+User --> UC_Cadastro
+User --> UC_ViewEvents
+User --> UC_SimCompra
+User --> UC_MeusIngressos
+
+Organizer --> UC_Login
+Organizer --> UC_ViewEvents
+Organizer --> UC_AddEvent
+Organizer --> UC_EditEvent
+Organizer --> UC_Stats
+Organizer --> UC_Export
+@enduml

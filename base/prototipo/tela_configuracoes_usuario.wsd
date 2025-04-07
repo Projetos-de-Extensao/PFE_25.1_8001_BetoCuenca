@@ -1,0 +1,13 @@
+@startuml
+skinparam handwritten true
+title Configurações - Usuário
+
+rectangle "Configurações do Usuário" {
+  [Alterar Nome]
+  [Alterar Email]
+  [Alterar Senha]
+  [Botão: Salvar Alterações]
+  [Botão: Excluir Conta]
+  [Botão: Voltar]
+}
+@enduml

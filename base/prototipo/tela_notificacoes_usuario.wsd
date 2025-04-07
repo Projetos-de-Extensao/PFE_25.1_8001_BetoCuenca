@@ -1,0 +1,13 @@
+@startuml
+skinparam handwritten true
+title Notificações - Usuário
+
+rectangle "Notificações do Usuário" {
+  [Notificação 1]
+  [Notificação 2]
+  [Notificação 3]
+  [Botão: Marcar Todas como Lidas]
+  [Botão: Voltar]
+  [Selecione o idioma: Português | Inglês]
+}
+@enduml

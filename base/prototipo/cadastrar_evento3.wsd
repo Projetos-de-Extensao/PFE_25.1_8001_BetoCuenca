@@ -1,0 +1,10 @@
+@startuml
+skinparam handwritten true
+title Cadastrar Evento - Etapa 3
+
+frame "Cadastrar Evento - Parte 3" {
+  component "Imagem de Capa"
+  component "Categorias"
+  component "Próximo"
+}
+@enduml

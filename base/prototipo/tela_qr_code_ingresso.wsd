@@ -1,0 +1,12 @@
+@startuml
+skinparam handwritten true
+title QR Code - Ingresso
+
+rectangle "QR Code do Ingresso" {
+  [QR Code Gerado]
+  [Nome do Evento]
+  [Data e Hora]
+  [Localização]
+  [Botão: Voltar]
+}
+@enduml

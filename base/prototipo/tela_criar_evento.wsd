@@ -1,0 +1,10 @@
+@startuml
+skinparam handwritten true
+title Tela Criar Evento
+
+frame "Criar Novo Evento" {
+  component "Botão Novo Evento"
+  component "Formulário de Criação"
+  component "Exportar Relatório (PDF/Excel)"
+}
+@enduml
