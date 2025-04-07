@@ -1,0 +1,53 @@
+@startsalt
+{
+  {#white+lightgrey}
+  {* <b>Aplicativo Web de Eventos - Fluxo de Tarefas (Wireframe)</b> }
+
+__**Tela: Gerenciar Evento**__
+  {T "Gerenciar Evento" 
+    [Buscar organizador    | input:___________ 🔍]
+    [Detalhes do evento   | input:___________]
+    [Data e Hora          | input:___/___/____ ▾]
+    [Local                | input:___________]
+    [Categoria            | dropdown: Evento ▼]
+    [Configurar Ingressos | ( ) Gratuito]
+    [                     | ( ) Pago R$___]
+    [                     | ( ) Limitado ___ vagas]
+    [ [Publicar Evento] ]
+  }
+--------------------------------------------------------------
+__**Tela: Consultar Eventos**__
+  {T "Consultar Eventos"
+    [Filtrar por: | dropdown: Categoria ▼]
+    [Eventos disponíveis:]
+    {#
+      Evento | Data  | Vagas   | Status
+      ------|-------|---------|--------
+      Show A| 15/04 | 50/100  | Aberto
+      Show B| 20/04 | 0/200   | Lotado
+      Show C| 25/04 | 150/150 | Fechado
+    }
+    [Atualizar Lista]
+  }
+--------------------------------------------------------------
+__**Tela: Gerar Relatório**__
+  {T "Gerar Relatório"
+    [Período: | 01/03/2024 ▾ to 31/03/2024 ▾]
+    [Métricas:]
+    [ (✔) Número de participantes ]
+    [ (✔) Taxa de ocupação ]
+    [ (✔) Vendas por categoria ]
+    [ ( ) Engajamento social ]
+    [Formato: | (✔) PDF   ( ) Excel ]
+    [ [Gerar Relatório] ]
+  }
+--------------------------------------------------------------
+__**Notas**__
+  note right
+    <b>Problemas identificados:</b>
+    1. Campo de busca lento
+    2. Atualização de disponibilidade não automática
+    3. Opções de relatório pouco intuitivas
+  end note
+}
+@endsalt
