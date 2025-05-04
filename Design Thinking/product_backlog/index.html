@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Backlog - Cuencos - PFE</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Backlog - Cuencos";
+        var mkdocs_page_input_path = "Design Thinking\\product_backlog.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> PFE
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Projeto Front-End</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Design Thinking</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../5w2h/">5W2H</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Brainstorm/">Brainstorm</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../aht/">06 - Análise de Tarefas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avaliawcagwai/">wcag</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../documento_de_visao/">Documento de Visão</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../entrevista/">Entrevista</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mapa_mental/">Mapas Mentais</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../metodologia/">Metodologia</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pesquisas/">Pesquisas</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Backlog - Cuencos</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#tema-1-web-app-para-cliente">Tema 1. Web App para Cliente</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#epico-11-pagina-inicial">Épico 1.1. Página Inicial</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-111-tela-inicial-agradavel-e-responsiva">Feature 1.1.1. Tela Inicial Agradável e Responsiva</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-112-modal-de-boas-vindas">Feature 1.1.2. Modal de Boas-Vindas</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#epico-12-registrologin">Épico 1.2. Registro/Login</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-121-sistema-de-registro-e-login">Feature 1.2.1. Sistema de Registro e Login</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-122-alternancia-de-perfis">Feature 1.2.2. Alternância de Perfis</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#epico-13-pagina-de-compras">Épico 1.3. Página de Compras</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-131-comprar-ingressos">Feature 1.3.1. Comprar Ingressos</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-132-compartilhamento-de-eventos">Feature 1.3.2. Compartilhamento de Eventos</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#epico-14-perfil-de-usuario">Épico 1.4. Perfil de Usuário</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-141-gerenciar-perfil">Feature 1.4.1. Gerenciar Perfil</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#epico-15-buscar-eventos">Épico 1.5. Buscar Eventos</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-151-listar-e-filtrar-eventos">Feature 1.5.1. Listar e Filtrar Eventos</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#epico-16-paginas-dos-eventos">Épico 1.6. Páginas dos Eventos</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-161-detalhes-dos-eventos">Feature 1.6.1. Detalhes dos Eventos</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-162-notificacoes-de-eventos-salvos">Feature 1.6.2. Notificações de Eventos Salvos</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tema-2-web-app-para-organizadores">Tema 2. Web App para Organizadores</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#epico-21-pagina-inicial">Épico 2.1. Página Inicial</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-211-tela-inicial-para-organizadores">Feature 2.1.1. Tela Inicial para Organizadores</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#epico-22-registrologin">Épico 2.2. Registro/Login</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-221-registro-e-login-de-organizadores">Feature 2.2.1. Registro e Login de Organizadores</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#epico-23-pagina-para-criar-eventos">Épico 2.3. Página para Criar Eventos</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-231-criacao-e-edicao-de-eventos">Feature 2.3.1. Criação e Edição de Eventos</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#epico-24-pagina-de-gerenciamento">Épico 2.4. Página de Gerenciamento</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-241-controle-de-eventos">Feature 2.4.1. Controle de Eventos</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#epico-25-pagina-de-estatisticas">Épico 2.5. Página de Estatísticas</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-251-estatisticas-de-vendas">Feature 2.5.1. Estatísticas de Vendas</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#epico-26-perfil-de-usuario">Épico 2.6. Perfil de Usuário</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#feature-261-gerenciar-perfil-de-organizador">Feature 2.6.1. Gerenciar Perfil de Organizador</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prototipo_alta_fidelidade/">Protótipo</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prototipo_baixa_fidelidade/">Protótipo</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Prototipo</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../prototipo/prototipo/">Prototipo</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Sprint</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sprint/sprint1/">Sprint 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sprint/sprint2/">Sprint 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sprint/sprint3/">Sprint 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sprint/sprint4/">Sprint 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sprint/sprint5/">Sprint 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sprint/sprint6/">Sprint 6</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../sprint/sprint7/">Sprint 7</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">PFE</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Design Thinking</li>
+      <li class="breadcrumb-item active">Backlog - Cuencos</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="backlog-cuencos">Backlog - Cuencos</h1>
+<h2 id="tema-1-web-app-para-cliente">Tema 1. Web App para Cliente</h2>
+<h3 id="epico-11-pagina-inicial">Épico 1.1. Página Inicial</h3>
+<h4 id="feature-111-tela-inicial-agradavel-e-responsiva">Feature 1.1.1. Tela Inicial Agradável e Responsiva</h4>
+<p><strong>Histórias de Usuário:</strong>
+- US08 - Acesso fácil em computador e celular (responsividade)
+- US18 - Interface interativa e responsiva</p>
+<p><strong>Tarefas:</strong>
+- Criar estrutura básica da página inicial (HTML, CSS, JS)
+- Implementar layout responsivo usando media queries
+- Adicionar animações/interatividade básica (hover effects, transições)
+- Testar compatibilidade em dispositivos móveis</p>
+<h4 id="feature-112-modal-de-boas-vindas">Feature 1.1.2. Modal de Boas-Vindas</h4>
+<p><strong>História de Usuário:</strong>
+- US12 - Modal explicativo ao primeiro acesso</p>
+<p><strong>Tarefas:</strong>
+- Criar modal de boas-vindas (HTML/CSS/JS)
+- Detectar primeiro acesso do usuário (localStorage)
+- Permitir fechar o modal e não exibi-lo novamente</p>
+<hr />
+<h3 id="epico-12-registrologin">Épico 1.2. Registro/Login</h3>
+<h4 id="feature-121-sistema-de-registro-e-login">Feature 1.2.1. Sistema de Registro e Login</h4>
+<p><strong>História de Usuário:</strong>
+- US04 - Registro e login de usuários</p>
+<p><strong>Tarefas:</strong>
+- Criar formulários de registro e login
+- Implementar validação de formulário (campos obrigatórios, senha segura)
+- Conectar sistema de autenticação (pode ser simulado/local)
+- Redirecionar usuário após login</p>
+<h4 id="feature-122-alternancia-de-perfis">Feature 1.2.2. Alternância de Perfis</h4>
+<p><strong>História de Usuário:</strong>
+- US17 - Alternar entre visualização de cliente e organizador</p>
+<p><strong>Tarefas:</strong>
+- Adicionar botão para alternar perfil
+- Controlar visualização de acordo com o tipo de usuário
+- Atualizar interface ao alternar</p>
+<hr />
+<h3 id="epico-13-pagina-de-compras">Épico 1.3. Página de Compras</h3>
+<h4 id="feature-131-comprar-ingressos">Feature 1.3.1. Comprar Ingressos</h4>
+<p><strong>Histórias de Usuário:</strong>
+- US02 - Compra de ingressos na plataforma
+- US19 - Geração de QR Codes fictícios
+- US11 - Sair da página sem perder os dados</p>
+<p><strong>Tarefas:</strong>
+- Implementar carrinho de compras
+- Criar página de checkout
+- Gerar QR Code fictício após compra (pode usar libs JS como qrcode.js)
+- Aviso de confirmação para fechar a tela</p>
+<h4 id="feature-132-compartilhamento-de-eventos">Feature 1.3.2. Compartilhamento de Eventos</h4>
+<p><strong>História de Usuário:</strong>
+- US07 - Compartilhar eventos em redes sociais</p>
+<p><strong>Tarefas:</strong>
+- Adicionar botões de compartilhamento (WhatsApp, Instagram, etc.)
+- Integrar links dos eventos para compartilhamento</p>
+<hr />
+<h3 id="epico-14-perfil-de-usuario">Épico 1.4. Perfil de Usuário</h3>
+<h4 id="feature-141-gerenciar-perfil">Feature 1.4.1. Gerenciar Perfil</h4>
+<p><strong>Histórias de Usuário:</strong>
+- US06 - Acessar aba "Meus ingressos"
+- US10 - Editar dados do perfil</p>
+<p><strong>Tarefas:</strong>
+- Criar página "Meu Perfil"
+- Listar ingressos comprados
+- Implementar edição de informações do usuário</p>
+<hr />
+<h3 id="epico-15-buscar-eventos">Épico 1.5. Buscar Eventos</h3>
+<h4 id="feature-151-listar-e-filtrar-eventos">Feature 1.5.1. Listar e Filtrar Eventos</h4>
+<p><strong>Histórias de Usuário:</strong>
+- US01 - Visualizar lista de eventos
+- US03 - Filtrar eventos por data, local e categoria</p>
+<p><strong>Tarefas:</strong>
+- Criar página com listagem de eventos
+- Implementar sistema de filtros dinâmicos
+- Conectar filtros à busca em tempo real</p>
+<hr />
+<h3 id="epico-16-paginas-dos-eventos">Épico 1.6. Páginas dos Eventos</h3>
+<h4 id="feature-161-detalhes-dos-eventos">Feature 1.6.1. Detalhes dos Eventos</h4>
+<p><strong>História de Usuário:</strong>
+- US05 - Ver detalhes completos dos eventos</p>
+<p><strong>Tarefas:</strong>
+- Criar página de detalhes de evento
+- Incluir informações como data, local, descrição, preço, categorias
+- Adicionar botão de "Comprar ingresso"</p>
+<h4 id="feature-162-notificacoes-de-eventos-salvos">Feature 1.6.2. Notificações de Eventos Salvos</h4>
+<p><strong>História de Usuário:</strong>
+- US09 - Receber notificações sobre eventos salvos</p>
+<p><strong>Tarefas:</strong>
+- Permitir salvar eventos em "favoritos"
+- Criar sistema de lembretes (pode ser uma notificação local ou um alerta no site)</p>
+<hr />
+<h2 id="tema-2-web-app-para-organizadores">Tema 2. Web App para Organizadores</h2>
+<h3 id="epico-21-pagina-inicial">Épico 2.1. Página Inicial</h3>
+<h4 id="feature-211-tela-inicial-para-organizadores">Feature 2.1.1. Tela Inicial para Organizadores</h4>
+<p><strong>História de Usuário:</strong>
+- US18 - Interface interativa e responsiva</p>
+<p><strong>Tarefas:</strong>
+- Exibir eventos organizados pelo usuário
+- Mostrar alertas de vendas recentes</p>
+<hr />
+<h3 id="epico-22-registrologin">Épico 2.2. Registro/Login</h3>
+<h4 id="feature-221-registro-e-login-de-organizadores">Feature 2.2.1. Registro e Login de Organizadores</h4>
+<p><strong>História de Usuário:</strong>
+- US04 - Registro e login</p>
+<p><strong>Tarefas:</strong>
+- Criar formulário de cadastro para organizador
+- Implementar autenticação diferenciada</p>
+<hr />
+<h3 id="epico-23-pagina-para-criar-eventos">Épico 2.3. Página para Criar Eventos</h3>
+<h4 id="feature-231-criacao-e-edicao-de-eventos">Feature 2.3.1. Criação e Edição de Eventos</h4>
+<p><strong>História de Usuário:</strong>
+- US13 - Criar e editar eventos</p>
+<p><strong>Tarefas:</strong>
+- Criar formulário de criação de eventos
+- Permitir editar eventos existentes
+- Validar campos obrigatórios (nome, data, local, etc.)</p>
+<hr />
+<h3 id="epico-24-pagina-de-gerenciamento">Épico 2.4. Página de Gerenciamento</h3>
+<h4 id="feature-241-controle-de-eventos">Feature 2.4.1. Controle de Eventos</h4>
+<p><strong>História de Usuário:</strong>
+- US15 - Envio de confirmações via pop-ups</p>
+<p><strong>Tarefas:</strong>
+- Listar eventos criados pelo organizador
+- Mostrar status (ativos, esgotados, etc.)
+- Implementar sistema de confirmação de ações com pop-ups/modais</p>
+<hr />
+<h3 id="epico-25-pagina-de-estatisticas">Épico 2.5. Página de Estatísticas</h3>
+<h4 id="feature-251-estatisticas-de-vendas">Feature 2.5.1. Estatísticas de Vendas</h4>
+<p><strong>Histórias de Usuário:</strong>
+- US14 - Painel com estatísticas de vendas
+- US16 - Exportar relatórios em PDF ou Excel</p>
+<p><strong>Tarefas:</strong>
+- Exibir gráficos de vendas por evento (pode usar Chart.js)
+- Implementar exportação de relatórios (gerar PDF ou Excel)
+- Permitir selecionar período de análise (ex: últimos 30 dias)</p>
+<hr />
+<h3 id="epico-26-perfil-de-usuario">Épico 2.6. Perfil de Usuário</h3>
+<h4 id="feature-261-gerenciar-perfil-de-organizador">Feature 2.6.1. Gerenciar Perfil de Organizador</h4>
+<p><strong>Histórias de Usuário:</strong>
+- US10 - Editar dados do perfil
+- US20 - Visualizar os eventos do perfil
+- US21 - Acessar as páginas de estatísticas e gerenciamento</p>
+<p><strong>Tarefas:</strong>
+- Criar página de Perfil do Organizador
+- Exibir informações cadastradas do organizador (nome, CNPJ, email)
+- Adicionar botão de Editar Dados (opcional para futura edição)
+- Garantir que os dados sejam carregados automaticamente após login
+- Estilizar a página para ficar consistente com o restante do sistema
+- Adicionar botões/links de acesso rápido no Dashboard do Organizador:
+  - Link para página de gerenciamento de eventos
+  - Link para página de estatísticas de vendas
+- Garantir que o menu de navegação destaque opções rápidas ao ser organizador
+- Criar atalhos visuais (ex: cards, ícones ou botões grandes)
+- Validar se o redirecionamento está funcionando corretamente</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../pesquisas/" class="btn btn-neutral float-left" title="Pesquisas"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../prototipo_alta_fidelidade/" class="btn btn-neutral float-right" title="Protótipo">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../pesquisas/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../prototipo_alta_fidelidade/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

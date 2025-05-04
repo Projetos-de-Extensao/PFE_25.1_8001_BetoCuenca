@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>userStories - PFE</title>
+    <title>Entrevista - PFE</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "userStories";
-        var mkdocs_page_input_path = "base\\userStories.md";
+        var mkdocs_page_name = "Entrevista";
+        var mkdocs_page_input_path = "Design Thinking\\entrevista.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -43,7 +43,7 @@
                 <li class="toctree-l1"><a class="reference internal" href="../..">Projeto Front-End</a>
                 </li>
               </ul>
-              <p class="caption"><span class="caption-text">Base</span></p>
+              <p class="caption"><span class="caption-text">Design Thinking</span></p>
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../5w2h/">5W2H</a>
                   </li>
@@ -55,7 +55,9 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../documento_de_visao/">Documento de Visão</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../entrevista/">Entrevista</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Entrevista</a>
+    <ul class="current">
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../mapa_mental/">Mapas Mentais</a>
                   </li>
@@ -63,12 +65,16 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../pesquisas/">Pesquisas</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../product_backlog/">Backlog - Cuencos</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../prototipo_alta_fidelidade/">Protótipo</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../prototipo_baixa_fidelidade/">Protótipo</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">userStories</a>
-    <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Prototipo</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../prototipo/prototipo/">Prototipo</a>
+                </li>
     </ul>
                   </li>
               </ul>
@@ -103,8 +109,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Base</li>
-      <li class="breadcrumb-item active">userStories</li>
+          <li class="breadcrumb-item">Design Thinking</li>
+      <li class="breadcrumb-item active">Entrevista</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -113,93 +119,83 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="user-stories-visao-usuario">User Stories (Visão Usuário)</h2>
+                <h2 id="introducao">Introdução</h2>
+<p align="justify">
+A técnica da entrevista consiste em uma conversa guiada por um roteiro de perguntas ou tópicos, com o objetivo de questionar os stakeholders sobre o sistema atual e esclarecer suas necessidades para o sistema que será desenvolvido. A entrevista permite uma investigação aprofundada sobre um problema, coletando uma grande quantidade de informações relevantes para o projeto.
+</p>
+
+<h2 id="metodologia">Metodologia</h2>
+<p align="justify">
+Para esta entrevista, optamos por seguir um modelo de entrevista aberta, com uma série de perguntas de apoio pré-definidas. O objetivo foi permitir que os stakeholders expusessem informações importantes para o sistema. As questões foram formuladas e filtradas de acordo com o interesse da equipe, orientando o entrevistador durante a conversa. Tanto o entrevistador quanto o entrevistado tiveram liberdade para abordar qualquer assunto relacionado ao sistema.
+</p>
+
+<h3 id="roteiro">Roteiro</h3>
+<ul>
+<li>Qual o objetivo principal da aplicação?  </li>
+<li>Como será o processo para cadastrar um novo cliente ou torneio?  </li>
+<li>Como será a forma de adicionar produtos?  </li>
+<li>Quais informações seriam interessantes para o cliente?  </li>
+<li>Você gostaria de poder editar seus dados salvos?  </li>
+<li>Você gostaria de receber notificações sobre eventos futuros?  </li>
+<li>O que você acha de uma aplicação que permita integração com redes sociais?  </li>
+</ul>
+<h2 id="entrevistas">Entrevistas</h2>
+<h3 id="versao-10">Versão 1.0</h3>
+<h4 id="entrevista-1"><strong>Entrevista 1</strong></h4>
 <table>
 <thead>
 <tr>
-<th>Descrição</th>
+<th>Nome</th>
+<th>Papel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Como usuário, quero visualizar uma lista de eventos disponíveis para encontrar aqueles que me interessam.</td>
+<td>Guilherme Reis</td>
+<td>Moderador</td>
 </tr>
 <tr>
-<td>Como usuário, quero comprar ingressos de eventos diretamente na plataforma.</td>
-</tr>
-<tr>
-<td>Como usuário, quero filtrar eventos por data, local e categoria para encontrar os mais relevantes.</td>
-</tr>
-<tr>
-<td>Como usuário, quero fazer login e me registrar para acessar minhas compras.</td>
-</tr>
-<tr>
-<td>Como usuário, quero visualizar detalhes completos dos eventos para me decidir melhor.</td>
-</tr>
-<tr>
-<td>Como usuário, quero acessar a aba "Meus ingressos" para visualizar e gerenciar meus ingressos.</td>
-</tr>
-<tr>
-<td>Como usuário, quero compartilhar eventos em redes sociais para convidar amigos.</td>
-</tr>
-<tr>
-<td>Como usuário, quero poder acessá-lo facilmente tanto no computador para me organizar quanto no celular para usá-lo.</td>
-</tr>
-<tr>
-<td>Como usuário, quero receber notificações dos eventos que salvei para não esquecê-los.</td>
-</tr>
-<tr>
-<td>Como usuário, quero poder editar meus dados para manter minhas informações atualizadas.</td>
-</tr>
-<tr>
-<td>Como usuário, sair da página sem perder os dados ou ser avisado para não ter que fazer tudo de novo.</td>
-</tr>
-<tr>
-<td>Como usuário, quero ver um modal de boas-vindas ao acessar o site pela primeira vez para entender como usá-lo.</td>
+<td>Stakeholders</td>
+<td>Entrevistados</td>
 </tr>
 </tbody>
 </table>
-<h2 id="user-stories-visao-organizador">User Stories (visão Organizador)</h2>
+<p align="justify">
+Durante a entrevista, foram abordados tópicos como o objetivo principal da aplicação, o processo de cadastro, a adição de produtos e as informações relevantes para os clientes. Também foram discutidas funcionalidades como notificações, integração com redes sociais e edição de dados salvos.
+</p>
+
+<h2 id="conclusao">Conclusão</h2>
+<p align="justify">
+A aplicação da técnica de entrevista permitiu coletar informações valiosas para o desenvolvimento do sistema, alinhando as expectativas dos stakeholders com os objetivos do projeto.
+</p>
+
+<h2 id="referencias">Referências</h2>
+<blockquote>
+<p><a href="https://cheers.com.br">Cheers.com.br</a><br />
+<a href="https://www.ingresso.com">Ingresso.com.br</a></p>
+</blockquote>
+<h2 id="autores">Autor(es)</h2>
 <table>
 <thead>
 <tr>
+<th>Data</th>
+<th>Versão</th>
 <th>Descrição</th>
+<th>Autor(es)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Como organizador, quero poder criar e editar eventos diretamente na interface para atualizar as informações quando necessário</td>
+<td>dd/mm/yyyy</td>
+<td>1.0</td>
+<td>Criação do documento</td>
+<td>Guilherme Reis</td>
 </tr>
 <tr>
-<td>Como organizador, quero acessar um painel de controle com estatísticas de vendas para acompanhar o desempenho dos eventos.</td>
-</tr>
-<tr>
-<td>Como organizador, quero que a aplicação envie emails ou confirmações de inscrição com modais ou pop-ups.</td>
-</tr>
-<tr>
-<td>Como organizador, quero poder exportar relatórios de vendas em formato PDF ou Excel para análise externa.</td>
-</tr>
-<tr>
-<td>Como organizador, quero poder alternar entre perfis de organizador e cliente.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="user-stories-visao-sistema">User Stories (visão sistema)</h2>
-<table>
-<thead>
-<tr>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Como sistema, devo permitir que a aplicação funcione offline após o primeiro carregamento para melhorar a experiência do usuário.</td>
-</tr>
-<tr>
-<td>Como sistema, devo garantir que a interface seja interativa e responsiva.</td>
-</tr>
-<tr>
-<td>Como sistema, devo gerar QR Codes fictícios para os ingressos, garantindo uma experiência realista.</td>
+<td>dd/mm/yyyy</td>
+<td>2.0</td>
+<td>Adição de informações detalhadas</td>
+<td>Anderson Lima</td>
 </tr>
 </tbody>
 </table>
@@ -207,8 +203,8 @@
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../prototipo_baixa_fidelidade/" class="btn btn-neutral float-left" title="Protótipo"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../sprint/sprint1/" class="btn btn-neutral float-right" title="Sprint 1">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../documento_de_visao/" class="btn btn-neutral float-left" title="Documento de Visão"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mapa_mental/" class="btn btn-neutral float-right" title="Mapas Mentais">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -231,10 +227,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../prototipo_baixa_fidelidade/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../documento_de_visao/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../sprint/sprint1/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../mapa_mental/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
