@@ -49,10 +49,10 @@ body {
 /* Hero Section */
 .hero {
   background: linear-gradient(rgba(162, 0, 255, 0.8), rgba(162, 0, 255, 0.8)),
-              url('images/bg-banner.png') center/cover no-repeat;
-  padding: 4rem 7.5%;
+              url('images/eventos/pucinrio.png') center/cover no-repeat;
+  padding: 10%;
   color: white;
-  text-align: left;
+  text-align: right;
 }
 
 .hero h1 {
@@ -64,6 +64,7 @@ body {
   font-size: 1rem;
   max-width: 500px;
   margin-bottom: 1.5rem;
+  text-align: right;
 }
 
 .hero-buttons .btn {
@@ -141,7 +142,7 @@ body {
 }
 
 .btn.primary {
-  background-color: #FF2DAF;
+  background-color: #FF0078;
   color: white;
 }
 
