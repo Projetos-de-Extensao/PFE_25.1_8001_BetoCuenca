@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    background-color: #303030;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% 7.5%; /* Use rem for proportional spacing */
+    background-color: #0C0C0C;
+}
+
+.logo img {
+    max-height: auto;
+    max-width: auto;
+    height: 3rem;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 7.5%; /* Use rem for spacing */
+}
+
+.nav-link {
+    color: #A200FF;
+    text-decoration: none;
+    font-size: 1rem; /* Use rem for font size */
+    white-space: nowrap
+}
+
+.login-button {
+    color: #A200FF;
+    border: 0.165rem solid #A200FF; /* Use rem for border */
+    padding: 0.5rem 1.25rem; /* Use rem for padding */
+    border-radius: 1.75rem; /* Use rem for border radius */
+    text-decoration: none;
+    font-size: 1rem; /* Use rem for font size */
+}
+
+.login-button:hover {
+    background-color: #A200FF;
+    color: #0C0C0C;
+}
