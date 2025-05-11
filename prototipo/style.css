@@ -204,3 +204,111 @@ body {
   text-align: center;
   margin-top: 2rem;
 }
+
+.footer {
+  background-color: #010101; /* New background color */
+  color: white;
+  padding: 3rem 7.5%;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Distribui as colunas com espaço igual */
+  flex-wrap: nowrap; /* Garante que as colunas fiquem em uma linha */
+  text-align: left; /* Alinha o texto à direita dentro de cada coluna */
+  max-width: 80%; /* Define uma largura máxima para centralizar o conteúdo */
+  margin: 0 auto; /* Centraliza o footer em relação à página */
+}
+
+.footer-col {
+  flex: 1; /* Garante que todas as colunas tenham o mesmo tamanho */
+  max-width: 400px; /* Limita a largura de cada coluna */
+}
+
+.footer-logo {
+  width: 15rem;
+  margin-left: -2.5rem;
+}
+
+.footer-col p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.footer-col h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #a200ff;
+}
+
+.footer-social a {
+  background-color: transparent; /* Remove o fundo */
+  padding: 0; /* Remove o padding */
+  border-radius: 0; /* Remove bordas arredondadas */
+}
+
+.footer-social a:hover {
+  background-color: #a200ff;
+}
+
+.footer-social img {
+  width: 2rem; /* Define o tamanho das logos */
+  height: 2rem; /* Garante proporção uniforme */
+  margin-right: 0.5rem; /* Espaçamento entre as logos */
+  transition: transform 0.3s; /* Adiciona animação ao passar o mouse */
+}
+
+.footer-social img:hover {
+  transform: scale(1.1); /* Aumenta levemente o tamanho ao passar o mouse */
+}
+
+.footer-btn {
+  display: inline-block;
+  background-color: #a200ff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.footer-btn:hover {
+  background-color: #A200FF;
+}
+
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: #4C4D8B;
+  margin: 2rem 0 1rem 0;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 0.85rem;
+  color: white;
+}
