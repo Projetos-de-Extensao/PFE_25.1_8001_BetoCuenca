@@ -15,30 +15,30 @@ body {
 .logo img {
     max-height: auto;
     max-width: auto;
-    height: 3rem;
+    height: 4rem; /* Aumenta o tamanho da logo */
     width: auto;
 }
 
 .nav {
     display: flex;
     align-items: center;
-    gap: 7.5%; /* Use rem for spacing */
+    gap: 10%; /* Use rem for spacing */
 }
 
 .nav-link {
     color: #A200FF;
     text-decoration: none;
-    font-size: 1rem; /* Use rem for font size */
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte dos links */
     white-space: nowrap
 }
 
 .login-button {
     color: #A200FF;
-    border: 0.165rem solid #A200FF; /* Use rem for border */
-    padding: 0.5rem 1.25rem; /* Use rem for padding */
+    border: 0.165rem solid #A200FF; /* Ajusta a espessura da borda */
+    padding: 0.6rem 1.5rem; /* Aumenta o padding do botão */
     border-radius: 1.75rem; /* Use rem for border radius */
     text-decoration: none;
-    font-size: 1rem; /* Use rem for font size */
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte do botão */
 }
 
 .login-button:hover {
@@ -144,8 +144,8 @@ body {
 
 .event-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr); /* Limita a 3 eventos por linha */
+  gap: 1.5rem; /* Espaçamento entre os eventos */
 }
 
 .event-card {
@@ -161,7 +161,8 @@ body {
 
 .event-card img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 9; /* Define a proporção 16:9 */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
 }
 
 .event-info {
@@ -270,7 +271,7 @@ body {
 }
 
 .footer-social a:hover {
-  background-color: #a200ff;
+  background-color: transparent; /* Remove o efeito de fundo */
 }
 
 .footer-social img {
@@ -281,7 +282,7 @@ body {
 }
 
 .footer-social img:hover {
-  transform: scale(1.1); /* Aumenta levemente o tamanho ao passar o mouse */
+  transform: none; /* Remove o efeito de escala */
 }
 
 .footer-btn {
