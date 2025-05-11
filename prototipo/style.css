@@ -57,6 +57,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
   margin-left: auto;
+  min-height: 450px; /* Increased height */
 }
 
 .hero h1, .hero p {
@@ -138,6 +139,7 @@ body {
 .eventos h2 {
   color: #A200FF;
   margin-bottom: 2rem;
+  font-size: 2.5rem; /* Aumenta o tamanho do texto do título */
 }
 
 .event-grid {
@@ -164,6 +166,7 @@ body {
 
 .event-info {
   padding: 1rem;
+  font-size: 1.25rem; /* Aumenta o tamanho do texto das informações */
 }
 
 .month {
