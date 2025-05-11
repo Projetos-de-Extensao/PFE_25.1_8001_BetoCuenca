@@ -50,14 +50,13 @@ body {
 .hero {
   background: linear-gradient(rgba(162, 0, 255, 0.65), rgba(162, 0, 255, 0.65)),
               url('images/eventos/pucinrio.png') center/cover no-repeat;
-  padding: 10%;
+  height: 75vh;
   color: white;
   text-align: left;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin-left: auto;
-  min-height: 450px; /* Increased height */
 }
 
 .hero h1, .hero p {
