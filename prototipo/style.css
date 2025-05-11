@@ -45,3 +45,118 @@ body {
     background-color: #A200FF;
     color: #0C0C0C;
 }
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(162, 0, 255, 0.8), rgba(162, 0, 255, 0.8)),
+              url('images/bg-banner.png') center/cover no-repeat;
+  padding: 4rem 7.5%;
+  color: white;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons .btn {
+  margin-right: 1rem;
+}
+
+/* Filtros */
+.filters {
+  background-color: #A200FF;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 7.5%;
+}
+
+.filters select {
+  background-color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+/* Eventos */
+.eventos {
+  padding: 3rem 7.5%;
+  background-color: #0C0C0C;
+  color: white;
+}
+
+.eventos h2 {
+  color: #A200FF;
+  margin-bottom: 2rem;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.event-card {
+  background-color: #1a1a1a;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.event-card:hover {
+  transform: scale(1.03);
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+}
+
+.event-info {
+  padding: 1rem;
+}
+
+.month {
+  color: #A200FF;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+/* Botões */
+.btn {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 1.5rem;
+  display: inline-block;
+}
+
+.btn.primary {
+  background-color: #FF2DAF;
+  color: white;
+}
+
+.btn.secondary {
+  border: 1px solid white;
+  color: white;
+}
+
+.btn.explore {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.center {
+  text-align: center;
+  margin-top: 2rem;
+}
