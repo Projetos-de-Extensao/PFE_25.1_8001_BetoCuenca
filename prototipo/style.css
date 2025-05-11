@@ -64,14 +64,15 @@ body {
   margin-bottom: 1rem;
   align-self: flex-end;
   width: 100%; /* Block both h1 and p to the same width */
-  max-width: 600px; /* Set a maximum width for consistency */
+  max-width: 300px; /* Ensure both h1 and p have the same max width */
 }
 
 .hero p {
   font-size: 1.25rem; /* Increase the font size of p */
-  max-width: 500px;
   margin-bottom: 1.5rem;
-  text-align: right;
+  text-align: left;
+  word-wrap: break-word; /* Ensure text wraps within the max width */
+  word-break: break-word; /* Break long words if necessary */
 }
 
 .hero-buttons .btn {
