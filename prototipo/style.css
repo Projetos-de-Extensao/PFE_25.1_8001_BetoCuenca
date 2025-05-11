@@ -48,20 +48,27 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(162, 0, 255, 0.8), rgba(162, 0, 255, 0.8)),
+  background: linear-gradient(rgba(162, 0, 255, 0.65), rgba(162, 0, 255, 0.65)),
               url('images/eventos/pucinrio.png') center/cover no-repeat;
   padding: 10%;
   color: white;
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
 }
 
-.hero h1 {
+.hero h1, .hero p {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  align-self: flex-end;
+  width: 100%; /* Block both h1 and p to the same width */
+  max-width: 600px; /* Set a maximum width for consistency */
 }
 
 .hero p {
-  font-size: 1rem;
+  font-size: 1.25rem; /* Increase the font size of p */
   max-width: 500px;
   margin-bottom: 1.5rem;
   text-align: right;
