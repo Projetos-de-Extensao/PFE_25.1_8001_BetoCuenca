@@ -157,9 +157,9 @@ body {
 
 /* Sidebar */
 .sidebar {
-  width: 260px;
+  width: 20%;
   background-color: #2F2F2F;
-  padding: 6rem 1rem;
+  padding: 7rem 2rem;
 }
 
 .sidebar h2 {
@@ -193,7 +193,7 @@ body {
 /* Main Content */
 .content {
   flex: 1;
-  padding: 3rem 50% 3rem 5%;
+  padding: 3rem 35% 3rem 5%;
   background-color: #151515;
 }
 
@@ -221,13 +221,13 @@ section {
 .avatar {
   background-color: #a200ff;
   border-radius: 50%;
-  width: 110px;
-  height: 110px;
+  width: 9.375rem; /* 150px convertido para rem */
+  height: 9.375rem; /* 150px convertido para rem */
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  font-size: 2.5rem;
+  font-size: 3rem; /* Ajusta o tamanho da fonte para corresponder ao novo tamanho */
 }
 
 .upload-icon {
