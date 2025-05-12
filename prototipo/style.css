@@ -238,11 +238,11 @@ body {
 
 .footer-content {
   display: flex;
-  justify-content: space-between; /* Distribui as colunas com espaço igual */
+  justify-content: space-evenly; /* Distribui as colunas com espaço igual */
   flex-wrap: nowrap; /* Garante que as colunas fiquem em uma linha */
   text-align: left; /* Alinha o texto à direita dentro de cada coluna */
   max-width: 80%; /* Define uma largura máxima para centralizar o conteúdo */
-  margin: 0 auto; /* Centraliza o footer em relação à página */
+  margin: 0 auto;
 }
 
 .footer-col {
@@ -293,12 +293,12 @@ body {
 }
 
 .footer-social a:hover {
-  background-color: transparent; /* Remove o efeito de fundo */
+  background-color: transparent;
 }
 
 .footer-social img {
-  width: 2rem; /* Define o tamanho das logos */
-  height: 2rem; /* Garante proporção uniforme */
+  width: 2rem; 
+  height: 2rem;
   margin-right: 0.5rem; /* Espaçamento entre as logos */
   transition: transform 0.3s; /* Adiciona animação ao passar o mouse */
 }
