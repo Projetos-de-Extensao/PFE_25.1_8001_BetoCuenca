@@ -238,16 +238,17 @@ body {
 
 .footer-content {
   display: flex;
-  justify-content: space-evenly; /* Distribui as colunas com espaço igual */
+  justify-content: center; /* Distribui as colunas com espaço igual */
   flex-wrap: nowrap; /* Garante que as colunas fiquem em uma linha */
   text-align: left; /* Alinha o texto à direita dentro de cada coluna */
-  max-width: 80%; /* Define uma largura máxima para centralizar o conteúdo */
-  margin: 0 auto;
+  max-width: 100%; /* Define uma largura máxima para centralizar o conteúdo */
+  gap: 3rem;
 }
 
 .footer-col {
   flex: 1; /* Garante que todas as colunas tenham o mesmo tamanho */
-  max-width: 400px; /* Limita a largura de cada coluna */
+  max-width: 300px; /* Limita a largura de cada coluna */
+  justify-content: space-between;
 }
 
 .footer-logo {
