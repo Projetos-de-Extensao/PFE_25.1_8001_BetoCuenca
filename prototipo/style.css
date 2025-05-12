@@ -346,3 +346,156 @@ body {
   font-size: 0.85rem;
   color: white;
 }
+
+body {
+  background-color: #101010;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background-color: #1f1f1f;
+  padding: 2rem 1rem;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 0.8rem 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: 0.3s;
+}
+
+.sidebar-nav a.active,
+.sidebar-nav a:hover {
+  background-color: #a200ff;
+  color: #ffffff;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 3rem 5%;
+  background-color: #0a0a0a;
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.profile-photo h2,
+.profile-info h2,
+.contact-info h2 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.photo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  background-color: #a200ff;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 2.5rem;
+}
+
+.upload-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #222;
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+/* Form Fields */
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 0.7rem 1rem;
+  background-color: #333;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+}
+
+.form-group input::placeholder {
+  color: #aaa;
+}
+
+.business-question small {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.mini-button {
+  background-color: #a200ff;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.save-button {
+  background-color: #a200ff;
+  border: none;
+  padding: 1rem 2.5rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+
+.save-button:hover {
+  background-color: #9200e6;
+}
