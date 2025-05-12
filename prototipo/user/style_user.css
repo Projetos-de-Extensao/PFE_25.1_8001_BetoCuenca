@@ -159,7 +159,7 @@ body {
 .sidebar {
   width: 260px;
   background-color: #2F2F2F;
-  padding: 3rem 1rem;
+  padding: 6rem 1rem;
 }
 
 .sidebar h2 {
@@ -169,19 +169,25 @@ body {
 }
 
 .sidebar-nav a {
+  color: white; /* Texto branco por padrão */
+  background-color: transparent; /* Fundo transparente */
   display: block;
   padding: 0.8rem 1rem;
-  color: white;
   text-decoration: none;
   border-radius: 8px;
   margin-bottom: 0.5rem;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
-.sidebar-nav a.active,
+.sidebar-nav a.active {
+  color: #C155FF; /* Texto roxo para a página atual */
+  background-color: transparent; /* Fundo transparente */
+  pointer-events: none; /* Desativa ações na aba ativa */
+}
+
 .sidebar-nav a:hover {
-  background-color: #a200ff;
-  color: #ffffff;
+  color: #C155FF; /* Texto roxo ao passar o mouse */
+  background-color: transparent; /* Fundo transparente ao passar o mouse */
 }
 
 /* Main Content */
@@ -228,7 +234,7 @@ section {
   position: absolute;
   bottom: 0;
   right: 0;
-  background: #222;
+  background: #C155FF;
   border: 2px solid white;
   border-radius: 50%;
   font-size: 1.2rem;
