@@ -158,8 +158,8 @@ body {
 /* Sidebar */
 .sidebar {
   width: 260px;
-  background-color: #1f1f1f;
-  padding: 2rem 1rem;
+  background-color: #2F2F2F;
+  padding: 3rem 1rem;
 }
 
 .sidebar h2 {
@@ -187,8 +187,8 @@ body {
 /* Main Content */
 .content {
   flex: 1;
-  padding: 3rem 5%;
-  background-color: #0a0a0a;
+  padding: 3rem 50% 3rem 5%;
+  background-color: #151515;
 }
 
 .content h1 {
