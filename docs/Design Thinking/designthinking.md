@@ -7,19 +7,29 @@ title: Design Thinking
 
 ### **1. Capa**
 
-- Cuencos
-- Beto Cuenca: Guilherme Reis, Bernardo Casanovas e Anderson Lima
-- Data
-- ![Logo Cuencos](../assets/logo_cuencos.jpg)
+- **Título do Projeto**: Cuencos
+- **Nome da Equipe**: Beto Cuenca (Guilherme Reis, Anderson Lima e Bernardo Casanovas)
+- **Data**: 2025.1
+- **Logo da Empresa/Organização**: ![Logo Cuencos](../assets/logo_cuencos.jpg)
 
 ---
 
 ### **2. Introdução**
 
-- **Contexto do Projeto**: Breve descrição do problema ou oportunidade.
-- **Objetivo**: O que se espera alcançar com o projeto.
-- **Público-Alvo**: Quem será impactado pela solução.
-- **Escopo**: Limites e abrangência do projeto.
+- **Contexto do Projeto**:  
+  A organização de eventos, compras de ingressos e o relacionamento entre clientes e organizadores ainda apresentam dificuldades de experiência, acessibilidade e controle. Há uma demanda crescente por plataformas intuitivas, responsivas e com recursos integrados para esses públicos. No mercado de Eventos Universitários, há uma falta de investimento de tempo nesses aspectos
+
+- **Objetivo**:  
+  Criar um website que atenda tanto ao público geral quanto a organizadores, oferecendo uma experiência fluida para compra, gerenciamento e promoção de eventos.
+
+- **Público-Alvo**:  
+  - Clientes interessados em eventos universitários  
+  - Organizadores que buscam uma plataforma para publicar, vender e gerenciar seus eventos.
+
+- **Escopo**:  
+  - Desenvolvimento de duas interfaces: uma para o cliente e outra para o organizador.  
+  - Funcionalidades incluem: login/registro, compras, QR Code, perfil e dashboard de estatísticas.  
+  - Interface responsiva e interativa.
 
 ---
 
@@ -27,32 +37,58 @@ title: Design Thinking
 
 #### **3.1. Empatia**
 
-- **Pesquisa**: Métodos utilizados para entender o usuário (entrevistas, observação, etc.).
-- **Insights**: Principais descobertas sobre as necessidades, desejos e dores do usuário.
-- **Personas**: Descrição dos perfis de usuários criados com base na pesquisa.
+- **Pesquisa**:  
+  - Observação de plataformas concorrentes.  
+  - Entrevistas com usuários que frequentam eventos e organizadores de pequeno porte (atléticas).  
+  - Análise de feedbacks em websites similares.
+
+- **Insights**:  
+  - Usuários desejam praticidade e clareza no processo de compra.  
+  - Organizadores querem relatórios e controle detalhado das vendas.  
+  - A maioria acessa dos usuários acessa via dispositivos móveis e organizadores por pc.  
+  - Interface confusa e pouco responsiva gera abandono da plataforma.
+
+- **Personas**:  
+  - *Jean, 20 anos, universitário* – Usa o celular para comprar ingressos e prefere apps rápidos.  
+  - *Carla, 21 anos, organizadora de eventos de atlética* – precisa de uma plataforma para divulgar eventos e acompanhar vendas em tempo real.
 
 #### **3.2. Definição**
 
-- **Problema Central**: Definição clara do problema a ser resolvido (ex.: "Como podemos...?").
-- **Pontos de Vista (POV)**: Frases que sintetizam as necessidades do usuário e os insights.
+- **Problema Central**:  
+  *Como podemos criar uma plataforma de eventos que seja eficiente, intuitiva e útil tanto para clientes quanto para organizadores?*
 
-#### **3.3. Ideaçã**
+- **Pontos de Vista (POV)**:  
+  - João precisa de um jeito rápido e confiável de comprar ingressos.  
+  - Carla precisa de uma forma prática de criar eventos, acompanhar estatísticas e ter acesso fácil às ferramentas de gestão.
 
-- **Brainstorming**: Lista de ideias geradas pela equipe.
-- **Seleção de Ideias**: Critérios utilizados para escolher as melhores ideias.
-- **Ideias Selecionadas**: Descrição das ideias que serão prototipadas.
+#### **3.3. Ideação**
+
+- **Brainstorming**:  
+![Brainstorm](https://projetos-de-extensao.github.io/PFE_25.1_8001_BetoCuenca/Design%20Thinking/Brainstorm/)
 
 #### **3.4. Prototipagem**
 
-- **Descrição do Protótipo**: Como a ideia foi transformada em um protótipo (esboço, modelo físico, digital, etc.).
-- **Materiais Utilizados**: Recursos necessários para criar o protótipo.
-- **Testes Realizados**: Como o protótipo foi testado.
+- **Descrição do Protótipo**:  
+  Protótipo digital interativo desenvolvido em ferramentas como Figma e posteriormente implementado em HTML, CSS e JS.
+
+- **Materiais Utilizados**:  
+  - Alta fidelidade: Figma e Photoshop
+  - Baixa fidelidade: Linguagem .wsd 
+
+- **Testes Realizados**:  
+  - Testes em dispositivos móveis e desktop  
+  - Feedbacks coletados em formulários online
 
 #### **3.5. Teste**
 
-- **Feedback dos Usuários**: O que os usuários acharam do protótipo.
-- **Ajustes Realizados**: Mudanças feitas com base no feedback.
-- **Resultados Finais**: Descrição da solução final.
+- **Feedback dos Usuários**:  
+  - A definir
+
+- **Ajustes Realizados**:  
+  - A definir
+
+- **Resultados Finais**:  
+  - A definir
 
 ---
 
@@ -66,14 +102,7 @@ title: Design Thinking
 
 ### **5. Anexos**
 
-- Fotos, gráficos, tabelas, transcrições de entrevistas, etc.
+[Notion](https://www.notion.so/1e3383bc441b80b1800df291cf1946a5?v=1e3383bc441b81b18cbb000c6b8b996b&pvs=4) 
+[Miro](https://miro.com/app/board/uXjVICCpzOA=/?share_link_id=184508554103)
 
 ---
-
-## **Dicas para Criar o Documento**
-
-- Use uma linguagem clara e objetiva.
-- Inclua visualizações, como mapas de empatia, jornadas do usuário ou esboços de ideias.
-- Adapte o documento conforme o estágio do projeto (ex.: um documento inicial pode focar mais na pesquisa, enquanto um final pode detalhar a solução).
-
-Esse modelo é flexível e pode ser ajustado conforme as necessidades do seu projeto ou da sua equipe. O importante é que o documento reflita o processo colaborativo e iterativo do Design Thinking.
