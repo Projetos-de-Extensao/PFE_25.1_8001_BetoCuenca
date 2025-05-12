@@ -1,4 +1,4 @@
----
+<!-- ---
 id: wcag
 title: wcag
 ---
@@ -33,4 +33,4 @@ O Wcag é um....
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
 | 06/06/24 | 1.0 | Criação do documento | xxx xxxx | 
-| 09/09/20 | 2.0 | Adicionada visão produto | xxxx xxxx | 
+| 09/09/20 | 2.0 | Adicionada visão produto | xxxx xxxx |  -->

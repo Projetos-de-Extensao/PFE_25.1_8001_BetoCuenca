@@ -1,4 +1,4 @@
----
+<!-- ---
 id: documento_de_visao
 title: Documento de Visão
 ---
@@ -83,5 +83,5 @@ A aplicação não será responsável...
 ## Versionamento
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX e ZZZ ZZZZ | 
+| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX e ZZZ ZZZZ |  -->
 

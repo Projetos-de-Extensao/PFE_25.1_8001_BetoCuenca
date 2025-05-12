@@ -19,28 +19,25 @@ A equipe se reuniu via Discord para debater ideias gerais sobre o projeto. A reu
 
 ## Versão 1.0
 
-### Mapa Mental 1
-[![Mapa Mental](../assets/Mapas_mentais/entrevista.png)](../assets/Mapas_mentais/entrevista.png)
-
-[![Mapa Mental Entrevista](../assets/Mapas_mentais/entrevista.png)](../assets/Mapas_mentais/entrevista.png)
-
-### Mapa Mental 2
+### Mapa Mental
 
 [![Mapa Mental](../assets/mapa_mental1.png)](../assets/mapa_mental1.png)
+
+### Mapa Mental resumido
+[![Mapa Mental](../assets/mapa_mental_resumido.jpeg)]
 
 ## Conclusão
 
 <p align="justify">
-O mapa mental é uma ferramenta valiosa para oferecer uma visão geral do tema e fixar os pontos mais importantes do projeto. Ele auxilia na organização das ideias e no planejamento das próximas etapas.
+O mapa mental nos ajudou a nos orgnaizar e entender os pontos principais do nossos projeto. Sem dúvidas vai nos ajudar na organização das ideias e no planejamento das próximas etapas.
 </p>
 
 ## Referências
-> Mapa Mental XXX, Disponível em: https://www.....  
-> Ferramentas para Mapas Mentais, Disponível em: https://www....  
-> Plataforma para usuários colaborarem no desenho, Disponível em: https://...
+Mapa mental em linguagem .wsd
+Versão resumida feita no Canva
 
 ## Versionamento
 | Data       | Versão | Descrição                | Autor(es)       |
 |------------|--------|--------------------------|-----------------|
-| dd/mm/yy   | 1.0    | Criação do documento     | xxx xxxx        |
+| 25/03/25   | 1.0    | Criação do documento     | Guilherme Reis        |
 | 30/03/25   | 2.0    | Adicionado Mapa Mental 2 | Anderson Lima |
