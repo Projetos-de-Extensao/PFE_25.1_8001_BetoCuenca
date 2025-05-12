@@ -16,6 +16,10 @@ body {
     align-items: center;
     padding: 0.5% 7.5%; /* Use rem for proportional spacing */
     background-color: #0C0C0C;
+    position: fixed; /* Torna o header fixo */
+    top: 0; /* Fixa no topo da página */
+    width: 100%; /* Garante que o header ocupe toda a largura */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
 }
 
 .logo img {
@@ -248,7 +252,7 @@ body {
   flex-wrap: nowrap; /* Garante que as colunas fiquem em uma linha */
   text-align: left; /* Alinha o texto à direita dentro de cada coluna */
   max-width: 100%; /* Define uma largura máxima para centralizar o conteúdo */
-  gap: 3rem;
+  gap: 10rem; /* Aumenta o espaçamento entre os blocos */
 }
 
 .footer-col {
