@@ -57,6 +57,29 @@ body {
   flex-direction: column;
   align-items: flex-end;
   margin-left: auto;
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
+  padding-right: 15%; /* Adiciona uma margem para a direita */
+}
+
+.hero-content {
+  max-width: 40%; /* Define a largura máxima do bloco */
+  text-align: left; /* Alinha o texto à esquerda */
+  margin-right: 5%; /* Adiciona margem para a direita */
+}
+
+.hero h1 {
+  font-size: 3rem; /* Aumenta o tamanho do título */
+}
+
+.hero p {
+  font-size: 1.5rem; /* Aumenta o tamanho do parágrafo */
+  margin-bottom: 2rem; /* Adiciona mais espaço abaixo do parágrafo */
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem; /* Espaçamento entre os botões */
+  align-items: flex-start; /* Alinha os botões ao início do texto */
 }
 
 .hero h1, .hero p {
