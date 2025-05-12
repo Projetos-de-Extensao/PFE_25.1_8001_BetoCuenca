@@ -221,6 +221,7 @@ section {
 .avatar {
   background-color: #a200ff;
   border-radius: 50%;
+  border:#010101 solid 2px;
   width: 9.375rem; /* 150px convertido para rem */
   height: 9.375rem; /* 150px convertido para rem */
   display: flex;
@@ -235,7 +236,7 @@ section {
   bottom: 0;
   right: 0;
   background: #C155FF;
-  border: 2px solid white;
+  border: 2px solid #010101;
   border-radius: 50%;
   font-size: 1.2rem;
   padding: 0.3rem;
@@ -299,4 +300,18 @@ section {
 
 .save-button:hover {
   background-color: #9200e6;
+}
+
+/* Página: Mudar Email */
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.content .form-group p {
+  padding: 0.7rem 1rem;
+  background-color: #333;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
 }
