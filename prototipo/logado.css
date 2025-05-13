@@ -593,7 +593,16 @@ body.menu-open .menu-toggle span:nth-child(3) {
     transform: rotate(-45deg);
   }
   
+  .menu-toggle {
+    display: flex;
+  }
   
+  .hero {
+    height: 60vh;
+    align-items: center;
+    padding-right: 0;
+    text-align: center;
+  }
   
   .hero-content {
     max-width: 80%;
