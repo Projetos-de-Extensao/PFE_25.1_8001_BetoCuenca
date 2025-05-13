@@ -1,0 +1,454 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Zen+Kaku+Gothic+Antique:500,400,700|Fredoka:600|Inria+Sans:400");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "Nasalization-Regular";
+}
+
+/* Remova o estilo .log-in anterior que não está sendo usado */
+
+/* Estilos para o novo layout */
+.login-container {
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/backgroudimage.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay semitransparente roxo - alterado para #500379 */
+.login-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48, 4, 72, 0.7); /* Alterado para #500379 com opacidade de 0.7 */
+  z-index: 0;
+}
+
+/* Logo - Ajustada posição para frente e para baixo, e cor para preto */
+.logo {
+  position: absolute;
+  top: 60px; /* Movido para baixo (era 40px) */
+  left: 10%; /* Alinhado com o texto promocional (era 60px) */
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+}
+
+.logo-text {
+  font-family: "Nasalization-Regular", Helvetica, sans-serif;
+  color: #000000; /* Logo é branco na página de cadastro */
+  font-size: 26px;
+  margin-left: 10px;
+}
+
+
+
+/* Texto promocional */
+.promo-text {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 500px;
+  z-index: 1;
+}
+
+.promo-text p {
+  font-family: "Inria Sans", Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 400;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Card de login - Posicionado ainda mais para baixo */
+.login-card {
+  position: absolute;
+  bottom: -1%; /* Alterado de 5% para 1% para posicionar mais próximo da borda */
+  right: 5%;
+  width: 550px;
+  height: 700px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 50px; /* Aumentado padding para acomodar mais conteúdo */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribui o conteúdo uniformemente */
+}
+
+h1 {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 30px; /* Aumentado para manter proporcionalidade */
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+/* Ajustamos os espaçamentos para o card maior */
+.form-group {
+  margin-bottom: 25px; /* Aumentado */
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.password-input {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url(./images/eyepassword.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* Botão de continuar - cor escurecida */
+.continue-btn {
+  width: 100%;
+  padding: 18px;
+  background-color: #A200FF; /* Alterado para #7400B3 (versão escurecida do #A200FF) */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Fredoka", sans-serif;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 30px 0; /* Aumentado */
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider span {
+  padding: 0 10px;
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.google-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.google-login img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.google-login span {
+  color: #666;
+  font-size: 16px;
+}
+
+.signup-link {
+  text-align: center;
+  font-size: 14px;
+}
+
+.signup-link a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Responsividade aprimorada */
+@media (max-width: 1200px) {
+  .promo-text {
+    left: 5%;
+    max-width: 400px;
+  }
+  
+  .promo-text p {
+    font-size: 28px;
+  }
+  
+  .login-card {
+    width: 550px; /* Reduzido um pouco para telas menores */
+    height: auto; /* Permitir altura automática em telas menores */
+    min-height: 580px; /* Garantir altura mínima */
+  }
+}
+
+@media (max-width: 992px) {
+  .promo-text {
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .login-card {
+    width: 90%;
+    max-width: 550px;
+    bottom: 1%;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 30px;
+    height: auto;
+    min-height: 580px;
+  }
+  
+  .logo {
+    top: 20px;
+    left: 20px;
+    right: auto;
+    width: auto;
+  }
+  
+  .logo-text {
+    font-size: 22px;
+  }
+  
+  .logo img {
+    width: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .promo-text {
+    position: relative;
+    top: 100px;
+    width: 90%;
+    max-width: none;
+    transform: none;
+    left: auto;
+    margin: 0 auto;
+  }
+  
+  .login-card {
+    position: relative;
+    width: 90%;
+    max-width: none;
+    height: auto;
+    min-height: 500px;
+    margin: 150px auto 30px;
+    right: auto;
+    bottom: auto;
+    transform: none;
+    border-radius: 15px;
+  }
+  
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    left: 0;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group input {
+    padding: 12px;
+  }
+  
+  .continue-btn {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    top: 15px;
+  }
+  
+  .promo-text {
+    top: 80px;
+  }
+  
+  .promo-text p {
+    font-size: 20px;
+  }
+  
+  .login-card {
+    width: 95%;
+    padding: 20px;
+    margin-top: 120px;
+  }
+  
+  h1 {
+    font-size: 22px;
+  }
+  
+  .form-group label {
+    font-size: 13px;
+  }
+  
+  .divider {
+    margin: 20px 0;
+  }
+  
+  .google-login {
+    padding: 10px;
+  }
+  
+  .google-login span {
+    font-size: 14px;
+  }
+  
+  .signup-link {
+    font-size: 13px;
+  }
+}
+
+/* Corrigir problemas de viewport em dispositivos muito pequenos */
+@media (max-height: 650px) and (max-width: 768px) {
+  .login-container {
+    height: auto;
+    min-height: 100%;
+  }
+  
+  .login-card {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 15px;
+    min-height: 450px;
+  }
+  
+  .promo-text {
+    top: 70px;
+  }
+  
+  .promo-text p {
+    font-size: 18px;
+  }
+}
+
+/* Orientação horizontal em dispositivos móveis */
+@media (max-height: 450px) and (orientation: landscape) {
+  .login-container {
+    height: auto;
+    min-height: 100%;
+  }
+  
+  .logo {
+    position: relative;
+    top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .promo-text {
+    position: relative;
+    top: 0;
+    margin: 0 auto 20px;
+  }
+  
+  .login-card {
+    position: relative;
+    margin: 10px auto 20px;
+    min-height: 400px;
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .divider {
+    margin: 15px 0;
+  }
+}
+
+/* Para telas muito pequenas */
+@media (max-height: 700px) {
+  .login-card {
+    transform: translateX(50%) scale(0.9);
+    transform-origin: bottom center;
+    bottom: 0; /* Para telas pequenas, encosta completamente na borda */
+  }
+  
+  .promo-text {
+    top: 15%;
+  }
+  
+  .promo-text p {
+    font-size: 22px;
+  }
+}
