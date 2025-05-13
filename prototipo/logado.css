@@ -632,7 +632,9 @@ body.menu-open .menu-toggle span:nth-child(3) {
   }
   
   .filtro-item {
+    
     flex: 0 0 100%;
+
     padding: 0.5rem 1rem;
   }
   
