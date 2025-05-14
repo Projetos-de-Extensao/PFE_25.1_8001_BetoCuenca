@@ -1,0 +1,54 @@
+/* Estilos específicos para a página de mudar email */
+
+/* Para exibir o email atual */
+.current-email {
+  display: block;
+  padding: 0.7rem 1rem;
+  background-color: #333;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Mensagens de feedback */
+.error-message {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #ff6666;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #ff6666;
+}
+
+.success-message {
+  background-color: rgba(0, 255, 0, 0.1);
+  color: #66ff66;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #66ff66;
+}
+
+/* Estilos específicos para o formulário de mudar email */
+.content h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #C155FF;
+}
+
+/* Ajuste na versão mobile */
+@media (max-width: 768px) {
+  .container {
+    padding-top: 4rem;
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  .content {
+    padding: 2rem 5%;
+  }
+}

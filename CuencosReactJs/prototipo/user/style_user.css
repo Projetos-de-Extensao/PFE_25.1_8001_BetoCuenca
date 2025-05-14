@@ -33,27 +33,6 @@ body {
   gap: 10%;
 }
 
-/* Adicionando estilo para os itens de navegação */
-.nav-item {
-  display: flex;
-  align-items: center;
-  color: white;
-  text-decoration: none;
-  gap: 0.5rem;
-  font-size: 1rem;
-}
-
-.nav-icon {
-  width: 1.5rem;
-  height: auto;
-}
-
-.profile-icon {
-  width: 2.5rem;
-  height: auto;
-  cursor: pointer;
-}
-
 .nav-link {
   color: #A200FF;
   text-decoration: none;
@@ -184,7 +163,6 @@ body {
 .container {
   display: flex;
   min-height: 100vh;
-  padding-top: 4rem; /* Adicionando padding-top para compensar o header fixo */
 }
 
 /* Sidebar */
@@ -346,43 +324,4 @@ section {
   border-radius: 8px;
   color: white;
   font-size: 1rem;
-}
-
-/* Media Queries para responsividade */
-@media (max-width: 1200px) {
-  .container {
-    flex-direction: column;
-  }
-  
-  .sidebar {
-    width: 100%;
-    padding: 6rem 2rem 2rem;
-  }
-  
-  .content {
-    padding: 2rem 5%;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar-section {
-    gap: 1rem;
-  }
-  
-  .nav-item span {
-    display: none;
-  }
-  
-  .footer-content {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .footer-col {
-    max-width: 100%;
-  }
-  
-  .footer-col:nth-child(2) {
-    padding: 0;
-  }
 }

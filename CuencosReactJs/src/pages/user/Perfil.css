@@ -1,0 +1,308 @@
+.perfil-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.perfil-header {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.perfil-header h1 {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.perfil-header p {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  color: #666;
+  font-size: 16px;
+}
+
+.perfil-content {
+  display: flex;
+  gap: 40px;
+}
+
+/* Sidebar com navegação */
+.perfil-sidebar {
+  flex: 0 0 250px;
+}
+
+.profile-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #A200FF;
+}
+
+.change-photo-btn {
+  background: none;
+  border: none;
+  color: #A200FF;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.change-photo-btn:hover {
+  text-decoration: underline;
+}
+
+.perfil-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.perfil-nav li {
+  margin-bottom: 5px;
+}
+
+.perfil-nav a {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  transition: background-color 0.2s;
+}
+
+.perfil-nav li.active a {
+  background-color: rgba(162, 0, 255, 0.1);
+  color: #A200FF;
+  font-weight: 500;
+}
+
+.perfil-nav a:hover {
+  background-color: rgba(162, 0, 255, 0.05);
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user-icon {
+  background-image: url("/images/user-icon.svg");
+}
+
+.email-icon {
+  background-image: url("/images/email-icon.svg");
+}
+
+.password-icon {
+  background-image: url("/images/password-icon.svg");
+}
+
+.favorites-icon {
+  background-image: url("/images/star-icon.svg");
+}
+
+.tickets-icon {
+  background-image: url("/images/ticket-icon.svg");
+}
+
+/* Área principal com detalhes do perfil */
+.perfil-details {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-header h2 {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.edit-button {
+  border: none;
+  background-color: transparent;
+  color: #A200FF;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+.edit-button:hover {
+  text-decoration: underline;
+}
+
+/* Formulário */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.info-text {
+  font-size: 16px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  color: #333;
+  margin: 5px 0;
+}
+
+.change-link {
+  display: inline-block;
+  color: #A200FF;
+  font-size: 14px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.change-link:hover {
+  text-decoration: underline;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.save-button {
+  padding: 12px 25px;
+  background-color: #A200FF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cancel-button {
+  padding: 12px 25px;
+  background-color: #f2f2f2;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.section-divider {
+  height: 1px;
+  background-color: #eaeaea;
+  margin: 30px 0;
+}
+
+.account-actions {
+  margin-top: 20px;
+}
+
+.account-actions h3 {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.action-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.delete-account {
+  background-color: #fff0f0;
+  color: #ff3b30;
+  border: 1px solid #ffcaca;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .perfil-content {
+    flex-direction: column;
+  }
+  
+  .perfil-sidebar {
+    flex: none;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .profile-image-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .perfil-container {
+    margin: 20px auto;
+  }
+  
+  .perfil-details {
+    padding: 20px 15px;
+  }
+  
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .save-button, .cancel-button {
+    width: 100%;
+  }
+  
+  .profile-image-container {
+    flex-direction: column;
+  }
+}

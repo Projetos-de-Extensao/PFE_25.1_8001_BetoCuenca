@@ -1,0 +1,47 @@
+.sidebar {
+  width: 20%;
+  background-color: #2F2F2F;
+  padding: 7rem 2rem;
+  min-width: 200px;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.sidebar-nav a {
+  color: white;
+  background-color: transparent;
+  display: block;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.sidebar-nav a.active {
+  color: #C155FF;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.sidebar-nav a:hover {
+  color: #C155FF;
+  background-color: transparent;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    padding: 5rem 1rem 2rem;
+  }
+}

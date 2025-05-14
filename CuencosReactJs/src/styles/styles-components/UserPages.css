@@ -1,0 +1,152 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  padding-top: 4rem;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 3rem 35% 3rem 5%;
+  background-color: #151515;
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.profile-photo h2,
+.profile-info h2,
+.contact-info h2 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.photo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  background-color: #a200ff;
+  border-radius: 50%;
+  border: #010101 solid 2px;
+  width: 9.375rem;
+  height: 9.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 3rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upload-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #C155FF;
+  border: 2px solid #010101;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Form Fields */
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 0.7rem 1rem;
+  background-color: #333;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+}
+
+.form-group input::placeholder {
+  color: #aaa;
+}
+
+.business-question small {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.mini-button {
+  background-color: #a200ff;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  align-self: flex-start;
+}
+
+.save-button {
+  background-color: #a200ff;
+  border: none;
+  padding: 1rem 2.5rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+
+.save-button:hover {
+  background-color: #9200e6;
+}
+
+/* Estilos específicos para Mudar Email */
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: #4C4D8B;
+  margin: 1rem 0 2rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .content {
+    padding: 3rem 15% 3rem 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .content {
+    padding: 2rem 5%;
+  }
+}

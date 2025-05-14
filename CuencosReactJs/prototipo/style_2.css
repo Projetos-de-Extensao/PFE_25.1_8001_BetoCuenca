@@ -1,0 +1,499 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  font-family: 'Arial', sans-serif;
+  color: white;
+<<<<<<< HEAD:prototipo/logado.css
+  min-height: 100vh;
+=======
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% 7.5%; /* Use rem for proportional spacing */
+    background-color: #0C0C0C;
+    position: fixed; /* Torna o header fixo */
+    top: 0; /* Fixa no topo da página */
+    width: 100%; /* Garante que o header ocupe toda a largura */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+.logo img {
+  max-height: auto;
+  max-width: auto;
+  height: 4rem; /* Aumenta o tamanho da logo */
+  width: auto;
+>>>>>>> 06d5584231a5e81eef8a23d8fad539ec42ce802e:prototipo/style_2.css
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5% 7.5%; /* Atualizado para usar espaçamento proporcional */
+  background-color: #0C0C0C;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 2rem;
+  width: auto;
+  max-height: auto;
+  max-width: auto;
+}
+
+.navbar-section {
+  display: flex;
+  align-items: center;
+<<<<<<< HEAD:prototipo/logado.css
+  gap: 10%; /* Atualizado */
+=======
+  gap: 1.5rem;
+  padding: 0 5rem 0 5rem;
+>>>>>>> 06d5584231a5e81eef8a23d8fad539ec42ce802e:prototipo/style_2.css
+}
+
+.navbar-end {
+  gap: 10%;
+}
+
+.nav-item {
+  color: #A200FF;
+  text-decoration: none;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  font-weight: bold;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.nav-item:hover {
+  color: white;
+}
+
+.nav-icon {
+  height: 22px;
+}
+
+.profile-icon {
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Menu Hambúrguer para Mobile */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 100%;
+  background-color: #c63bfa;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+body.menu-open .menu-toggle span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+body.menu-open .menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+body.menu-open .menu-toggle span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(162, 0, 255, 0.65), rgba(162, 0, 255, 0.65)),
+              url('images/eventos/pucinrio.png') center/cover no-repeat;
+  height: 75vh;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+  justify-content: center;
+  padding-right: 15%;
+}
+
+.hero-content {
+  max-width: 40%;
+  text-align: left;
+  margin-right: 5%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.hero h1, .hero p {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  align-self: flex-end;
+  width: 100%;
+  max-width: 300px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.hero-buttons .btn {
+  margin-right: 1rem;
+}
+
+/* FILTRO */
+.filtro {
+  background-color: #c63bfa;
+  margin: -40px auto 2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-align: left;
+  z-index: 10;
+  position: relative;
+  width: 90%;
+}
+
+.filtro-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.filtro-item {
+  flex: 1;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.filtro-label {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.filtro-valor {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+}
+
+.filtro-linha {
+  margin-top: 0.5rem;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  border-radius: 1px;
+}
+
+/* EVENTOS */
+.eventos {
+  padding: 2rem;
+}
+
+.eventos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.eventos-header h2 {
+  color: #c63bfa;
+  font-size: 1.8rem;
+}
+
+.eventos-filtros {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.eventos-filtros select {
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  border: none;
+  background-color: #f1efff;
+  color: #1e1e3d;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.eventos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card-evento {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: left;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-evento img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-evento .info {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-evento span {
+  color: #999;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.card-evento h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.card-evento p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: auto;
+}
+
+.explorar {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.explorar button {
+  background-color: white;
+  color: black;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.explorar button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+/* FOOTER */
+.footer {
+  background-color: #010101;
+  color: white;
+  padding: 3rem 7.5%;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+  max-width: 100%;
+  gap: 4rem;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 7rem;
+  margin-left: -2.5rem;
+  max-width: 90%;
+}
+
+.footer-col p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.footer-col h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #a200ff;
+}
+
+.footer-social a {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.footer-social a:hover {
+  background-color: transparent;
+}
+
+.footer-social img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.footer-social img:hover {
+  transform: none;
+}
+
+.footer-btn {
+  display: inline-block;
+  background-color: #a200ff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.footer-btn:hover {
+  background-color: #8a00d6;
+}
+
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: #4C4D8B;
+  margin: 2rem 0 1rem 0;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 0.85rem;
+  color: white;
+}
+
+/* Botões */
+.btn {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 1.5rem;
+  display: inline-block;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn.primary {
+  background-color: #FF0078;
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #e0006a;
+}
+
+.btn.secondary {
+  border: 1px solid white;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn.explore {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn.explore:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* RESPONSIVIDADE — (continua igual, posso compactar ou ajustar se quiser) */

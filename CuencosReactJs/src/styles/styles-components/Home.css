@@ -1,0 +1,181 @@
+main {
+  padding-top: 5rem;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(162, 0, 255, 0.65), rgba(162, 0, 255, 0.65)),
+              url('/images/eventos/pucinrio.png') center/cover no-repeat;
+  height: 75vh;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+  justify-content: center;
+  padding-right: 15%;
+}
+
+.hero-content {
+  max-width: 40%;
+  text-align: left;
+  margin-right: 5%;
+}
+
+.hero h1, .hero p {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  align-self: flex-end;
+  width: 100%;
+  max-width: 300px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.hero-buttons .btn {
+  margin-right: 1rem;
+}
+
+/* Filtros */
+.filtro-central {
+  display: flex;
+  justify-content: center;
+  margin-top: -3.5rem;
+  margin-bottom: -3.5rem;
+}
+
+.filtro-box {
+  background-color: #C155FF;
+  border-radius: 1.5rem;
+  padding: 2rem 3rem;
+  display: flex;
+  gap: 3rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.filtro-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filtro-label {
+  font-size: 0.9rem;
+  color: #000000;
+  opacity: 0.8;
+}
+
+.filtro-valor {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 0.2rem 0;
+  position: relative;
+}
+
+.filtro-linha {
+  width: 100%;
+  height: 1px;
+}
+
+.filtro-valor.dropdown::after {
+  content: "▾";
+  font-size: 0.8rem;
+  position: absolute;
+  right: -1rem;
+  top: 0.2rem;
+}
+
+/* Eventos */
+.eventos {
+  padding: 3rem 7.5%;
+  background-color: #0C0C0C;
+  color: white;
+}
+
+.eventos h2 {
+  color: #A200FF;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.event-card {
+  background-color: #1a1a1a;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.event-card:hover {
+  transform: scale(1.03);
+}
+
+.event-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.month {
+  color: #A200FF;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.center {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .hero-content {
+    max-width: 60%;
+  }
+  
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    max-width: 80%;
+    padding-right: 0;
+  }
+  
+  .filtro-box {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin: 0 1rem;
+  }
+  
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+}

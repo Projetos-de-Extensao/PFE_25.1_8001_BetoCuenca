@@ -1,0 +1,100 @@
+/* Styles for the logado page */
+.eventos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.eventos-filtros {
+  display: flex;
+  gap: 1rem;
+}
+
+.eventos-filtros select {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.eventos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.card-evento {
+  background-color: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card-evento:hover {
+  transform: translateY(-5px);
+}
+
+.card-evento img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-evento .info {
+  padding: 1.5rem;
+}
+
+.card-evento .info span {
+  display: inline-block;
+  background-color: #A200FF;
+  padding: 0.3rem 1rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.card-evento .info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.card-evento .info p {
+  color: #aaa;
+  line-height: 1.5;
+}
+
+.explorar {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.explorar button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.explorar button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .eventos-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .eventos-grid {
+    grid-template-columns: 1fr;
+  }
+}
