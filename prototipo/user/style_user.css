@@ -40,6 +40,16 @@ body {
   white-space: nowrap;
 }
 
+.navbar-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar-end {
+  gap: 1.5rem;
+}
+
 .login-button {
   color: #A200FF;
   border: 0.165rem solid #A200FF;

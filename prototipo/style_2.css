@@ -9,7 +9,29 @@ body {
   background-color: #0f0f0f;
   font-family: 'Arial', sans-serif;
   color: white;
+<<<<<<< HEAD:prototipo/logado.css
   min-height: 100vh;
+=======
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% 7.5%; /* Use rem for proportional spacing */
+    background-color: #0C0C0C;
+    position: fixed; /* Torna o header fixo */
+    top: 0; /* Fixa no topo da página */
+    width: 100%; /* Garante que o header ocupe toda a largura */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+.logo img {
+  max-height: auto;
+  max-width: auto;
+  height: 4rem; /* Aumenta o tamanho da logo */
+  width: auto;
+>>>>>>> 06d5584231a5e81eef8a23d8fad539ec42ce802e:prototipo/style_2.css
 }
 
 /* NAVBAR */
@@ -35,7 +57,12 @@ body {
 .navbar-section {
   display: flex;
   align-items: center;
+<<<<<<< HEAD:prototipo/logado.css
   gap: 10%; /* Atualizado */
+=======
+  gap: 1.5rem;
+  padding: 0 5rem 0 5rem;
+>>>>>>> 06d5584231a5e81eef8a23d8fad539ec42ce802e:prototipo/style_2.css
 }
 
 .navbar-end {
