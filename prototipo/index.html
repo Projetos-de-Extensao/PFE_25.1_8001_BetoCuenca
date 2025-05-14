@@ -7,16 +7,27 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="images/logo cuencos roxa.png" alt="Logo Cuencos"/>
+  
+  <!-- NOVO HEADER NO PADRÃO index_2.html -->
+  <header class="navbar">
+    <div class="navbar-section">
+      <img src="./images/logo-header.svg" alt="Logo Cuencos" class="logo" />
     </div>
-    <nav class="nav">
-      <a href="#" class="nav-link">Venda aqui</a>
-      <a href="login.html" class="login-button">Login</a>
-    </nav>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="navbar-section navbar-end" id="navbar-menu">
+      <div class="close-menu" id="close-menu"></div>
+      <a href="#" class="nav-item nav-link">Venda aqui</a>
+      <a href="login.html" class="nav-item login-button">Login</a>
+    </div>
   </header>
   
+  <!-- Overlay para escurecer o fundo quando o menu estiver aberto -->
+  <div class="menu-overlay" id="menu-overlay"></div>
+
   <main>
   <!-- Hero Section -->
   <section class="hero">
@@ -153,7 +164,48 @@
   <p class="footer-copy">Copyright © 2025 Cuencos</p>
 </footer>
 </main>
+
+  <!-- Script para o menu hambúrguer-->
+  <script>
+    // Elementos do menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const closeMenu = document.getElementById('close-menu');
+    const menuOverlay = document.getElementById('menu-overlay');
+    const navbarMenu = document.getElementById('navbar-menu');
+    const navLinks = document.querySelectorAll('.nav-item');
+    
+    // Função para abrir o menu
+    function openMenu() {
+      navbarMenu.classList.add('active');
+      menuOverlay.classList.add('active');
+      document.body.classList.add('menu-open');
+      document.body.style.overflow = 'hidden'; // Impede rolagem quando menu está aberto
+    }
+    
+    // Função para fechar o menu
+    function closeMenuFunc() {
+      navbarMenu.classList.remove('active');
+      menuOverlay.classList.remove('active');
+      document.body.classList.remove('menu-open');
+      document.body.style.overflow = ''; // Restaura rolagem
+    }
+    
+    // Event listeners
+    menuToggle.addEventListener('click', openMenu);
+    closeMenu.addEventListener('click', closeMenuFunc);
+    menuOverlay.addEventListener('click', closeMenuFunc);
+    
+    // Fecha o menu ao clicar em links
+    navLinks.forEach(link => {
+      link.addEventListener('click', closeMenuFunc);
+    });
+    
+    // Fecha o menu ao redimensionar a tela para desktop
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 768) {
+        closeMenuFunc();
+      }
+    });
+  </script>
 </body>
 </html>
-
-

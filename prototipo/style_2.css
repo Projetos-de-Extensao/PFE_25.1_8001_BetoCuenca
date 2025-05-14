@@ -9,7 +9,25 @@ body {
   background-color: #0f0f0f;
   font-family: 'Arial', sans-serif;
   color: white;
-  min-height: 100vh; /* Garante altura mínima para evitar espaços em branco */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% 7.5%; /* Use rem for proportional spacing */
+    background-color: #0C0C0C;
+    position: fixed; /* Torna o header fixo */
+    top: 0; /* Fixa no topo da página */
+    width: 100%; /* Garante que o header ocupe toda a largura */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+.logo img {
+  max-height: auto;
+  max-width: auto;
+  height: 4rem; /* Aumenta o tamanho da logo */
+  width: auto;
 }
 
 /* NAVBAR */
