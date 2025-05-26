@@ -1,0 +1,137 @@
+/* Header moderno e escuro */
+.header-modern {
+  width: 100%;
+  height: 72px;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 1rem 0 0.25rem; /* Reduzido padding esquerdo de 1rem para 0.25rem */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+/* Logo e texto */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  margin-left: 0;
+  padding-left: 0.25rem; /* Pequeno padding interno para não encostar totalmente na borda */
+}
+
+.logo-text {
+  color: #A200FF;
+}
+
+.header-logo-icon {
+  height: 40px; /* Altura fixa para a logo */
+  max-height: 100%; /* Garante que não ultrapasse o container */
+  width: auto; /* Mantém proporção */
+  object-fit: contain; /* Garante que a imagem seja exibida completamente */
+  vertical-align: middle; /* Ajuda no alinhamento vertical */
+}
+
+.header-logo-text {
+  color: #8A00FF; /* Novo tom de roxo mais vibrante */
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+/* Links do lado direito */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-link {
+  color: #A200FF;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-link:hover {
+  color: white;
+}
+
+/* Botão de login */
+.header-login-button {
+  background: none;
+  border: 1.5px solid #A200FF;
+  color: #A200FF;
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-login-button:hover {
+  background-color: #A200FF;
+  color: black;
+}
+
+/* Espaçamento para o conteúdo abaixo do header fixo */
+.header-spacer {
+  height: 72px;
+}
+
+/* Estilos para o ícone no Header */
+.header-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+/* Navegação compacta */
+.header-nav {
+  gap: 1rem; /* Adicionar regra para aproximar itens */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header-logo-icon {
+    height: 24px;
+  }
+  
+  .header-logo-text {
+    font-size: 1.1rem;
+  }
+  
+  .header-nav {
+    gap: 0.75rem; /* Ainda mais próximo em mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0 1rem;
+  }
+  
+  .header-link {
+    font-size: 0.9rem;
+  }
+  
+  .header-login-button {
+    padding: 6px 16px;
+    font-size: 0.9rem;
+  }
+}

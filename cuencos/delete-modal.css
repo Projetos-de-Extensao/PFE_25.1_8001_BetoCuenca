@@ -1,0 +1,45 @@
+/* Estilos específicos para o modal de exclusão */
+.delete-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(3px);
+}
+
+.delete-modal-content {
+  background-color: #0F0F0F;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.8);
+}
+
+.delete-modal-title {
+  color: #B900FF;
+  font-weight: 700;
+}
+
+.delete-modal-cancel-btn {
+  background-color: #C466FF;
+  color: black;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.delete-modal-cancel-btn:hover {
+  background-color: #B23AFF;
+}
+
+.delete-modal-confirm-btn {
+  background-color: #DA3C3C;
+  color: white;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.delete-modal-confirm-btn:hover {
+  background-color: #C13333;
+}
+
+.delete-modal-event-card {
+  background-color: #1a1a1a;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

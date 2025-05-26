@@ -1,0 +1,5 @@
+
+/* Adicione espaçamento para o conteúdo abaixo do header fixo */
+.page-content {
+  padding-top: 60px; /* Ajuste conforme a altura do seu header */
+}

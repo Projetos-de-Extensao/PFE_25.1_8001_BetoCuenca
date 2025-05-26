@@ -1,0 +1,1054 @@
+.dashboard-page {
+  min-height: 100vh;
+  background-color: #1A1A1A;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0; /* Removido padding-top que poderia causar conflito */
+}
+
+/* Estilos para a página de gerenciamento */
+.header-spacer {
+  height: 72px;
+}
+
+/* Adicionando espaçador para o header fixo */
+.header-spacer {
+  height: 72px; /* Mesma altura do header */
+  width: 100%;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 2rem 2% 2rem 2%;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.dashboard-welcome {
+  margin-bottom: 2rem;
+  display: none; /* Ocultando conforme imagem */
+}
+
+.dashboard-welcome h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+/* Filtros */
+.dashboard-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.filter-dropdown {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+}
+
+.filter-dropdown span {
+  margin-right: 0.5rem;
+}
+
+.period-filters {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.period-filters button {
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #1e1e1e;
+  color: #bbb;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.period-filters button:hover {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.period-filters button.active {
+  background-color: #b43eff;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(180, 62, 255, 0.5);
+}
+
+.period-filters button.select-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chart-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* Grid de dashboard */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+  padding-right: 2%;
+}
+
+/* Card comum */
+.dashboard-card {
+  background-color: #2D2D2D;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-2px);
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.card-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.card-subtitle {
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-left: auto;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #2a2a2a;
+  color: #bbb;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Gráfico de visitas - redesenhado */
+.visits-chart {
+  grid-column: span 12;
+  grid-row: span 1;
+  height: auto;
+  padding: 24px;
+  background-color: #1E1E1E;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.visits-chart .card-header {
+  margin-bottom: 12px;
+}
+
+.visits-chart .card-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f2f2f2;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.chart-container {
+  width: 100%;
+  height: 380px;
+  margin-top: 10px;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  position: relative;
+}
+
+/* Estilos para o gráfico e seus componentes */
+.recharts-surface {
+  overflow: visible;
+}
+
+.recharts-line-curve {
+  stroke: #cc00ff !important;
+  stroke-width: 3px !important;
+  filter: drop-shadow(0 0 6px rgba(204, 0, 255, 0.6));
+}
+
+.recharts-area {
+  fill: url(#colorVisits) !important;
+}
+
+.recharts-reference-line line {
+  stroke: #ff8d4d !important;
+  stroke-width: 1.5px !important;
+  stroke-dasharray: 3 3 !important;
+}
+
+.recharts-cartesian-axis-line {
+  stroke: #333333;
+  stroke-opacity: 0.2;
+}
+
+.recharts-cartesian-grid-horizontal line {
+  stroke: #333333 !important;
+  stroke-opacity: 0.2 !important;
+}
+
+.recharts-cartesian-grid-vertical line {
+  stroke: transparent !important;
+}
+
+.recharts-xAxis .recharts-cartesian-axis-tick-value {
+  font-size: 12px;
+  fill: #AAAAAA !important;
+}
+
+.recharts-yAxis .recharts-cartesian-axis-tick-value {
+  font-size: 12px;
+  fill: #AAAAAA !important;
+}
+
+/* Ponto de destaque (dia 15) */
+.highlight-dot {
+  fill: #ff2d55 !important;
+  stroke: #ffffff !important;
+  stroke-width: 2px !important;
+  r: 6px !important;
+}
+
+.highlight-line {
+  stroke: #ffb347 !important;
+  stroke-dasharray: 3 3;
+  stroke-width: 1px !important;
+  stroke-opacity: 0.8 !important;
+}
+
+/* Tooltip customizado */
+.visits-chart-tooltip {
+  background-color: #333333;
+  border: 1px solid #cc00ff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  box-shadow: 0 0 10px rgba(204, 0, 255, 0.5);
+}
+
+.visits-chart-tooltip p {
+  margin: 0;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.visits-chart-tooltip .day {
+  font-weight: 700;
+  color: #cc00ff;
+}
+
+.visits-chart-tooltip .value {
+  margin-top: 2px;
+}
+
+/* Estilos para a legenda do eixo X */
+.x-axis-label {
+  text-anchor: middle;
+  font-size: 14px;
+  fill: #AAAAAA;
+  font-weight: 500;
+}
+
+/* Container de métricas */
+.metrics-container {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+/* Gráfico de distribuição de receita - Aprimorado */
+.revenue-distribution {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #1A1A1A;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.revenue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.revenue-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.revenue-period {
+  font-weight: 600;
+  color: #b43eff;
+  background-color: rgba(180, 62, 255, 0.1);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.pie-chart-container {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.legend-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  color: #f0f0f0;
+  font-size: 0.875rem;
+}
+
+.legend-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.legend-text {
+  display: flex;
+  align-items: center;
+}
+
+.legend-value {
+  margin-left: auto;
+  font-weight: 500;
+}
+
+/* Cards de resumo - Aprimorado */
+.sales-summary {
+  display: flex;
+  flex-direction: column;
+  background-color: #1A1A1A;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.sales-header {
+  margin-bottom: 1.5rem;
+}
+
+.sales-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.sales-header p {
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+.metrics-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.summary-card {
+  background-color: #121212;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-left: 3px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Primeiro card - Vendas */
+.summary-card:nth-child(1) {
+  border-left-color: #FF41B4;
+}
+
+/* Segundo card - Produtos */
+.summary-card:nth-child(2) {
+  border-left-color: #A341FD;
+}
+
+/* Terceiro card - Clientes */
+.summary-card:nth-child(3) {
+  border-left-color: #41AEFF;
+}
+
+.summary-icon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.icon-sale {
+  background-color: rgba(255, 65, 180, 0.15);
+}
+
+.icon-sale svg {
+  color: #FF41B4;
+}
+
+.icon-product {
+  background-color: rgba(163, 65, 253, 0.15);
+}
+
+.icon-product svg {
+  color: #A341FD;
+}
+
+.icon-customer {
+  background-color: rgba(65, 174, 255, 0.15);
+}
+
+.icon-customer svg {
+  color: #41AEFF;
+}
+
+.summary-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-value {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.color-sale {
+  color: #FF41B4;
+}
+
+.color-product {
+  color: #A341FD;
+}
+
+.color-customer {
+  color: #41AEFF;
+}
+
+.summary-label {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin-bottom: 0.75rem;
+}
+
+.summary-trend {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: auto;
+}
+
+.trend-positive {
+  color: #4caf50;
+}
+
+.trend-sale {
+  color: #FF41B4;
+}
+
+.trend-product {
+  color: #A341FD;
+}
+
+.trend-customer {
+  color: #41AEFF;
+}
+
+/* Products Table Styling - Atualizado */
+.popular-products {
+  grid-column: span 12;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: #1A1A1A;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.popular-products {
+  background-color: #10101a;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-products .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.popular-products .card-header h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+}
+
+.popular-products .card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.products-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.products-table table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #fff;
+}
+
+.products-table th {
+  font-weight: 500;
+  color: #9ca3af;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.products-table td {
+  padding: 1rem;
+}
+
+.products-table tr {
+  border-bottom: 1px solid rgba(75, 75, 75, 0.5);
+}
+
+/* Tooltip personalizado aprimorado */
+.custom-tooltip {
+  background-color: rgba(30, 30, 30, 0.95);
+  border: 1px solid rgba(162, 0, 255, 0.5);
+  border-radius: 8px;
+  padding: 10px 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.tooltip-label {
+  font-weight: 500;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tooltip-label strong {
+  margin-right: 8px;
+  color: #b43eff;
+}
+
+/* Melhorias para o hover do gráfico de linha */
+.recharts-tooltip-cursor {
+  stroke: rgba(180, 62, 255, 0.3) !important;
+  stroke-width: 2px !important;
+}
+
+.recharts-active-dot {
+  filter: drop-shadow(0 0 4px rgba(180, 62, 255, 0.5));
+}
+
+/* Ajuste para gráfico de linha */
+.recharts-cartesian-grid-horizontal line, .recharts-cartesian-grid-vertical line {
+  stroke: rgba(255, 255, 255, 0.08) !important;
+}
+
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  background-color: rgba(35, 35, 35, 0.95) !important;
+  border-color: rgba(162, 0, 255, 0.5) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.recharts-tooltip-label, .recharts-tooltip-item-name, .recharts-tooltip-item-value {
+  color: #fff !important;
+}
+
+/* Linha de referência para o pico de tráfego */
+.peak-reference-line {
+  stroke: #ff2d55;
+  stroke-width: 1.5px;
+  stroke-dasharray: 3 3;
+}
+
+.peak-reference-label {
+  fill: #ff2d55;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.recharts-reference-line line {
+  stroke: #ff2d55 !important;
+  stroke-width: 1.5px !important;
+  stroke-dasharray: 3 3 !important;
+}
+
+.recharts-reference-line-label {
+  fill: #ff2d55 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+/* Loading */
+.dashboard-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212;
+  color: #b43eff;
+  font-size: 1.5rem;
+}
+
+/* Placeholder dos gráficos */
+.chart-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  color: #b43eff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px dashed rgba(162, 0, 255, 0.3);
+}
+
+.chart-placeholder p {
+  margin: 5px 0;
+}
+
+/* Estilos para o cartão de produtos mais vendidos */
+.popular-products {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.popular-products h2 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Estilo para os cartões de eventos */
+.event-card {
+  background-color: #1e1e1e;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.event-card-image {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.event-card-content {
+  padding: 1rem;
+}
+
+.event-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.badge-published {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: rgb(16, 185, 129);
+}
+
+.badge-draft {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: rgb(245, 158, 11);
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dashboard-card {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .dashboard-content {
+    padding: 2rem 5%;
+    margin: 0 auto;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 0;
+  }
+  
+  .visits-chart,
+  .popular-products,
+  .metrics-container {
+    grid-column: span 2;
+  }
+  
+  .metrics-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .dashboard-filters {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .chart-actions {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .metrics-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .legend-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: 1.5rem;
+  }
+  
+  .dashboard-filters {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .period-filters {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+  
+  .chart-actions {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .visits-chart,
+  .popular-products,
+  .metrics-container {
+    grid-column: span 1;
+  }
+  
+  .metrics-cards {
+    gap: 0.75rem;
+  }
+  
+  .summary-card {
+    margin-bottom: 0;
+    padding: 1rem;
+  }
+  
+  .summary-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .summary-value {
+    font-size: 1.5rem;
+  }
+  
+  .summary-label {
+    font-size: 0.875rem;
+  }
+  
+  .summary-trend {
+    font-size: 0.75rem;
+  }
+}
+
+/* Responsividade da tabela */
+@media (max-width: 1024px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 50px minmax(150px, 1.5fr) 2fr 80px;
+  }
+  
+  .progress-container {
+    margin-right: 1rem;
+  }
+  
+  .sales-badge {
+    min-width: 3rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 40px minmax(120px, 1fr) 1.5fr 70px;
+  }
+  
+  .col-position,
+  .col-name,
+  .col-popularity,
+  .col-sales {
+    padding: 0 0.5rem;
+  }
+  
+  .sales-badge {
+    min-width: 2.5rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .popular-products {
+    padding: 1rem;
+  }
+  
+  .table-header,
+  .table-row {
+    grid-template-columns: 30px 1fr 70px;
+  }
+  
+  .col-popularity {
+    display: none;
+  }
+  
+  .col-name {
+    font-size: 0.75rem;
+  }
+  
+  .sales-badge {
+    min-width: 2rem;
+    padding: 0.25rem;
+    font-size: 0.65rem;
+  }
+}
+
+/* Melhorias para a legenda do gráfico de distribuição de receita */
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+
+/* Ajustes para o período selecionado */
+.revenue-period {
+  font-weight: 600;
+  color: #b43eff;
+  background-color: rgba(180, 62, 255, 0.1);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+/* Animações para mudanças de dados */
+.summary-value, .legend-value {
+  transition: all 0.3s ease;
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+  background-color: #2D2D2D;
+  transition: all 0.3s ease;
+}
+
+/* Tabela */
+.dashboard-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.dashboard-table th {
+  font-weight: 600;
+  color: #888;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .dashboard-sidebar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    padding: 0.5rem;
+    background-color: rgba(45, 45, 45, 0.95);
+    backdrop-filter: blur(10px);
+  }
+
+  .dashboard-sidebar nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+  }
+
+  .dashboard-sidebar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+  }
+
+  .dashboard-sidebar a svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .dashboard-content {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-card {
+    padding: 1rem;
+  }
+
+  .dashboard-table th,
+  .dashboard-table td {
+    padding: 0.75rem;
+  }
+
+  .dashboard-table th:not(:first-child),
+  .dashboard-table td:not(:first-child) {
+    display: none;
+  }
+
+  .dashboard-table th:first-child,
+  .dashboard-table td:first-child {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-card {
+    padding: 0.75rem;
+  }
+
+  .dashboard-table th,
+  .dashboard-table td {
+    padding: 0.5rem;
+  }
+}

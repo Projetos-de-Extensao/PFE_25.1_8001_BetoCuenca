@@ -1,0 +1,210 @@
+{
+  "filtros": {
+    "day": {
+      "label": "Hoje",
+      "descritor": "Hoje"
+    },
+    "week": {
+      "label": "Esta Semana", 
+      "descritor": "Esta Semana"
+    },
+    "month": {
+      "label": "Este Mês",
+      "descritor": "Maio 2025"
+    },
+    "semester": {
+      "label": "Este Semestre",
+      "descritor": "1º Semestre 2025"
+    }
+  },
+  "month": {
+    "visitas": {
+      "labels": ["1", "5", "10", "15", "20", "25", "30"],
+      "dados": [120, 185, 290, 410, 380, 520, 450],
+      "pico": {
+        "dia": "25",
+        "valor": 520
+      }
+    },
+    "distribuicaoReceita": {
+      "labels": ["PUC IN RIO", "Festival Gastronômico", "Rave Eletrônica", "Startup Weekend", "Outros"],
+      "dados": [35, 25, 20, 12, 8],
+      "cores": ["#ff6b35", "#f7931e", "#00b4d8", "#9d4edd", "#06ffa5"]
+    },
+    "eventosPopulares": [
+      {
+        "id": 1,
+        "nome": "PUC IN RIO",
+        "popularidade": 84,
+        "cor": "#ff6b35"
+      },
+      {
+        "id": 19,
+        "nome": "Festival Gastronômico Universitário",
+        "popularidade": 67,
+        "cor": "#f7931e"
+      },
+      {
+        "id": 20,
+        "nome": "Rave Eletrônica Universitária",
+        "popularidade": 89,
+        "cor": "#00b4d8"
+      },
+      {
+        "id": 10,
+        "nome": "Startup Weekend Universitário",
+        "popularidade": 58,
+        "cor": "#9d4edd"
+      },
+      {
+        "id": 12,
+        "nome": "Festival de Bandas Universitárias",
+        "popularidade": 72,
+        "cor": "#06ffa5"
+      }
+    ],
+    "vendasAbril": {
+      "total": 1247500,
+      "crescimento": 23.5,
+      "produtosVendidos": 2847,
+      "crescimentoProdutos": 18.2,
+      "novosClientes": 1689,
+      "crescimentoClientes": 31.7
+    }
+  },
+  "week": {
+    "visitas": {
+      "labels": ["Seg", "Ter", "Qua", "Qui", "Sex", "Sab", "Dom"],
+      "dados": [85, 92, 78, 105, 134, 156, 98],
+      "pico": {
+        "dia": "Sab",
+        "valor": 156
+      }
+    },
+    "distribuicaoReceita": {
+      "labels": ["Eventos Noturnos", "Eventos Acadêmicos", "Shows", "Esportes", "Outros"],
+      "dados": [42, 28, 18, 8, 4],
+      "cores": ["#ff6b35", "#f7931e", "#00b4d8", "#9d4edd", "#06ffa5"]
+    },
+    "eventosPopulares": [
+      {
+        "id": 1,
+        "nome": "PUC IN RIO",
+        "popularidade": 84,
+        "cor": "#ff6b35"
+      },
+      {
+        "id": 3,
+        "nome": "BAILE DO MAGNA",
+        "popularidade": 76,
+        "cor": "#f7931e"
+      },
+      {
+        "id": 7,
+        "nome": "FORRÓ UNIVERSITÁRIO DO NORDESTE",
+        "popularidade": 63,
+        "cor": "#00b4d8"
+      }
+    ],
+    "vendasAbril": {
+      "total": 287650,
+      "crescimento": 15.8,
+      "produtosVendidos": 672,
+      "crescimentoProdutos": 12.4,
+      "novosClientes": 298,
+      "crescimentoClientes": 22.1
+    }
+  },
+  "day": {
+    "visitas": {
+      "labels": ["00h", "04h", "08h", "12h", "16h", "20h", "24h"],
+      "dados": [12, 8, 15, 45, 78, 134, 89],
+      "pico": {
+        "dia": "20h",
+        "valor": 134
+      }
+    },
+    "distribuicaoReceita": {
+      "labels": ["Festa Noturna", "Evento Acadêmico", "Workshop", "Outros"],
+      "dados": [60, 25, 10, 5],
+      "cores": ["#ff6b35", "#f7931e", "#00b4d8", "#9d4edd"]
+    },
+    "eventosPopulares": [
+      {
+        "id": 1,
+        "nome": "PUC IN RIO",
+        "popularidade": 84,
+        "cor": "#ff6b35"
+      },
+      {
+        "id": 6,
+        "nome": "INTERCOMP 2025",
+        "popularidade": 91,
+        "cor": "#f7931e"
+      }
+    ],
+    "vendasAbril": {
+      "total": 45890,
+      "crescimento": 8.7,
+      "produtosVendidos": 127,
+      "crescimentoProdutos": 5.3,
+      "novosClientes": 43,
+      "crescimentoClientes": 12.8
+    }
+  },
+  "semester": {
+    "visitas": {
+      "labels": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun"],
+      "dados": [2100, 2450, 2890, 3200, 3650, 4100],
+      "pico": {
+        "dia": "Jun",
+        "valor": 4100
+      }
+    },
+    "distribuicaoReceita": {
+      "labels": ["Festas", "Eventos Acadêmicos", "Shows", "Esportes", "Outros"],
+      "dados": [38, 24, 22, 11, 5],
+      "cores": ["#ff6b35", "#f7931e", "#00b4d8", "#9d4edd", "#06ffa5"]
+    },
+    "eventosPopulares": [
+      {
+        "id": 1,
+        "nome": "PUC IN RIO",
+        "popularidade": 84,
+        "cor": "#ff6b35"
+      },
+      {
+        "id": 20,
+        "nome": "Rave Eletrônica Universitária",
+        "popularidade": 89,
+        "cor": "#f7931e"
+      },
+      {
+        "id": 12,
+        "nome": "Festival de Bandas Universitárias",
+        "popularidade": 72,
+        "cor": "#00b4d8"
+      },
+      {
+        "id": 8,
+        "nome": "Jogos Jurídicos Sulamericanos",
+        "popularidade": 45,
+        "cor": "#9d4edd"
+      },
+      {
+        "id": 6,
+        "nome": "INTERCOMP 2025",
+        "popularidade": 91,
+        "cor": "#06ffa5"
+      }
+    ],
+    "vendasAbril": {
+      "total": 7896540,
+      "crescimento": 45.3,
+      "produtosVendidos": 18567,
+      "crescimentoProdutos": 38.7,
+      "novosClientes": 12890,
+      "crescimentoClientes": 52.4
+    }
+  }
+}

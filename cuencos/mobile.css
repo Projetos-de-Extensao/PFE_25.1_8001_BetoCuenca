@@ -1,0 +1,153 @@
+/* Estilos responsivos para dispositivos móveis e tablets */
+
+/* Breakpoints: 
+   - xs: < 480px (celulares)
+   - sm: 480px - 767px (celulares grandes)
+   - md: 768px - 1023px (tablets)
+   - lg: 1024px - 1279px (desktops pequenos)
+   - xl: >= 1280px (desktops grandes)
+*/
+
+:root {
+  --header-height-mobile: 64px;
+  --header-height-desktop: 72px;
+}
+
+/* Ajustes gerais responsivos */
+body, html {
+  overflow-x: hidden;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 479px) {
+  h1, .h1 {
+    font-size: 1.75rem !important;
+  }
+  
+  h2, .h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  h3, .h3 {
+    font-size: 1.25rem !important;
+  }
+  
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+/* Ajustes para tablets */
+@media (min-width: 480px) and (max-width: 767px) {
+  h1, .h1 {
+    font-size: 2rem !important;
+  }
+  
+  h2, .h2 {
+    font-size: 1.75rem !important;
+  }
+  
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+/* Hero section responsivo */
+@media (max-width: 767px) {
+  .hero-carousel {
+    height: 60vh !important;
+  }
+  
+  .hero-content {
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+    text-align: center !important;
+  }
+  
+  .hero-buttons {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+  }
+  
+  .hero-carousel-control {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  
+  .carousel-arrow {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+/* Filtros responsivos */
+@media (max-width: 767px) {
+  .filtro-wrapper {
+    width: 95% !important;
+    padding: 1rem !important;
+  }
+  
+  .filtro-section {
+    margin-top: -30px !important;
+  }
+  
+  .eventos-filtros {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+  }
+  
+  .eventos-filtros select {
+    width: 100% !important;
+    margin-bottom: 0.5rem !important;
+  }
+}
+
+/* Footer responsivo */
+@media (max-width: 767px) {
+  .footer-content {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    padding: 2rem 1rem !important;
+  }
+  
+  .footer-col {
+    padding: 0 !important;
+  }
+}
+
+/* Fix padding in small devices */
+@media (max-width: 639px) {
+  .sm\:px-6 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .eventos {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* Ajustes para o menu de navegação */
+@media (max-width: 767px) {
+  .navbar {
+    height: var(--header-height-mobile) !important;
+  }
+  
+  .navbar-container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .navbar-right {
+    padding-top: calc(var(--header-height-mobile) + 20px) !important;
+  }
+} 

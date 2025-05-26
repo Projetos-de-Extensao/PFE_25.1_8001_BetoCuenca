@@ -1,0 +1,32 @@
+/* Estilos para posicionamento de ícones e texto */
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* Ajuste para texto à esquerda e ícone à direita */
+  flex-direction: row;
+}
+
+.google-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  /* Garante que o ícone esteja à esquerda e o texto à direita */
+  flex-direction: row;
+  gap: 10px;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Para componentes que precisam de um layout reverso */
+.reverse-layout {
+  flex-direction: row-reverse;
+}

@@ -1,0 +1,538 @@
+/* Estilos para a página de Em Desenvolvimento - Abordagem Mobile-First aprimorada */
+@import url("https://fonts.googleapis.com/css?family=Zen+Kaku+Gothic+Antique:500,400,700|Fredoka:600|Inria+Sans:400");
+
+:root {
+  --primary-color: #A200FF;
+  --primary-dark: #8700d6;
+  --background-dark: #1a0029;
+  --background-lighter: #270043;
+  --text-color: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --card-padding: 1.25rem;
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 0.75rem;
+  --border-radius-lg: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px; /* Base font size for rem calculations */
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.coming-soon-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--background-dark) 0%, var(--background-lighter) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: var(--text-color);
+  overflow: hidden;
+  padding: 1rem;
+}
+
+/* Back button - mobile-first version */
+.back-button {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 1.25rem;
+  font-size: 0.875rem;
+  z-index: 10;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-button:active {
+  transform: scale(0.95);
+}
+
+/* Content card - mobile-first version */
+.content-card {
+  width: 100%;
+  background: rgba(30, 0, 50, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: var(--border-radius-md);
+  border: 1px solid rgba(162, 0, 255, 0.3);
+  padding: var(--card-padding);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow-y: auto;
+  margin: 3.5rem 0 1rem 0; /* Space for fixed back button */
+}
+
+.coming-soon-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.construction-icon {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  animation: wrench 2.5s ease infinite;
+}
+
+.coming-soon-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(to right, var(--primary-color), #FF2DAF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 10px rgba(162, 0, 255, 0.3);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.divider {
+  width: 40%;
+  height: 2px;
+  background: linear-gradient(to right, var(--primary-color), #FF2DAF);
+  border-radius: 1px;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  width: 100%;
+  line-height: 1.5;
+}
+
+/* Features section - mobile-first */
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.feature-icon {
+  font-size: 1.1rem;
+  background: rgba(162, 0, 255, 0.2);
+  border-radius: 0.375rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature-text h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--primary-color);
+}
+
+.feature-text p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.release-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  margin-bottom: 1.25rem;
+  padding: 0.375rem 0.75rem;
+  background: rgba(162, 0, 255, 0.1);
+  border-radius: 1.25rem;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.calendar-icon {
+  color: var(--primary-color);
+}
+
+/* Action buttons - mobile-first */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.register-button, .notify-button {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.register-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.register-button:active {
+  background-color: var(--primary-dark);
+  transform: translateY(1px);
+}
+
+.notify-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgba(162, 0, 255, 0.5);
+}
+
+.notify-button:active {
+  background-color: rgba(162, 0, 255, 0.1);
+}
+
+/* Logo - mobile-first */
+.logo {
+  position: fixed;
+  bottom: 0.625rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+
+/* Tech background effects - optimized for mobile */
+.tech-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Efeitos combinados de fundo */
+.animated-star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+.animated-star.tiny {
+  width: 1px;
+  height: 1px;
+}
+
+.animated-star.small {
+  width: 2px;
+  height: 2px;
+}
+
+.animated-star.medium {
+  width: 3px;
+  height: 3px;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 0.8; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.5); }
+}
+
+/* Código aprimorado */
+.code-line {
+  position: absolute;
+  color: rgba(162, 0, 255, 0.4);
+  font-family: monospace;
+  font-size: 0.625rem;
+  white-space: nowrap;
+  top: -6.25rem;
+  animation: code-fall linear infinite;
+  text-shadow: 0 0 8px rgba(162, 0, 255, 0.3);
+  opacity: 0.7;
+}
+
+@keyframes code-fall {
+  from { transform: translateY(-6.25rem); }
+  to { transform: translateY(calc(100vh + 6.25rem)); }
+}
+
+/* Efeitos de circuito */
+.circuit-line {
+  position: absolute;
+  background: linear-gradient(to right, transparent, rgba(162, 0, 255, 0.3), transparent);
+  height: 1px;
+  width: 100%;
+  z-index: 0;
+  animation: circuit-pulse 2s infinite alternate;
+  display: none; /* Oculto em telas muito pequenas */
+}
+
+.circuit-dot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(162, 0, 255, 0.6);
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(162, 0, 255, 0.9);
+  animation: dot-pulse 1.5s infinite alternate;
+  display: none; /* Oculto em telas muito pequenas */
+}
+
+@keyframes circuit-pulse {
+  0% { opacity: 0.2; }
+  100% { opacity: 0.7; }
+}
+
+@keyframes dot-pulse {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(1.3); opacity: 1; }
+}
+
+/* Grid de matriz */
+.matrix-grid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(162, 0, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(162, 0, 255, 0.03) 1px, transparent 1px);
+  background-size: 15px 15px;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+/* Efeito de luz central pulsante */
+.pulse-light {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(162, 0, 255, 0.4) 0%, rgba(162, 0, 255, 0) 70%);
+  opacity: 0.3;
+  animation: pulse-light 4s infinite alternate;
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(20px);
+}
+
+@keyframes pulse-light {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 0.3; }
+  100% { transform: translate(-50%, -50%) scale(3); opacity: 0.1; }
+}
+
+/* Tablet breakpoint */
+@media (min-width: 640px) {
+  .content-card {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+  
+  .coming-soon-header h1 {
+    font-size: 1.75rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+  
+  .feature-text h3 {
+    font-size: 1rem;
+  }
+  
+  .feature-text p {
+    font-size: 0.9rem;
+  }
+  
+  .actions {
+    max-width: 80%;
+    margin: 1.25rem auto 0;
+  }
+  
+  .code-line {
+    font-size: 0.75rem;
+  }
+  
+  .circuit-dot, .circuit-line {
+    display: block; /* Mostrar em tablets */
+  }
+  
+  .pulse-light {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Small laptop breakpoint */
+@media (min-width: 768px) {
+  .back-button {
+    top: 1.25rem;
+    left: 1.25rem;
+    padding: 0.625rem 1rem;
+    font-size: 0.9375rem;
+  }
+  
+  .content-card {
+    max-width: 80%;
+    padding: 2rem;
+  }
+  
+  .construction-icon {
+    font-size: 2rem;
+  }
+  
+  .coming-soon-header h1 {
+    font-size: 2rem;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .features {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .actions {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .register-button, .notify-button {
+    width: auto;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .matrix-grid {
+    background-size: 20px 20px;
+  }
+  
+  .code-line {
+    font-size: 0.875rem;
+  }
+  
+  .pulse-light {
+    width: 200px;
+    height: 200px;
+  }
+  
+  /* Adicionar mais efeitos em telas maiores */
+  .circuit-dot::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(162, 0, 255, 0.3);
+    transform: scale(1.5);
+    animation: ripple 2s infinite;
+  }
+  
+  @keyframes ripple {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(4); opacity: 0; }
+  }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 1024px) {
+  .content-card {
+    max-width: 70%;
+    padding: 2.5rem;
+  }
+  
+  .coming-soon-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .construction-icon {
+    font-size: 2.5rem;
+  }
+  
+  .description {
+    max-width: 80%;
+  }
+  
+
+  
+  .code-line {
+    font-size: 1rem;
+  }
+  
+  .pulse-light {
+    width: 300px;
+    height: 300px;
+    filter: blur(40px);
+  }
+}
+
+/* Large desktop breakpoint */
+@media (min-width: 1280px) {
+  .content-card {
+    max-width: 60rem;
+  }
+  
+  .description {
+    max-width: 70%;
+  }
+  
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .pulse-light {
+    width: 400px;
+    height: 400px;
+  }
+}

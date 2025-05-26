@@ -1,0 +1,29 @@
+.logo-text-headeruser {
+  color: #A200FF;
+  font-size: 1.7rem;
+  font-family: 'Nasalization', 'Nasalization-regular', Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+/* Logo - Atualizado para alinhar logo e texto */
+
+:root 
+.logo {
+  position: absolute;
+  top: 60px; /* Movido para baixo (era 40px) */
+  left: 15.1%; /* Alinhado com o texto promocional (era 60px) */
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo-icon img {
+  height: 40px; /* Altura fixa para a logo */
+  max-height: 100%; /* Garante que não ultrapasse o container */
+  width: auto; /* Mantém proporção */
+  object-fit: contain; /* Garante que a imagem seja exibida completamente */
+  vertical-align: middle; /* Ajuda no alinhamento vertical */
+}
+

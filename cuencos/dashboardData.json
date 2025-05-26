@@ -1,0 +1,27 @@
+
+{
+  "visitasAbril": {
+    "labels": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"],
+    "dados": [120, 150, 180, 190, 210, 220, 190, 180, 200, 220, 250, 280, 300, 340, 500, 400, 350, 320, 300, 280, 270, 260, 250, 240, 230, 220, 210, 200, 190, 180]
+  },
+  "distribuicaoReceita": {
+    "labels": ["Engenharias Paranaense", "PUC IN RIO"],
+    "dados": [92, 8],
+    "cores": ["rgba(184, 74, 247, 0.8)", "rgba(74, 144, 247, 0.8)"],
+    "corBorda": ["rgba(184, 74, 247, 1)", "rgba(74, 144, 247, 1)"]
+  },
+  "vendasAbril": {
+    "total": 13960,
+    "crescimento": 10,
+    "produtosVendidos": 98,
+    "crescimentoProdutos": 2,
+    "novosClientes": 12,
+    "crescimentoClientes": 3
+  },
+  "eventosPopulares": [
+    { "nome": "PUC IN RIO", "popularidade": 84, "id": "01" },
+    { "nome": "Engenharias Paranaense 2025", "popularidade": 44, "id": "02" },
+    { "nome": "Festa Junina Universitária", "popularidade": 32, "id": "03" },
+    { "nome": "Calourada 2025.1", "popularidade": 28, "id": "04" }
+  ]
+}

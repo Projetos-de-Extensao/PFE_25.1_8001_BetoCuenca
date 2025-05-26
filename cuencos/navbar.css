@@ -1,0 +1,185 @@
+.navbar {
+  width: 100%;
+  height: 72px; /* Altura fixa para o menu */
+  background-color: #0f0f0f;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem 0 0.5rem; /* Ajustado para harmonizar ícones e texto */
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+/* Logo styling */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 40px;
+  gap: 0.5rem; /* Aproximar logo do texto */
+}
+
+.logo-icon {
+  height: 40px; /* Mesmo tamanho do dashboard-header */
+  width: auto;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.logo-text,
+.logo-text-headeruser {
+  color: #C600FF;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Links container - Side direito */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem; /* Reduzido de 2rem para 1rem */
+  height: 40px;
+  padding-left: 28rem;
+  white-space: nowrap;
+}
+
+/* Navigation links */
+.nav-item {
+  display: flex;
+  align-items: center;
+  color: #A200FF; /* Mesma cor do dashboard-header */
+  text-decoration: none;
+  font-size: 1.1rem; /* Mesmo tamanho do dashboard-header */
+  font-weight: 500;
+  transition: all 0.3s ease;
+  height: 100%;
+  gap: 0.5rem; /* Aproximar ícone do texto */
+  padding: 0 0.75rem; /* Ajustado para harmonizar ícones e texto */
+  border-radius: 0.375rem;
+}
+
+.nav-item:hover {
+  color: white; /* Mesmo comportamento do dashboard-header */
+  background-color: rgba(162, 0, 255, 0.1);
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.login-button {
+  padding: 8px 20px; /* Mesmo padding do dashboard-header */
+  border: 1.5px solid #A200FF;
+  border-radius: 50px;
+  color: #A200FF;
+  font-weight: 600;
+}
+
+.login-button:hover {
+  background-color: #A200FF;
+  color: white;
+}
+
+.nav-icon {
+  width: 24px; /* Reduzido para harmonizar com o texto */
+  height: 24px; /* Reduzido para harmonizar com o texto */
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Mobile menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #A200FF;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .navbar-right {
+    position: fixed;
+    top: 72px;
+    right: -300px;
+    width: 300px;
+    height: auto;
+    background-color: #0f0f0f;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem; /* Reduzido de 1.5rem para 0.75rem */
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 40;
+  }
+
+  .navbar-right.active {
+    right: 0;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .nav-item {
+    padding: 1rem 0.75rem; /* Aumentado padding vertical */
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(162, 0, 255, 0.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 1rem 0 0.75rem;
+  }
+  
+  .logo-icon {
+    height: 36px;
+  }
+  
+  .nav-icon {
+    width: 22px; /* Aumentado de 22px para 26px */
+    height: 22px; /* Aumentado de 22px para 26px */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 0 0.75rem 0 0.5rem;
+  }
+  
+  .logo-icon {
+    height: 32px;
+  }
+  
+  .navbar-right {
+    width: 280px;
+    right: -280px;
+  }
+}

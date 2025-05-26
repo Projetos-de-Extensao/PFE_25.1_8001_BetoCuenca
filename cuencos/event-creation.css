@@ -1,0 +1,258 @@
+
+/* Estilos para a página de criação de eventos */
+.event-creation-container {
+  background-color: #0F0F0F;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-creation-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.progress-bar-container {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.progress-bar {
+  height: 1px;
+  background-color: #2D2D2D;
+  position: relative;
+}
+
+.progress-bar-active {
+  height: 1px;
+  background-color: #BB00FF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.steps-markers {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: -6px;
+}
+
+.step-marker {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #2D2D2D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-marker.active {
+  background-color: #BB00FF;
+}
+
+.step-label {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #A0A0A0;
+}
+
+.step-label.active {
+  color: #BB00FF;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+}
+
+.form-section h3 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-label {
+  color: white;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.required::after {
+  content: '*';
+  color: #BB00FF;
+  margin-left: 0.25rem;
+}
+
+.text-input {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1A1A1A;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: white;
+}
+
+.text-input:focus {
+  border-color: #BB00FF;
+  outline: none;
+}
+
+.text-area {
+  min-height: 150px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #BB00FF;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #A200E6;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #BB00FF;
+  color: #BB00FF;
+}
+
+.btn-outline:hover {
+  background-color: rgba(187, 0, 255, 0.1);
+}
+
+.upload-container {
+  border: 2px dashed #333;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.upload-container.has-file {
+  border-style: solid;
+  border-color: #BB00FF;
+}
+
+.ticket-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.ticket-option {
+  padding: 1.5rem;
+  background-color: #1A1A1A;
+  border: 2px solid #333;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ticket-option:hover {
+  border-color: #555;
+}
+
+.ticket-option.active {
+  border-color: #BB00FF;
+  background-color: rgba(187, 0, 255, 0.1);
+}
+
+.ticket-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1rem;
+}
+
+.ticket-details {
+  margin-top: 2rem;
+}
+
+.preview-card {
+  background-color: #1A1A1A;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.preview-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.preview-content {
+  padding: 1.5rem;
+}
+
+.preview-title {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.preview-section {
+  margin-bottom: 1rem;
+}
+
+.preview-section-title {
+  font-size: 1rem;
+  color: #BB00FF;
+  margin-bottom: 0.5rem;
+}
+
+.preview-text {
+  color: #A0A0A0;
+  font-size: 0.9rem;
+}
+
+.preview-divider {
+  height: 1px;
+  background-color: #333;
+  margin: 1.5rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .event-creation-main {
+    padding: 1rem;
+  }
+  
+  .ticket-options {
+    grid-template-columns: 1fr;
+  }
+  
+  .buttons-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .buttons-container button {
+    width: 100%;
+  }
+}
