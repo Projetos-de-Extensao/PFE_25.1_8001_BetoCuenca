@@ -12,21 +12,17 @@ title: Sprint 3
 
 | Tarefa                                                                                       | Responsabilidade |
 | -------------------------------------------------------------------------------------------- | ---------------- |
-| Decidir o nome o projeto.                                                                    | Todos            |
-| Criar o repositório nos padrões (Organizar wiki).                                          | xxx              |
-| Criar issues no GitHub / ZenHub                                                              | xxx              |
-| Configuração do grupo do Telegram(configurar bot).                                         | xxx              |
-| Estudar e escolher as metodologias.                                                          | Todos            |
-| [Documento de visão](https://github.com/xxx/xxx.md)                                            | XXX e XXXXX      |
-| Elaborar[5w2H](https://github.com/xxx/xxx.md)                                                   | XXX e XXXXX      |
-| [Mapas Mentais](https://github.com/xxx/xxx.md)                                                  | XXX e XXXXX      |
-| [Brainstorming](https://github.com/UnBArqDsw/2020.1_G7_TCM/blob/master/docs/base/Brainstorm.md) | Todos            |
-| [Entrevistas](https://github.com/xxx/xxx.md)                                                    | XXX e XXXXX      |
-| [Prototipação.](https://github.com/xxx/xxx.md)                                                | XXX e XXXXX      |
+| Organizar o Site project.                                                                    | Guilherme Reis
+            |
+| Fazer o Protótipo.                                          | Guilherme Reis e Bernardo Casanovas              |
+| Criar issues no GitHub                                                              | Guilherme Reis
+              |
+| Site HTML e CSS.                                         | Anderson Lima e Bernardo Casanovas
+              |
 
 ## Sprint Retrospective/Review Meeting
 
-#### Presentes na reunião: XXXX
+#### Presentes na reunião: Anderson Lima, Guilherme Reis e Bernardo Casanovas
 
 ### ✅ Feito
 - Protótipo em Figma
