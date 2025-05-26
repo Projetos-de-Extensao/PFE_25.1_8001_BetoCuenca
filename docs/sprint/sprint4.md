@@ -6,48 +6,43 @@ title: Sprint 4
 
 ## Planejamento de Sprint
 
-#### Presentes na reunião: XXXXX
+#### Presentes na reunião: Anderson Lima, Bernardo Casanovas e Guilherme Reis
 
 ### Lista de Tarefas da Sprint
 
 | Tarefa                                                                                       | Responsabilidade |
 | -------------------------------------------------------------------------------------------- | ---------------- |
-| Decidir o nome o projeto.                                                                    | Todos            |
-| Criar o repositório nos padrões (Organizar wiki).                                          | xxx              |
-| Criar issues no GitHub / ZenHub                                                              | xxx              |
-| Configuração do grupo do Telegram(configurar bot).                                         | xxx              |
-| Estudar e escolher as metodologias.                                                          | Todos            |
-| [Documento de visão](https://github.com/xxx/xxx.md)                                            | XXX e XXXXX      |
-| Elaborar[5w2H](https://github.com/xxx/xxx.md)                                                   | XXX e XXXXX      |
-| [Mapas Mentais](https://github.com/xxx/xxx.md)                                                  | XXX e XXXXX      |
-| [Brainstorming](https://github.com/UnBArqDsw/2020.1_G7_TCM/blob/master/docs/base/Brainstorm.md) | Todos            |
-| [Entrevistas](https://github.com/xxx/xxx.md)                                                    | XXX e XXXXX      |
-| [Prototipação.](https://github.com/xxx/xxx.md)                                                | XXX e XXXXX      |
+| Organizar Sprints no Github.                                                                    | Guilherme Reis
+            |
+| Finalizar Site em HTML.                                          | Bernardo Casanovas
+              |
+| Começar Site no React                                                              | Anderson Lima              |
+
 
 ## Sprint Retrospective/Review Meeting
 
 #### Presentes na reunião: XXXX
 
 ### ✅ Feito
-- Protótipo em Figma
-- Organização do Project
+- Sprints Github
+- Finalizar site HTML
+- Começar site React
 
 ### ❌ Não Feito
-- Site HTML e CSS
-    - Finalizar as páginas
+- Nada
 
 
 ## ✅ O que devemos continuar fazendo como equipe?
 - Reuniões curtas e efetivas
 - Suporte e apoio entre os membros
+- Trabalho em equipe
 
 ## ❌ O que deveríamos parar de fazer como equipe?
 - Acreditamos que nesta sprint a equipe não cometeu erros significativos
 
 
 ## 📈 O que deveríamos começar a fazer como equipe ou pelo menos tentar?
-- Garantir que a cultura da equipe esteja alinhada com a metodologia Scrum
-- Usar um pouco mais o Notion para atualizar o estado das tarefas e sempre atualizar entre os membros as tarefas feitas e se tem alguma complicação.
+- Talvez começar a fazer daily meetings para se assemelhar mais à metodologia Scrum
 
 
 ### Ferramentas utilizadas
