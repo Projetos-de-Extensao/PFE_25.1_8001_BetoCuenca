@@ -21,15 +21,13 @@ title: Sprint 5
 
 ## Sprint Retrospective/Review Meeting
 
-#### Presentes na reunião: XXXX
+#### Presentes na reunião: Anderson Lima, Bernardo Casanovas e Guilherme Reis
 
 ### ✅ Feito
-- Sprints Github
-- Finalizar site HTML
-- Começar site React
+- ...
 
 ### ❌ Não Feito
-- Nada
+- ...
 
 
 ## ✅ O que devemos continuar fazendo como equipe?
