@@ -28,27 +28,29 @@ title: Sprint 3
 
 #### Presentes na reunião: XXXX
 
-### Dividas da Interação
+### ✅ Feito
+- Protótipo em Figma
+- Organização do Project
 
-### Riscos Encontrados
+### ❌ Não Feito
+- Site HTML e CSS
+    - Finalizar as páginas
 
-- Nenhum: Plano de gerenciamento de riscos não implementado.
 
-### Pontos Positivos
+## ✅ O que devemos continuar fazendo como equipe?
+- Reuniões curtas e efetivas
+- Suporte e apoio entre os membros
 
-![pontos positivos](../assets/Sprints/S1-positivos.png)
+## ❌ O que deveríamos parar de fazer como equipe?
+- Acreditamos que nesta sprint a equipe não cometeu erros significativos
 
-### Pontos Negativos
 
-![pontos negativos](../assets/Sprints/S1-negativos.png)
+## 📈 O que deveríamos começar a fazer como equipe ou pelo menos tentar?
+- Garantir que a cultura da equipe esteja alinhada com a metodologia Scrum
+- Usar um pouco mais o Notion para atualizar o estado das tarefas e sempre atualizar entre os membros as tarefas feitas e se tem alguma complicação.
 
-### O que podemos melhorar?
-
-- Ter mais foco na reuniões para evitar o desperdício de tempo.
-- A equipe deve ter mais autonomia em relação à falta de membros.
-- Podemos utilizar algo ferramenta de timebox para maior efetividade nas reuniões, sugestão: https://timebox.cedrotech.com/
 
 ### Ferramentas utilizadas
 
-- Reunião:Meet
-- Colheita dos pontos: [Mentimeter](https://www.mentimeter.com/)
+- Reunião: Discord
+- Organização de Tarefas: Notion

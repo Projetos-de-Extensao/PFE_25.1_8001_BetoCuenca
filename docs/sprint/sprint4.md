@@ -2,7 +2,7 @@
 id: sprint4
 title: Sprint 4
 ---
-# Sprint 4 (xx/xx/xx à xx/xx/202x)
+# Sprint 4 (12/05/25 à 19/05/2025)
 
 ## Planejamento de Sprint
 
@@ -14,7 +14,7 @@ title: Sprint 4
 | -------------------------------------------------------------------------------------------- | ---------------- |
 | Decidir o nome o projeto.                                                                    | Todos            |
 | Criar o repositório nos padrões (Organizar wiki).                                          | xxx              |
-| Criar issues no GitHub /                                                                     | xxx              |
+| Criar issues no GitHub / ZenHub                                                              | xxx              |
 | Configuração do grupo do Telegram(configurar bot).                                         | xxx              |
 | Estudar e escolher as metodologias.                                                          | Todos            |
 | [Documento de visão](https://github.com/xxx/xxx.md)                                            | XXX e XXXXX      |
@@ -28,27 +28,29 @@ title: Sprint 4
 
 #### Presentes na reunião: XXXX
 
-### Dividas da Sprint
+### ✅ Feito
+- Protótipo em Figma
+- Organização do Project
 
-### Riscos Encontrados
+### ❌ Não Feito
+- Site HTML e CSS
+    - Finalizar as páginas
 
-- Nenhum: Plano de gerenciamento de riscos não implementado.
 
-### Pontos Positivos
+## ✅ O que devemos continuar fazendo como equipe?
+- Reuniões curtas e efetivas
+- Suporte e apoio entre os membros
 
-![pontos positivos](../assets/Sprints/S1-positivos.png)
+## ❌ O que deveríamos parar de fazer como equipe?
+- Acreditamos que nesta sprint a equipe não cometeu erros significativos
 
-### Pontos Negativos
 
-![pontos negativos](../assets/Sprints/S1-negativos.png)
+## 📈 O que deveríamos começar a fazer como equipe ou pelo menos tentar?
+- Garantir que a cultura da equipe esteja alinhada com a metodologia Scrum
+- Usar um pouco mais o Notion para atualizar o estado das tarefas e sempre atualizar entre os membros as tarefas feitas e se tem alguma complicação.
 
-### O que podemos melhorar?
-
-- Ter mais foco na reuniões para evitar o desperdício de tempo.
-- A equipe deve ter mais autonomia em relação à falta de membros.
-- Podemos utilizar algo ferramenta de timebox para maior efetividade nas reuniões, sugestão: https://timebox.cedrotech.com/
 
 ### Ferramentas utilizadas
 
-- Reunião: [M](https://hangouts.google.com/)eet
-- Colheita dos pontos: [Mentimeter](https://www.mentimeter.com/)
+- Reunião: Discord
+- Organização de Tarefas: Notion
