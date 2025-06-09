@@ -24,10 +24,14 @@ title: Sprint 5
 #### Presentes na reunião: Anderson Lima, Bernardo Casanovas e Guilherme Reis
 
 ### ✅ Feito
-- ...
+- Garantir a Estrutura do site
+- Garantir o Design do site
+- Garantir as funcionalidades do site
 
 ### ❌ Não Feito
-- ...
+- Garantir as funcionalidades do site
+    - Devemos consertar alguns bugs
+    - Devemos criar uma API 
 
 
 ## ✅ O que devemos continuar fazendo como equipe?
