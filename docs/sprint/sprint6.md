@@ -21,10 +21,11 @@ title: Sprint 6
 #### Presentes na reunião: Anderson Lima, Bernardo Casanovas e Guilherme Reis
 
 ### ✅ Feito
-- ...
+- Fazer API
+- Consertar Bugs. 
 
 ### ❌ Não Feito
-- ...
+- Nada
 
 
 ## ✅ O que devemos continuar fazendo como equipe?
@@ -37,7 +38,7 @@ title: Sprint 6
 
 
 ## 📈 O que deveríamos começar a fazer como equipe ou pelo menos tentar?
-- Talvez começar a fazer daily meetings para se assemelhar mais à metodologia Scrum
+- Reuniões diárias assemelhando-se ao scrum.
 
 
 ### Ferramentas utilizadas

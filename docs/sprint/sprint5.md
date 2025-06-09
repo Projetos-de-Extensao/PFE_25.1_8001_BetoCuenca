@@ -44,7 +44,8 @@ title: Sprint 5
 
 
 ## 📈 O que deveríamos começar a fazer como equipe ou pelo menos tentar?
-- Talvez começar a fazer daily meetings para se assemelhar mais à metodologia Scrum
+- Reuniões diárias assemelhando-se ao scrum e mais testes de funcionalidade
+
 
 
 ### Ferramentas utilizadas
