@@ -2,7 +2,7 @@
 id: sprint5
 title: Sprint 5
 ---
-# Sprint 4 (19/05/25 à 26/05/2025)
+# Sprint 5 (19/05/25 à 26/05/2025)
 
 ## Planejamento de Sprint
 
