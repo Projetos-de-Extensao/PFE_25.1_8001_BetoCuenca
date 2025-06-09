@@ -100,7 +100,7 @@ title: Design Thinking
 
 ---
 
-### **5. Anexos**
+### **5. Anexos sobre metodologias**
 
 [Notion](https://www.notion.so/1e3383bc441b80b1800df291cf1946a5?v=1e3383bc441b81b18cbb000c6b8b996b&pvs=4) 
 [Miro](https://miro.com/app/board/uXjVICCpzOA=/?share_link_id=184508554103)
