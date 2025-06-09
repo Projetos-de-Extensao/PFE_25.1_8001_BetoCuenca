@@ -14,7 +14,7 @@ title: Sprint 1
 | -------------------------------------------------------------------------------------------- | ---------------- |
 | Decidir o nome o projeto.                                                                     | Todos            |
 | Criar o repositório nos padrões (Organizar wiki).                                          | Todos              |
-| Criar issues no GitHub / ZenHub [-]                                                              | Anderson, Enrique              |
+| Criar issues no GitHub                                                           | Anderson, Enrique              |
 | Estudar e escolher as metodologias.                                                          | Todos            |
 | Elaborar [5w2H](https://projetos-de-extensao.github.io/PFE_25.1_8001_II/base/5w2h/)                                                   |  Bernardo      |
 | [Mapas Mentais](https://projetos-de-extensao.github.io/PFE_25.1_8001_II/base/mapa_mental/)                                                  | Todos      |

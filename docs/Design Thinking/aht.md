@@ -1,4 +1,4 @@
-# 06 - **Análise de Tarefas**  
+# **Análise de Tarefas**
 
 **Contexto:**  
 

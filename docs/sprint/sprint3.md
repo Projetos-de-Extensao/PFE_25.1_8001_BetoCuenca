@@ -2,11 +2,11 @@
 id: sprint3
 title: Sprint 3
 ---
-# Sprint 3 (xx/xx/xx à xx/xx/202x)
+# Sprint 3 (28/04/25 à 12/05/25)
 
 ## Planejamento de Sprint
 
-#### Presentes na reunião: XXXXX
+#### Presentes na reunião: Anderson Lima, Guilherme Reis e Bernardo Casanovas
 
 ### Lista de Tarefas da Sprint
 
@@ -20,7 +20,7 @@ title: Sprint 3
 | Site HTML e CSS.                                         | Anderson Lima e Bernardo Casanovas
               |
 
-## Sprint Retrospective/Review Meeting
+## Sprint Review
 
 #### Presentes na reunião: Anderson Lima, Guilherme Reis e Bernardo Casanovas
 

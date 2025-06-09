@@ -12,17 +12,24 @@ title: Sprint 4
 
 | Tarefa                                                                                       | Responsabilidade |
 | -------------------------------------------------------------------------------------------- | ---------------- |
+<<<<<<< HEAD
 | Organizar Sprints no Github.                                                                    | Guilherme Reis
             |
 | Finalizar Site em HTML.                                          | Bernardo Casanovas
               |
 | Começar Site no React                                                              | Anderson Lima              |
 
+=======
+| Organizar Sprints no Github                                                                    | Guilherme Reis            |
+| Finalizar Site em HTML                                          | Bernardo Casanovas              |
+| Começar Site no Notion                                                                    | Anderson Lima              |
+>>>>>>> f64f47c (atualização sprints)
 
-## Sprint Retrospective/Review Meeting
+## Sprint Review
 
-#### Presentes na reunião: XXXX
+#### Presentes na reunião: Anderson Lima, Guilherme Reis e Bernardo Casanovas
 
+<<<<<<< HEAD
 ### ✅ Feito
 - Sprints Github
 - Finalizar site HTML
@@ -44,8 +51,31 @@ title: Sprint 4
 ## 📈 O que deveríamos começar a fazer como equipe ou pelo menos tentar?
 - Talvez começar a fazer daily meetings para se assemelhar mais à metodologia Scrum
 
+=======
+## ✅ Feito
+- .....
+## ❌ Não Feito
+- .......
 
+
+## Sprint Retrospective
+
+#### Presentes na reunião: Anderson Lima, Guilherme Reis e Bernardo Casanovas
+
+### ✅ O que devemos continuar fazendo como equipe?
+- ........
+
+### ❌ O que deveríamos parar de fazer como equipe?
+- ......
+>>>>>>> f64f47c (atualização sprints)
+
+### 📈 O que deveríamos começar a fazer como equipe ou pelo menos tentar?
+- .......
 ### Ferramentas utilizadas
 
+<<<<<<< HEAD
 - Reunião: Discord
+=======
+- Reunião: Presencial
+>>>>>>> f64f47c (atualização sprints)
 - Organização de Tarefas: Notion
